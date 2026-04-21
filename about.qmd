@@ -22,8 +22,6 @@ Con más de 10 años de experiencia en desarrollo de software y educación técn
 
 ## Licencia
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0?style=flat-square&logo=creative-commons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
 **© 2026 Diego Medardo Saavedra García.** Algunos derechos reservados bajo [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ---

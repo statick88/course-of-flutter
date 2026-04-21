@@ -4,7 +4,7 @@
 
 Este eBook no es para personas que buscan el camino fácil. Aquí no vienemos a "copiar y pegar" código de internet. Este material es tu guía de ingeniería para transformar tu mentalidad y dominar **Flutter** y **Dart** con rigor profesional.
 
-**Licencia**: Este curso está bajo [Licencia Creative Commons BY-NC-SA 4.0](licencia.md) — Attribution, NonCommercial, ShareAlike.
+**Licencia**: Este curso está bajo [Licencia Creative Commons BY-NC-SA 4.0](licencia) — Attribution, NonCommercial, ShareAlike.
 
 El autor cree firmemente que los **CONCEPTOS IMPORTAN MÁS QUE EL CÓDIGO**. Si entiendes la base, el framework es solo una herramienta.
 

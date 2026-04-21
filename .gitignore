@@ -1,5 +1,6 @@
 # Quarto / Book Output
-docs/
+# docs/ is NOT ignored - needed for GitHub Pages deployment
+# !docs/
 _book/
 _bookdown_files/
 *.html
@@ -52,3 +53,6 @@ __pycache__/
 .pytest_cache/
 venv/
 .env
+
+/.quarto/
+**/*.quarto_ipynb

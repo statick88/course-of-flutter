@@ -1,0 +1,1605 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Flutter - Desarrollo Móvil De Cero a Experto",
+    "section": "",
+    "text": "Bienvenidos al Curso de Flutter\nEste eBook no es para personas que buscan el camino fácil. Aquí no vienemos a “copiar y pegar” código de internet. Este material es tu guía de ingeniería para transformar tu mentalidad y dominar Flutter y Dart con rigor profesional.\nLicencia: Este curso está bajo Licencia Creative Commons BY-NC-SA 4.0 — Attribution, NonCommercial, ShareAlike.\nEl autor cree firmemente que los CONCEPTOS IMPORTAN MÁS QUE EL CÓDIGO. Si entiendes la base, el framework es solo una herramienta.",
+    "crumbs": [
+      "Bienvenidos al Curso de Flutter"
+    ]
+  },
+  {
+    "objectID": "index.html#la-hoja-de-ruta-del-ingeniero",
+    "href": "index.html#la-hoja-de-ruta-del-ingeniero",
+    "title": "Flutter - Desarrollo Móvil De Cero a Experto",
+    "section": "La Hoja de Ruta del Ingeniero",
+    "text": "La Hoja de Ruta del Ingeniero\nEn este viaje de 56 horas de puro aprendizaje, vamos a DESTRUIR la mediocridad cubriendo:\n\nFUNDAMENTOS DE DART: Olvídate de lo básico; vamos a profundizar en Mixins, Extensions y Tipado Fuerte.\nESTADO REACTIVO: Dominaremos Riverpod 2.x con Generators. No más boilerplate innecesario.\nCLEAN ARCHITECTURE (DDD): Aprenderás a construir sistemas, no solo apps. La arquitectura es la que te salvará la vida en producción.\nTESTING RIGUROSO: Un código sin tests es un código que NO FUNCIONA. Punto.\nOPTIMIZACIÓN EXTREMA: Aprenderás a usar DevTools para que tu app corra a 120 FPS constantes.",
+    "crumbs": [
+      "Bienvenidos al Curso de Flutter"
+    ]
+  },
+  {
+    "objectID": "index.html#metodología-statick",
+    "href": "index.html#metodología-statick",
+    "title": "Flutter - Desarrollo Móvil De Cero a Experto",
+    "section": "Metodología Statick",
+    "text": "Metodología Statick\nComo tu facilitador, seré exigente. Mi objetivo es que entiendas el POR QUÉ de cada línea de código. Este curso es 90% PRÁCTICO, construyendo 7 aplicaciones reales desde cero.\n\n\n\n\n\n\nImportantEL RETO ANTI-IA\n\n\n\nCada módulo contiene desafíos diseñados para que tu IA no pueda ayudarte. Si no puedes explicar la arquitectura detrás de tu código, NO HAS APRENDIDO NADA.\n\n\nUsa la barra lateral para navegar. Si buscas el éxito rápido, estás en el lugar equivocado. Si buscas convertirte en un ARQUITECTO DE SOFTWARE, bienvenido a casa.",
+    "crumbs": [
+      "Bienvenidos al Curso de Flutter"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "1  Acerca de este eBook",
+    "section": "",
+    "text": "1.1 Sobre el Autor\nEste curso de Flutter con Arquitectura Profesional está diseñado para desarrolladores que quieren dominar el desarrollo móvil con metodologías de ingeniería de software. Basado en la metodología Statick: 90% práctico, 100% aplicable.\nDiego Medardo Saavedra García\nFullStack Developer | Ethical Hacker | Docente Universitario | Estudiante de Máster\nCon más de 10 años de experiencia en desarrollo de software y educación técnica, Diego ha creado este curso con un enfoque en Arquitectura Limpia, Testing, Seguridad y Pensamiento Crítico. Su objetivo es formar no solo programadores, sino Ingenieros de Software capaces de liderar proyectos complejos en Flutter.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Acerca de este eBook</span>"
+    ]
+  },
+  {
+    "objectID": "about.html#sobre-el-autor",
+    "href": "about.html#sobre-el-autor",
+    "title": "1  Acerca de este eBook",
+    "section": "",
+    "text": "1.1.1 CV y Portafolio\n\nWeb: statick88.github.io\nLinkedIn: linkedin.com/in/diego-saavedra-developer\nX (Twitter): x.com/statick_ds\nGitHub: github.com/statick88\nGoogle Scholar: scholar.google.com/citations\nHack The Box: hackthebox.com",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Acerca de este eBook</span>"
+    ]
+  },
+  {
+    "objectID": "about.html#licencia",
+    "href": "about.html#licencia",
+    "title": "1  Acerca de este eBook",
+    "section": "1.2 Licencia",
+    "text": "1.2 Licencia\n© 2026 Diego Medardo Saavedra García. Algunos derechos reservados bajo Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).\n\nEste material puedes compartirlo y adaptarlo bajo los mismos términos de esta licencia.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Acerca de este eBook</span>"
+    ]
+  },
+  {
+    "objectID": "SETUP.html",
+    "href": "SETUP.html",
+    "title": "2  Guía de Inicio Rápido (Setup)",
+    "section": "",
+    "text": "2.1 1. Flutter SDK\nPara comenzar a usar este eBook y realizar los laboratorios, asegúrate de tener instalado el siguiente software:\nInstala la versión estable de Flutter (3.41 o superior). - Instrucciones oficiales",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Guía de Inicio Rápido (Setup)</span>"
+    ]
+  },
+  {
+    "objectID": "SETUP.html#editor-de-código",
+    "href": "SETUP.html#editor-de-código",
+    "title": "2  Guía de Inicio Rápido (Setup)",
+    "section": "2.2 2. Editor de Código",
+    "text": "2.2 2. Editor de Código\nRecomendamos Visual Studio Code con las siguientes extensiones: - Flutter (by Dart Code) - Dart (by Dart Code) - Error Lens (opcional, muy recomendado)",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Guía de Inicio Rápido (Setup)</span>"
+    ]
+  },
+  {
+    "objectID": "SETUP.html#quarto-opcional",
+    "href": "SETUP.html#quarto-opcional",
+    "title": "2  Guía de Inicio Rápido (Setup)",
+    "section": "2.3 3. Quarto (Opcional)",
+    "text": "2.3 3. Quarto (Opcional)\nSi deseas renderizar este eBook localmente o modificarlo, necesitas instalar Quarto CLI. - Descargar Quarto",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Guía de Inicio Rápido (Setup)</span>"
+    ]
+  },
+  {
+    "objectID": "SETUP.html#repositorio-del-curso",
+    "href": "SETUP.html#repositorio-del-curso",
+    "title": "2  Guía de Inicio Rápido (Setup)",
+    "section": "2.4 4. Repositorio del Curso",
+    "text": "2.4 4. Repositorio del Curso\nClona el repositorio con las soluciones de los laboratorios:\n\n\nBASH\n\ngit clone https://github.comTuUsuario/curso-flutter.git\n\nO descarga desde: Reemplaza TuUsuario con tu nombre de usuario de GitHub",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Guía de Inicio Rápido (Setup)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html",
+    "href": "glosario.html",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "",
+    "text": "3.1 A\nGlosario técnico con referencias cruzadas a las unidades donde se cubre cada tema en profundidad.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#a",
+    "href": "glosario.html#a",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "",
+    "text": "AAB (Android App Bundle): Formato de publicación de Google Play que optimiza el tamaño de la app para cada dispositivo. → Ver: Unidad 12: Build y Distribución\nAdMob: Plataforma de monetización de Google para apps móviles. → Relacionado: Unidad 12: Build y Distribución\nAPI (Application Programming Interface): Contrato que define cómo dos sistemas se comunican. → Ver: Unidad 7: Integración con APIs",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#b",
+    "href": "glosario.html#b",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.2 B",
+    "text": "3.2 B\n\nBloc (Business Logic Component): Patrón de gestión de estado basado en streams. → Relacionado: Unidad 5: Gestión de Estado\nBuild Context: Objeto que contiene información sobre la ubicación del widget en el árbol de widgets.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#c",
+    "href": "glosario.html#c",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.3 C",
+    "text": "3.3 C\n\nClean Architecture: Patrón de diseño que separa el código en capas (Domain, Infrastructure, Presentation) para mejorar la mantenibilidad. → Ver: Unidad 6: Clean Architecture\nConsumerWidget: Widget de Riverpod que puede escuchar cambios en el estado sin necesidad de un StatefulWidget. → Ver: Unidad 5: Riverpod\nCross-References: Referencias entre secciones del libro. Ejemplo: La capa DOMAIN (→ Chapter 15) es independiente de Flutter.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#d",
+    "href": "glosario.html#d",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.4 D",
+    "text": "3.4 D\n\nDart: Lenguaje de programación optimizado para UI, desarrollado por Google.\nDDD (Domain Driven Design): Metodología de diseño de software centrada en el dominio del negocio. → Ver: Unidad 6: DDD en Flutter\nDependency Injection: Patrón para inyectar dependencias desde fuera, no crearlas dentro. → Ver: Unidad 6: Clean Architecture\nDio: Paquete potente para realizar peticiones HTTP con soporte para interceptores. → Ver: Unidad 7: APIs HTTP\nDrift: Biblioteca de persistencia (SQLite) para Dart y Flutter con tipado seguro. → Ver: Unidad 8: SQLite con Drift",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#e",
+    "href": "glosario.html#e",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.5 E",
+    "text": "3.5 E\n\nEntity: Objeto del dominio que representa una entidad de negocio con identidad única. → Ver: Unidad 6: Clean Architecture\nEntorno de Desarrollo (IDE): Android Studio, VS Code o IntelliJ con plugins de Flutter.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#f",
+    "href": "glosario.html#f",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.6 F",
+    "text": "3.6 F\n\nFirebase Cloud Messaging (FCM): Servicio de notificaciones push de Google. → Ver: Unidad 9: Firebase Notifications\nFVM (Flutter Version Manager): Gestor de versiones de Flutter para proyectos con diferentes versiones.\nFuture: Objeto que representa un valor que estará disponible en el futuro (operación asíncrona).",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#g",
+    "href": "glosario.html#g",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.7 G",
+    "text": "3.7 G\n\nGetIt: Biblioteca de inyección de dependencias para Dart y Flutter.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#h",
+    "href": "glosario.html#h",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.8 H",
+    "text": "3.8 H\n\nHot Reload: Característica de Flutter que permite inyectar cambios de código directamente en la app sin reiniciarla. → Ver: Unidad 3: Primeros Pasos\nHttp Client: Componente para realizar peticiones de red. → Ver: Unidad 7: Integración con APIs",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#i",
+    "href": "glosario.html#i",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.9 I",
+    "text": "3.9 I\n\nInheritedWidget: Widget base para compartir estado hacia abajo en el árbol de widgets.\nIsolate: Concurrencia en Dart - procesos separados con memoria independiente.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#l",
+    "href": "glosario.html#l",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.10 L",
+    "text": "3.10 L\n\nLayout: Estructura visual de la interfaz. → Ver: Unidad 4: Layouts\nListener: Función que se ejecuta cuando cambia el estado.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#m",
+    "href": "glosario.html#m",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.11 M",
+    "text": "3.11 M\n\nMappers: Funciones que transforman datos entre capas (DTO → Entity, Entity → Model). → Ver: Unidad 7: Mappers y Models\nMaterial Design: Sistema de diseño de Google para interfaces consistente.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#p",
+    "href": "glosario.html#p",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.12 P",
+    "text": "3.12 P\n\nPackage: Librería reutilizable de código Dart/Flutter.\npubspec.yaml: Archivo de configuración de dependencias de Flutter.\nProvider: Paquete oficial de gestión de estado de Flutter. → Ver: Unidad 5: Gestión de Estado\nPub.dev: Repositorio oficial de packages Dart y Flutter.\nPush Notification: Notificación enviada al dispositivo aunque la app esté cerrada. → Ver: Unidad 9: Firebase Notifications",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#r",
+    "href": "glosario.html#r",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.13 R",
+    "text": "3.13 R\n\nRef (Reference): En Riverpod, objeto para leer estado sin rebuild automático.\nRepository Pattern: Abstracción que hiding la fuente de datos real.\nRiverpod: Gestor de estado reactivo y seguro que mejora los conceptos de Provider. → Ver: Unidad 5: Riverpod",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#s",
+    "href": "glosario.html#s",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.14 S",
+    "text": "3.14 S\n\nSetState: Método en StatefulWidget para rebuilds locales.\nSQLite: Base de datos local embebida. → Ver: Unidad 8: SQLite con Drift\nStatefulWidget: Widget con estado mutable que puede cambiar durante su lifetime.\nStatelessWidget: Widget inmutable que solo se construye una vez.\nStream: Secuencia asynchronous de eventos o valores.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#t",
+    "href": "glosario.html#t",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.15 T",
+    "text": "3.15 T\n\nTDD (Test-Driven Development): Metodología de desarrollo donde se escribe el test primero. → Ver: Unidad 14: Testing y CI/CD",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#u",
+    "href": "glosario.html#u",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.16 U",
+    "text": "3.16 U\n\nuseProvider: Hook de Riverpod para acceder a providers en widgets.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#v",
+    "href": "glosario.html#v",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.17 V",
+    "text": "3.17 V\n\nVoidCallback: Función sin返回值 (equivalente a Action en otros frameworks).",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#w",
+    "href": "glosario.html#w",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.18 W",
+    "text": "3.18 W\n\nWidget: La unidad básica de construcción de interfaces en Flutter. Todo en Flutter es un widget. → Ver: Unidad 4: Widgets Básicos\nWidget Tree: Árbol jerárquico de todos los widgets de la app.\n\n\n\n\n\n\n\n\nTipCómo usar este glosario\n\n\n\n\nLas cross-references te llevan directamente a la unidad donde se cubre el tema\nCada término tiene un link a la sección relevante\nSi no entiendes un concepto, busca aquí primero\nLos términos están organizados alfabéticamente por simplicidad",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#contribuir-al-glosario",
+    "href": "glosario.html#contribuir-al-glosario",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.19 Contribuir al Glosario",
+    "text": "3.19 Contribuir al Glosario\n¿Conoces un término que falta? 1. Haz fork del repositorio 2. Añade el término en orden alfabético 3. Envía un PR con el término nuevo\nTu contribución ayuda a otros estudiantes 🎓",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "glosario.html#flashcards-de-repaso",
+    "href": "glosario.html#flashcards-de-repaso",
+    "title": "3  Glosario de Términos (Flutter & Dart)",
+    "section": "3.20 📇 Flashcards de Repaso",
+    "text": "3.20 📇 Flashcards de Repaso\nLas siguientes flashcards te ayudan a repasar los conceptos clave del curso. Usa estas preguntas para autoevaluarte antes de los exámenes.\n\nClean ArchitectureRiverpodSQLite/DriftFirebase & SupabasePerformance\n\n\n\n3.20.1 Pregunta 1\n¿Cuáles son las 3 capas principales de Clean Architecture?\n\n\n\n\n\n\nTip\n\n\n\n\n\nRespuesta: 1. DOMAIN - Lógica de negocio pura (Dart sin dependencias de Flutter) 2. INFRASTRUCTURE - Implementaciones concretas (APIs, Bases de datos) 3. PRESENTATION - UI y Widgets de Flutter\n\n\n\n\n\n3.20.2 Pregunta 2\n¿Por qué el DOMAIN debe ser independiente de Flutter?\n\n\n\n\n\n\nTip\n\n\n\n\n\nRespuesta: Para mantener la portabilidad. El dominio puede usarse en cualquier plataforma (API REST, CLI, Flutter Web) sin cambios.\n\n\n\n\n\n\n\n3.20.3 Pregunta 3\n¿Qué es un NotifierProvider en Riverpod?\n\n\n\n\n\n\nTip\n\n\n\n\n\nRespuesta: Un provider que permite mutable state (estado mutable) con métodos para modificar el estado. Ideal para CRUD operations.\n\n\n\n\n\n3.20.4 Pregunta 4\n¿Cuál es la diferencia entre FutureProvider y StreamProvider?\n\n\n\n\n\n\nTip\n\n\n\n\n\nRespuesta: - FutureProvider: Para operaciones que devuelven un solo valor (una petición HTTP) - StreamProvider: Para flujos de datos continuos que se actualizan en tiempo real\n\n\n\n\n\n\n\n3.20.5 Pregunta 5\n¿Qué es el patrón Repository en Clean Architecture?\n\n\n\n\n\n\nTip\n\n\n\n\n\nRespuesta: Una abstracción que define cómo se acceden los datos, separando la interfaz (contrato) de la implementación concreta (Drift, Firebase, API).\n\n\n\n\n\n\n\n3.20.6 Pregunta 6\n¿Cuál es la diferencia principal entre Firebase y Supabase?\n\n\n\n\n\n\nTip\n\n\n\n\n\nRespuesta: - Firebase: Ecosistema cerrado de Google, propiedad - Supabase: Código abierto (open-source), basado en PostgreSQL, más control sobre los datos\n\n\n\n\n\n\n\n3.20.7 Pregunta 7\n¿Qué es un RepaintBoundary y cuándo usarlo?\n\n\n\n\n\n\nTip\n\n\n\n\n\nRespuesta: Un widget que aísla su hijo del resto del árbol de renderizado. Usarlo cuando tienes animaciones o widgets complejos que no necesitan ser redibujados cuando cambia el estado padre.\n\n\n\n\n\n3.20.8 Pregunta 8\n¿Por qué const es importante en Flutter?\n\n\n\n\n\n\nTip\n\n\n\n\n\nRespuesta: El compilador puede cachear widgets const porque nunca cambian, reduciendo el número de rebuilds necesarios.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Glosario de Términos (Flutter & Dart)</span>"
+    ]
+  },
+  {
+    "objectID": "licencia.html",
+    "href": "licencia.html",
+    "title": "4  Licencia Creative Commons",
+    "section": "",
+    "text": "4.1 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Licencia Creative Commons</span>"
+    ]
+  },
+  {
+    "objectID": "licencia.html#creative-commons-attribution-noncommercial-sharealike-4.0-international-cc-by-nc-sa-4.0",
+    "href": "licencia.html#creative-commons-attribution-noncommercial-sharealike-4.0-international-cc-by-nc-sa-4.0",
+    "title": "4  Licencia Creative Commons",
+    "section": "",
+    "text": "4.1.1 Usted es libre de:\n\nCompartir — copiar y redistribuir el material en cualquier medio o formato\nAdaptar — remezclar, transformar y crear a partir del material\n\n\n\n4.1.2 Bajo los siguientes términos:\n\n Atribución — Debe dar crédito appropriate, proporcionar un enlace a la licencia, e indicar si se realizaron cambios. Puede hacerlo de cualquier manera razonable, pero no de tal manera que sugiera que el licenciante lo respalda a usted o su uso.\n NoComercial — No puede utilizar el material para fines comerciales.\n CompartirIgual — Si remezcla, transforma o crea a partir del material, debe distribuir su contribución bajo la misma licencia que el original.\n\n\n\n4.1.3 Notas legales\nDies ist eine übersichtliche Zusammenfassung (und keineswegs ein Ersatz) der vollständigen Lizenz. Visite Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International para ver el texto legal completo.\n\n© 2026 Diego Medardo Saavedra García. Algunos derechos reservados.",
+    "crumbs": [
+      "Introducción al Curso",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Licencia Creative Commons</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_variables.html",
+    "href": "unidades/unidad1/1_variables.html",
+    "title": "5  Variables y Tipos de Datos en Dart",
+    "section": "",
+    "text": "5.1 Tipos de Datos Básicos\nEn Dart, todo es un objeto. Como facilitador, quiero que entiendas que la seguridad de tipos (type safety) no es una restricción, sino una herramienta para evitar errores en producción.\nDart soporta los siguientes tipos fundamentales:",
+    "crumbs": [
+      "I - Fundamentos de Dart",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Variables y Tipos de Datos en Dart</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_variables.html#tipos-de-datos-básicos",
+    "href": "unidades/unidad1/1_variables.html#tipos-de-datos-básicos",
+    "title": "5  Variables y Tipos de Datos en Dart",
+    "section": "",
+    "text": "String: Cadenas de texto.\nint / double: Números enteros y de punto flotante.\nbool: Valores lógicos (true/false).\nList / Map: Colecciones de datos.\n\n\n\nDART\n\nvoid main() {\n  final String name = 'Abacom Flutter'; // Inmutable después de la asignación\n  const double version = 3.41;          // Constante en tiempo de compilación\n  int students = 15;\n  \n  print('Bienvenido a $name versión $version');\n}",
+    "crumbs": [
+      "I - Fundamentos de Dart",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Variables y Tipos de Datos en Dart</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_variables.html#inferencia-de-tipos-vs-tipado-explícito",
+    "href": "unidades/unidad1/1_variables.html#inferencia-de-tipos-vs-tipado-explícito",
+    "title": "5  Variables y Tipos de Datos en Dart",
+    "section": "5.2 Inferencia de Tipos vs Tipado Explícito",
+    "text": "5.2 Inferencia de Tipos vs Tipado Explícito\nDart puede inferir el tipo usando var, pero en este curso preferimos el tipado explícito o el uso de final para mejorar la legibilidad y mantenibilidad.\n\n¿Por qué final es preferible a var en el desarrollo de aplicaciones móviles? Investiga la diferencia entre final y const en Dart. ¿Cuál de los dos usarías para definir la URL de una API que se obtiene en tiempo de ejecución?\n\n💡 Pista: En Chapter 16 profundizaremos en cómo consumir APIs con Dart.",
+    "crumbs": [
+      "I - Fundamentos de Dart",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Variables y Tipos de Datos en Dart</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_funciones.html",
+    "href": "unidades/unidad1/2_funciones.html",
+    "title": "6  Funciones y Parámetros",
+    "section": "",
+    "text": "6.1 Definición de Funciones\nLas funciones en Dart son objetos de primera clase, lo que significa que pueden pasarse como argumentos a otras funciones (callback), un concepto clave para entender los Widgets en Flutter.",
+    "crumbs": [
+      "I - Fundamentos de Dart",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Funciones y Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_funciones.html#definición-de-funciones",
+    "href": "unidades/unidad1/2_funciones.html#definición-de-funciones",
+    "title": "6  Funciones y Parámetros",
+    "section": "",
+    "text": "DART\n\n// Función básica con tipado de retorno\nString greet(String name) {\n  return 'Hola, $name';\n}\n\n// Arrow Function (para expresiones de una sola línea)\nString greetShort(String name) =&gt; 'Hola, $name';",
+    "crumbs": [
+      "I - Fundamentos de Dart",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Funciones y Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_funciones.html#parámetros-nombrados-named-parameters",
+    "href": "unidades/unidad1/2_funciones.html#parámetros-nombrados-named-parameters",
+    "title": "6  Funciones y Parámetros",
+    "section": "6.2 Parámetros Nombrados (Named Parameters)",
+    "text": "6.2 Parámetros Nombrados (Named Parameters)\nEn Flutter, casi todos los Widgets usan parámetros nombrados para mejorar la claridad.\n\n\nDART\n\nvoid main() {\n  createApp(title: 'My Awesome App', version: 1.0);\n}\n\n// Los parámetros entre {} son nombrados y opcionales por defecto\nvoid createApp({required String title, double? version}) {\n  print('Creando app: $title (v$version)');\n}\n\n\n\n\n\n\n\nTipBuenas Prácticas\n\n\n\nUsa siempre la palabra clave required para parámetros que son indispensables para el funcionamiento de tu lógica.",
+    "crumbs": [
+      "I - Fundamentos de Dart",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Funciones y Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_clases.html",
+    "href": "unidades/unidad1/3_clases.html",
+    "title": "7  POO Avanzada: Abstract, Mixins y Extensions",
+    "section": "",
+    "text": "7.1 Clases Abstractas e Interfaces\nEn un nivel superior, el uso de clases simples no es suficiente. Para construir sistemas escalables, debemos dominar la reutilización de código y la extensibilidad sin herencia múltiple.\nDart no tiene la palabra clave interface; cada clase es implícitamente una interfaz.",
+    "crumbs": [
+      "I - Fundamentos de Dart",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>POO Avanzada: Abstract, Mixins y Extensions</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_clases.html#clases-abstractas-e-interfaces",
+    "href": "unidades/unidad1/3_clases.html#clases-abstractas-e-interfaces",
+    "title": "7  POO Avanzada: Abstract, Mixins y Extensions",
+    "section": "",
+    "text": "DART\n\nabstract class Repository {\n  Future&lt;List&lt;String&gt;&gt; getData();\n}\n\nclass ApiRepository implements Repository {\n  @override\n  Future&lt;List&lt;String&gt;&gt; getData() async =&gt; ['Data 1', 'Data 2'];\n}",
+    "crumbs": [
+      "I - Fundamentos de Dart",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>POO Avanzada: Abstract, Mixins y Extensions</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_clases.html#mixins-reutilización-de-comportamiento",
+    "href": "unidades/unidad1/3_clases.html#mixins-reutilización-de-comportamiento",
+    "title": "7  POO Avanzada: Abstract, Mixins y Extensions",
+    "section": "7.2 Mixins: Reutilización de Comportamiento",
+    "text": "7.2 Mixins: Reutilización de Comportamiento\nLos mixins permiten añadir funcionalidades a una clase sin usar herencia. Es fundamental para manejar comportamientos transversales (ej. validaciones, animaciones).\n\n\nDART\n\nmixin Logger {\n  void log(String msg) =&gt; print('[LOG ${DateTime.now()}]: $msg');\n}\n\nclass UserService with Logger {\n  void save() =&gt; log('Usuario guardado');\n}",
+    "crumbs": [
+      "I - Fundamentos de Dart",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>POO Avanzada: Abstract, Mixins y Extensions</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_clases.html#extension-methods",
+    "href": "unidades/unidad1/3_clases.html#extension-methods",
+    "title": "7  POO Avanzada: Abstract, Mixins y Extensions",
+    "section": "7.3 Extension Methods",
+    "text": "7.3 Extension Methods\nPermiten añadir funcionalidad a bibliotecas de terceros o clases existentes del sistema sin modificarlas.\n\n\nDART\n\nextension StringExtensions on String {\n  bool get isValidEmail =&gt; contains('@');\n}\n\n\nDiseño de Framework: Imagina que estás creando un sistema de persistencia. ¿Cómo usarías una combinación de abstract class y mixins para obligar a que todos tus servicios tengan un método save() y, opcionalmente, una capacidad de cache?",
+    "crumbs": [
+      "I - Fundamentos de Dart",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>POO Avanzada: Abstract, Mixins y Extensions</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/1_configuracion.html",
+    "href": "unidades/unidad2/1_configuracion.html",
+    "title": "8  Instalación y Configuración del Entorno",
+    "section": "",
+    "text": "8.1 Pasos de Instalación\nPara desarrollar en Flutter, necesitamos un entorno de desarrollo (IDE) y el SDK de Flutter. En este curso, recomendamos Visual Studio Code por su ligereza y excelentes extensiones.",
+    "crumbs": [
+      "II - Instalación y Configuración",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Instalación y Configuración del Entorno</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/1_configuracion.html#pasos-de-instalación",
+    "href": "unidades/unidad2/1_configuracion.html#pasos-de-instalación",
+    "title": "8  Instalación y Configuración del Entorno",
+    "section": "",
+    "text": "Flutter SDK: Descarga la versión estable (3.41+) desde flutter.dev.\nVariables de Entorno: Agrega la carpeta bin de Flutter a tu PATH.\nAndroid Studio: Instálalo para obtener el Android SDK y las herramientas de emulación.\nVS Code Extensions: Instala las extensiones de Flutter y Dart.",
+    "crumbs": [
+      "II - Instalación y Configuración",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Instalación y Configuración del Entorno</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/1_configuracion.html#verificación-del-entorno",
+    "href": "unidades/unidad2/1_configuracion.html#verificación-del-entorno",
+    "title": "8  Instalación y Configuración del Entorno",
+    "section": "8.2 Verificación del Entorno",
+    "text": "8.2 Verificación del Entorno\nEjecuta el siguiente comando en tu terminal para verificar que todo esté en orden:\n\n\nBASH\n\nflutter doctor\n\n\n\n\n\n\n\nWarning¡No te detengas!\n\n\n\nNo es necesario que todos los checks de flutter doctor estén en verde (como Chrome o Windows Desktop) si solo vas a desarrollar para Android o iOS. Lo importante es tener el SDK, el Toolchain de Android/iOS y un IDE listo.\n\n\n\nSolución de Problemas: Si flutter doctor indica que las licencias de Android no han sido aceptadas, ¿cuál es el comando exacto para aceptarlas todas de una vez? (Pista: usa el flag --android-licenses).",
+    "crumbs": [
+      "II - Instalación y Configuración",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Instalación y Configuración del Entorno</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/1_primeros_pasos.html",
+    "href": "unidades/unidad3/1_primeros_pasos.html",
+    "title": "9  Flutter: Primeros Pasos",
+    "section": "",
+    "text": "9.1 ¿Qué es un Widget?\nFlutter es un framework declarativo. Esto significa que nosotros describimos cómo se debe ver la interfaz basándonos en su estado actual.\nEn Flutter, todo es un Widget. Un Widget es una descripción inmutable de una parte de la interfaz de usuario.",
+    "crumbs": [
+      "III - Flutter: Primeros Pasos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Flutter: Primeros Pasos</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/1_primeros_pasos.html#qué-es-un-widget",
+    "href": "unidades/unidad3/1_primeros_pasos.html#qué-es-un-widget",
+    "title": "9  Flutter: Primeros Pasos",
+    "section": "",
+    "text": "9.1.1 Stateless vs Stateful Widgets\n\nStatelessWidget: No cambia su estado una vez construido. Es ideal para elementos estáticos como iconos o etiquetas de texto.\nStatefulWidget: Tiene un objeto de estado interno que puede cambiar. Cuando el estado cambia, el Widget se reconstruye.",
+    "crumbs": [
+      "III - Flutter: Primeros Pasos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Flutter: Primeros Pasos</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/1_primeros_pasos.html#mi-primera-aplicación-hello-world",
+    "href": "unidades/unidad3/1_primeros_pasos.html#mi-primera-aplicación-hello-world",
+    "title": "9  Flutter: Primeros Pasos",
+    "section": "9.2 Mi Primera Aplicación (Hello World)",
+    "text": "9.2 Mi Primera Aplicación (Hello World)\n\n\nDART\n\nimport 'package:flutter/material.dart';\n\nvoid main() =&gt; runApp(const MyApp());\n\nclass MyApp extends StatelessWidget {\n  const MyApp({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      debugShowCheckedModeBanner: false,\n      title: 'Abacom Flutter',\n      home: Scaffold(\n        appBar: AppBar(\n          title: const Text('Bienvenidos a Flutter'),\n          backgroundColor: Colors.orange,\n        ),\n        body: const Center(\n          child: Text('¡Hola Mundo desde Abacom!'),\n        ),\n      ),\n    );\n  }\n}\n\n\n\n\n\n\n\nTipHot Reload\n\n\n\nFlutter permite ver los cambios casi instantáneamente sin perder el estado de la aplicación. ¡Pruébalo cambiando el texto del Text widget!",
+    "crumbs": [
+      "III - Flutter: Primeros Pasos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Flutter: Primeros Pasos</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad4/1_widgets_basicos.html",
+    "href": "unidades/unidad4/1_widgets_basicos.html",
+    "title": "10  Widgets Básicos de Flutter",
+    "section": "",
+    "text": "10.1 Text, Center y Scaffold\nEn esta sección exploraremos los bloques fundamentales con los que construirás cualquier interfaz en Flutter. Recuerda: en Flutter, componemos interfaces anidando widgets.",
+    "crumbs": [
+      "IV - Widgets Básicos y Avanzados",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Widgets Básicos de Flutter</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad4/1_widgets_basicos.html#text-center-y-scaffold",
+    "href": "unidades/unidad4/1_widgets_basicos.html#text-center-y-scaffold",
+    "title": "10  Widgets Básicos de Flutter",
+    "section": "",
+    "text": "Scaffold: Proporciona la estructura visual básica (AppBar, Body, BottomNavigationBar).\nCenter: Alinea su hijo en el centro de su espacio disponible.\nText: Muestra una cadena de texto con estilo.\n\n\n\nDART\n\nScaffold(\n  appBar: AppBar(title: const Text('Mi App')),\n  body: const Center(child: Text('Hola Flutter')),\n)",
+    "crumbs": [
+      "IV - Widgets Básicos y Avanzados",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Widgets Básicos de Flutter</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad4/1_widgets_basicos.html#imagenes-y-iconos",
+    "href": "unidades/unidad4/1_widgets_basicos.html#imagenes-y-iconos",
+    "title": "10  Widgets Básicos de Flutter",
+    "section": "10.2 Imagenes y Iconos",
+    "text": "10.2 Imagenes y Iconos\nFlutter facilita la inclusión de recursos visuales:\n\nIcon: Usa la fuente de iconos de Material Design por defecto.\nImage.network: Carga una imagen desde una URL.\nImage.asset: Carga una imagen local definida en el pubspec.yaml.\n\n\n\nDART\n\nconst Icon(Icons.favorite, color: Colors.red, size: 50),\nImage.network('https://dart.dev/assets/img/logo-lockup.png'),\n\n\nOptimización de Recursos: ¿Cuál es la diferencia de rendimiento entre usar Image.network y Image.asset en una aplicación móvil? ¿Por qué es importante definir las dimensiones de las imágenes antes de cargarlas?",
+    "crumbs": [
+      "IV - Widgets Básicos y Avanzados",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Widgets Básicos de Flutter</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad4/2_layouts.html",
+    "href": "unidades/unidad4/2_layouts.html",
+    "title": "11  Layouts: Column, Row y Stack",
+    "section": "",
+    "text": "11.1 Column y Row\nPara crear interfaces complejas, necesitamos organizar los widgets en el espacio. Flutter utiliza un sistema de Layouts basado en hijos múltiples.\nAmbos usan mainAxisAlignment y crossAxisAlignment para controlar la alineación.",
+    "crumbs": [
+      "IV - Widgets Básicos y Avanzados",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Layouts: Column, Row y Stack</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad4/2_layouts.html#column-y-row",
+    "href": "unidades/unidad4/2_layouts.html#column-y-row",
+    "title": "11  Layouts: Column, Row y Stack",
+    "section": "",
+    "text": "Column: Organiza los widgets verticalmente.\nRow: Organiza los widgets horizontalmente.\n\n\n\n\nDART\n\nColumn(\n  mainAxisAlignment: MainAxisAlignment.center,\n  children: [\n    const Text('Item 1'),\n    const Icon(Icons.star),\n  ],\n)",
+    "crumbs": [
+      "IV - Widgets Básicos y Avanzados",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Layouts: Column, Row y Stack</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad4/2_layouts.html#container-y-padding",
+    "href": "unidades/unidad4/2_layouts.html#container-y-padding",
+    "title": "11  Layouts: Column, Row y Stack",
+    "section": "11.2 Container y Padding",
+    "text": "11.2 Container y Padding\n\nPadding: Añade espacio alrededor de un widget.\nContainer: Un widget versátil que combina pintura, posicionamiento y dimensionamiento (margen, borde, color de fondo).\n\n\n\n\n\n\n\nTipMenos es Más\n\n\n\nSi solo necesitas añadir espacio, prefiere el widget Padding sobre un Container con padding, ya que es más ligero para el motor de renderizado.\n\n\n\nDesafío de Diseño: Intenta replicar una fila de tres botones con iconos y etiquetas de texto debajo, asegurándote de que estén distribuidos equitativamente en la pantalla. ¿Qué propiedad de MainAxisAlignment usarías?",
+    "crumbs": [
+      "IV - Widgets Básicos y Avanzados",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Layouts: Column, Row y Stack</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_gestion_estado.html",
+    "href": "unidades/unidad5/1_gestion_estado.html",
+    "title": "12  Gestión de Estado: El Alma de tu App",
+    "section": "",
+    "text": "12.1 ¿Por qué importa la arquitectura de estado?\nSi no dominas el estado, no dominas Flutter. Punto. Como facilitador, veo demasiados programadores que ensucian su código con setState en lugares donde NO debería estar. El estado no es solo “hacer que algo cambie en pantalla”, es la VERDAD ÚNICA de tu aplicación en un momento dado.\nCuando tu app crece, el código espagueti de pasar datos entre constructores se vuelve una PESADILLA técnica. Un buen Ingeniero de Software busca:",
+    "crumbs": [
+      "V - Gestión de Estado",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gestión de Estado: El Alma de tu App</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_gestion_estado.html#por-qué-importa-la-arquitectura-de-estado",
+    "href": "unidades/unidad5/1_gestion_estado.html#por-qué-importa-la-arquitectura-de-estado",
+    "title": "12  Gestión de Estado: El Alma de tu App",
+    "section": "",
+    "text": "SEPARACIÓN DE INTERESES: Tu UI no debe saber CÓMO se calculan los datos, solo debe mostrarlos.\nINMUTABILIDAD: El estado no se “modifica”, se reemplaza por uno nuevo para garantizar predictibilidad.\nREACTIVIDAD: Tu interfaz debe ser un reflejo automático de tus datos.",
+    "crumbs": [
+      "V - Gestión de Estado",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gestión de Estado: El Alma de tu App</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_gestion_estado.html#flujo-de-datos-en-gestión-de-estado",
+    "href": "unidades/unidad5/1_gestion_estado.html#flujo-de-datos-en-gestión-de-estado",
+    "title": "12  Gestión de Estado: El Alma de tu App",
+    "section": "12.2 Flujo de Datos en Gestión de Estado",
+    "text": "12.2 Flujo de Datos en Gestión de Estado\n\n\nMERMAID\n\ngraph TD\n    A[Estado/State] --&gt;|notifica cambio| B[Gestor de Estado]\n    B --&gt;|actualiza| C[UI/Widgets]\n    C --&gt;|interacción usuario| D[Eventos/Actions]\n    D --&gt;|procesa| E[Lógica de Negocio]\n    E --&gt;|nuevo estado| A\n    \n    style A fill:#e1f5fe\n    style B fill:#fff3e0\n    style C fill:#e8f5e9\n    style E fill:#fce4ec\n\nFlujo unidireccional: El estado fluye en una sola dirección: Estado → UI. Los eventos de la UI vuelven a través de acciones que procesan la lógica de negocio y generan un nuevo estado.",
+    "crumbs": [
+      "V - Gestión de Estado",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gestión de Estado: El Alma de tu App</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_gestion_estado.html#el-gran-error-del-novato",
+    "href": "unidades/unidad5/1_gestion_estado.html#el-gran-error-del-novato",
+    "title": "12  Gestión de Estado: El Alma de tu App",
+    "section": "12.3 El Gran Error del Novato",
+    "text": "12.3 El Gran Error del Novato\nEl mayor pecado es mezclar la lógica de negocio con los Widgets. Si tu archivo main.dart tiene 500 líneas, ESTÁS HACIENDO LAS COSAS MAL. Aquí te enseñaremos a mantener tus Widgets “tontos” y tu lógica “inteligente” y centralizada.\n\nEL DILEMA DEL ARQUITECTO: Imagina que tienes una app con 50 pantallas y todas necesitan saber si el usuario tiene una suscripción activa. Si usas setState y pasas el dato por constructores, ¿cuántos archivos tendrías que modificar si el requerimiento cambia? Explica por qué un gestor de estado global es la ÚNICA solución profesional aquí.",
+    "crumbs": [
+      "V - Gestión de Estado",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gestión de Estado: El Alma de tu App</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/2_riverpod.html",
+    "href": "unidades/unidad5/2_riverpod.html",
+    "title": "13  Riverpod 2.x Avanzado: Generators y Reactividad",
+    "section": "",
+    "text": "13.1 @riverpod: Generación de Código\nEn aplicaciones empresariales, no escribimos los providers manualmente. Utilizamos Riverpod Generators para automatizar la creación de proveedores seguros y con tipado fuerte.\nEl uso de @riverpod elimina el boilerplate y reduce los errores humanos al autogenerar el tipo de provider adecuado según el valor de retorno.",
+    "crumbs": [
+      "V - Gestión de Estado",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Riverpod 2.x Avanzado: Generators y Reactividad</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/2_riverpod.html#riverpod-generación-de-código",
+    "href": "unidades/unidad5/2_riverpod.html#riverpod-generación-de-código",
+    "title": "13  Riverpod 2.x Avanzado: Generators y Reactividad",
+    "section": "",
+    "text": "DART\n\n@riverpod\nFuture&lt;String&gt; fetchUser(FetchUserRef ref, String id) async {\n  return await ref.watch(apiClientProvider).getUser(id);\n}",
+    "crumbs": [
+      "V - Gestión de Estado",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Riverpod 2.x Avanzado: Generators y Reactividad</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/2_riverpod.html#manejo-de-datos-asíncronos-con-asyncvalue",
+    "href": "unidades/unidad5/2_riverpod.html#manejo-de-datos-asíncronos-con-asyncvalue",
+    "title": "13  Riverpod 2.x Avanzado: Generators y Reactividad",
+    "section": "13.2 Manejo de Datos Asíncronos con AsyncValue",
+    "text": "13.2 Manejo de Datos Asíncronos con AsyncValue\nAsyncValue es un tipo de unión que representa perfectamente los estados de una petición: data, loading y error. Como ingeniero, debes manejar siempre estos tres estados para garantizar una UX robusta.\n\n\nDART\n\n@riverpod\nclass TodoList extends _$TodoList {\n  @override\n  FutureOr&lt;List&lt;Todo&gt;&gt; build() =&gt; [];\n\n  Future&lt;void&gt; addTodo(Todo todo) async {\n    state = const AsyncValue.loading();\n    state = await AsyncValue.guard(() async {\n      return await ref.read(apiProvider).save(todo);\n    });\n  }\n}\n\n\nOptimización de Memoria: ¿Cuándo usarías .keepAlive() en un provider generado? Explica el impacto en la memoria de la aplicación si mantienes vivos todos los estados de los detalles de productos que el usuario ha visitado.",
+    "crumbs": [
+      "V - Gestión de Estado",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Riverpod 2.x Avanzado: Generators y Reactividad</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/2_riverpod.html#práctica-implementa-un-notifier-completo",
+    "href": "unidades/unidad5/2_riverpod.html#práctica-implementa-un-notifier-completo",
+    "title": "13  Riverpod 2.x Avanzado: Generators y Reactividad",
+    "section": "13.3 🚀 Práctica: Implementa un Notifier Completo",
+    "text": "13.3 🚀 Práctica: Implementa un Notifier Completo\nLlegó el momento de aplicar lo aprendido. En esta sección construirás desde cero un sistema de gestión de tareas con estados completos.\n\n13.3.1 Fase 1: Configuración\n\n\nBASH\n\nflutter create practica_riverpod\ncd practica_riverpod\nflutter pub add flutter_riverpod riverpod_annotation\ndart run build_runner build -d\n\n\n\n13.3.2 Fase 2: Implementación\nCrea las siguientes entidades y providers:\n\nEntidad Task con id, título, descripción y estado (pendiente/completado)\nNotifierProvider para gestionar el CRUD completo\nFilterProvider para filtrar tareas por estado\n\n\n\n13.3.3 Fase 3: Validación\nTu implementación debe pasar estas pruebas: - ✅ Crear una tarea nueva aparece en la lista inmediatamente - ✅ Marcar como completada no elimina la tarea - ✅ Filtrar por “pendientes” oculta las completadas - ✅ Persistir el estado al reiniciar la app\n\n\n13.3.4 Entregable\nSube tu código a un repositorio Git y comparte el enlace. ¿Cuántas líneas de código escribiste? Compara con la versión sin @riverpod.",
+    "crumbs": [
+      "V - Gestión de Estado",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Riverpod 2.x Avanzado: Generators y Reactividad</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html",
+    "href": "unidades/unidad6/1_clean_architecture.html",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "",
+    "text": "14.1 📚 Teoría: Los Fundamentos\nAquí NO formamos “pica-teclas”. Formamos INGENIEROS. La Arquitectura Limpia es la diferencia entre un programador que sobrevive al día a día y un arquitecto que diseña sistemas robustos que duran décadas.\nSi programas pensando en el “ahora”, tu código morirá mañana. Si programas con Arquitectura, tu código es ETERNO.",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html#teoría-los-fundamentos",
+    "href": "unidades/unidad6/1_clean_architecture.html#teoría-los-fundamentos",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "",
+    "text": "TipPor qué este capítulo es CRÍTICO\n\n\n\nClean Architecture es el fundamento de TODOS los capítulos posteriores de este curso. Sin dominarlo, cada solución que implementes será técnica debt acumulado. Chapter 15",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html#la-analogía-del-edificio",
+    "href": "unidades/unidad6/1_clean_architecture.html#la-analogía-del-edificio",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "14.2 La Analogía del Edificio",
+    "text": "14.2 La Analogía del Edificio\nImagina que construyes una casa y pegas las tuberías directamente a las paredes con cemento. Si una tubería falla, tienes que DESTRUIR la pared. Eso es lo que haces cuando pegas tu lógica de negocio directamente a los Widgets de Flutter o a la base de datos de Chapter 19Firebase[/ref] o Chapter 20Supabase[/ref].\nClean Architecture nos permite tener “paredes” (UI) y “tuberías” (Lógica) separadas, para que podamos cambiar una sin afectar la otra.",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html#diagrama-de-la-arquitectura",
+    "href": "unidades/unidad6/1_clean_architecture.html#diagrama-de-la-arquitectura",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "15.1 Diagrama de la Arquitectura",
+    "text": "15.1 Diagrama de la Arquitectura\n\n\nMERMAID\n\ngraph TB\n    subgraph PRESENTATION[\"PRESENTATION (UI)\"]\n        UI[Widgets de Flutter]\n        VM[ViewModels / Notifiers]\n    end\n    \n    subgraph DOMAIN[\"DOMAIN (Lógica de Negocio)\"]\n        E[Entidades]\n        UC[Casos de Uso]\n        RP[Contratos de Repository]\n    end\n    \n    subgraph INFRASTRUCTURE[\"INFRASTRUCTURE (Datos)\"]\n        API[Implementaciones API]\n        DB[Drift / SQLite]\n        FB[Firebase]\n        SP[Supabase]\n    end\n    \n    UI --&gt; VM\n    VM --&gt; UC\n    UC --&gt; RP\n    RP -.-&gt; API\n    RP -.-&gt; DB\n    RP -.-&gt; FB\n    RP -.-&gt; SP\n    \n    style DOMAIN fill:#90EE90,stroke:#333\n    style PRESENTATION fill:#87CEEB,stroke:#333\n    style INFRASTRUCTURE fill:#FFB6C1,stroke:#333\n\n\nNota: Las flechas punteadas indican que el DOMAIN NO conoce la implementación. Solo conoce abstracciones (contratos).\n\n\nCapa 1: DOMAIN (El Corazón)Capa 2: INFRASTRUCTURECapa 3: PRESENTATION\n\n\nAquí están tus Entidades y Casos de Uso. Es Dart PURO. No permitas que nada de Flutter entre aquí.\n\n\nDART\n\n// ✅ ESTO VA EN DOMAIN - Es Dart puro\nclass User {\n  final String id;\n  final String email;\n  final String name;\n  \n  User({required this.id, required this.email, required this.name});\n  \n  bool get isValid =&gt; email.contains('@') && name.isNotEmpty;\n}\n\n\n\n\n\n\n\nWarningError Común\n\n\n\nNO imports flutter/material.dart en DOMAIN. Si lo haces, tu dominio depende de Flutter y pierde portabilidad. ❌\n\n\n\n\nAquí es donde “hablas” con el mundo exterior (APIs, DBs). Son los obreros que construyen las tuberías.\n\n\nDART\n\n// ✅ ESTO VA EN INFRASTRUCTURE\nimport '../../domain/entities/user.dart';\n\nabstract class UserRepository {\n  Future&lt;User&gt; getUser(String id);\n  Future&lt;List&lt;User&gt;&gt; getAllUsers();\n}\n\nclass SupabaseUserRepository implements UserRepository {\n  // Habla con Supabase - detalles de implementación\n}\n\n\n\nEs solo la fachada. Flutter vive aquí. Es la capa más volátil y menos importante para la lógica de negocio.\n\n\nDART\n\n// ✅ ESTO VA EN PRESENTATION\nimport 'package:flutter/material.dart';\nimport '../../domain/entities/user.dart';\n\nclass UserProfile extends StatelessWidget {\n  final User user;\n  \n  @override\n  Widget build(BuildContext context) {\n    return Text(user.name);\n  }\n}\n\n\n\n\n\n15.1.1 Ejemplo Completo: Flujo de Datos\n\nSin Clean Architecture (EL MALO)Con Clean Architecture (EL BUENO)\n\n\n\n\nDART\n\n// ❌ ESTO ES LO QUE HACEN LOS \"PICA-TECLAS\"\nclass HomePage extends StatelessWidget {\n  @override\n  Widget build(BuildContext context) {\n    // Lógica de negocio pegada al Widget\n    final db = FirebaseFirestore.instance;\n    \n    return Scaffold(\n      body: FutureBuilder(\n        future: db.collection('users').get(),\n        builder: (context, snapshot) {\n          // UI + DATA todo mezclado\n          return ListView(\n            children: snapshot.data!.docs\n                .map((doc) =&gt; Text(doc['name']))\n                .toList(),\n          );\n        },\n      ),\n    );\n  }\n}\n\n\n\n\n\nDART\n\n// DOMAIN - Caso de Uso\nclass GetUsersUseCase {\n  final UserRepository _repository;\n  \n  Future&lt;List&lt;User&gt;&gt; call() =&gt; _repository.getAllUsers();\n}\n\n// INFRASTRUCTURE - Repo implementación  \nclass FirebaseUserRepository implements UserRepository {\n  @override\n  Future&lt;User&gt; getUser(String id) async {\n    final doc = await FirebaseFirestore.instance\n        .collection('users')\n        .doc(id)\n        .get();\n    return User.fromMap(doc.data()!);\n  }\n}\n\n// PRESENTATION - Solo UI\nclass HomePage extends StatelessWidget {\n  final GetUsersUseCase _getUsers;\n  \n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      body: FutureBuilder(\n        future: _getUsers(),\n        builder: (context, snapshot) {\n          return ListView(\n            children: snapshot.data!\n                .map((user) =&gt; Text(user.name))\n                .toList(),\n          );\n        },\n      ),\n    );\n  }\n}",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html#cross-references-entre-capas",
+    "href": "unidades/unidad6/1_clean_architecture.html#cross-references-entre-capas",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "15.2 Cross-References entre Capas",
+    "text": "15.2 Cross-References entre Capas\nEsta arquitectura se conecta con conceptos de otras unidades:\n\n\n\n\n\n\n\n\nCapa\nRelaciona con\nWhy\n\n\n\n\nDOMAIN\nChapter 13 Riverpod\nProviders manejan casos de uso\n\n\nINFRASTRUCTURE\nChapter 18 SQLite/Drift\nRepository pattern + DAOs\n\n\nPRESENTATION\n[Unidad 4: Widgets]\nSolo recibe y renderiza datos",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html#flujo-de-datos-cómo-viaja-la-información",
+    "href": "unidades/unidad6/1_clean_architecture.html#flujo-de-datos-cómo-viaja-la-información",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "15.3 Flujo de Datos: Cómo viaja la información",
+    "text": "15.3 Flujo de Datos: Cómo viaja la información\n\n\nMERMAID\n\nsequenceDiagram\n    participant P as PRESENTATION\n    participant D as DOMAIN\n    participant I as INFRASTRUCTURE\n    participant E as EXT/DB\n    \n    P-&gt;&gt;D: 1. Llama al Caso de Uso\n    D-&gt;&gt;I: 2. Solicita datos (interfaz)\n    I-&gt;&gt;E: 3. Impl. concreta (Firebase/SQLite)\n    E--&gt;&gt;I: 4. Devuelve datos\n    I--&gt;&gt;D: 5. Transforma a Entidad\n    D--&gt;&gt;P: 6. Retorna Entidad pura\n    P-&gt;&gt;P: 7. Actualiza UI\n\n\nImportante: El PRESENTATION solo conoce el DOMAIN. NUNCA llama directamente a Firebase o SQLite desde los Widgets.\n\n\nNota: El patrón Repository de Chapter 18 es fundamental para la capa de INFRASTRUCTURE, permitiendo cambiar la implementación de base de datos sin afectar el DOMAIN.",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html#preguntas-de-comprensión",
+    "href": "unidades/unidad6/1_clean_architecture.html#preguntas-de-comprensión",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "15.4 Preguntas de Comprensión",
+    "text": "15.4 Preguntas de Comprensión\nAntes de继续, responde estas preguntas para verificar tu entendimiento:",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html#pregunta-1-identificación-de-capas",
+    "href": "unidades/unidad6/1_clean_architecture.html#pregunta-1-identificación-de-capas",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "15.5 ⭐ Pregunta 1: Identificación de Capas",
+    "text": "15.5 ⭐ Pregunta 1: Identificación de Capas\nEn el siguiente código, identifica qué capa representa cada parte:\n\n\nDART\n\nclass FirebaseAuthService implements AuthService {\n  @override\n  Future&lt;User&gt; login(String email, String password) async {\n    final credential = awaitFirebaseAuth.signInWithEmailAndPassword(\n      email: email,\n      password: password,\n    );\n    return User(id: credential.user!.uid, email: email);\n  }\n}\n\nRespuesta: INFRASTRUCTURE -因为 implementa un contrato (AuthService) y habla con Firebase. ✅",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html#pregunta-2-por-qué-el-dominio-es-puro",
+    "href": "unidades/unidad6/1_clean_architecture.html#pregunta-2-por-qué-el-dominio-es-puro",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "15.6 ⭐ Pregunta 2: Por qué el Dominio es “puro”?",
+    "text": "15.6 ⭐ Pregunta 2: Por qué el Dominio es “puro”?\nPor qué el DOMAIN debe ser 100% Dart sin dependencias externas?\nPistas: 1. Imagina que mañana quieres usar este código en una API REST 2. O en un script de CLI 3. O en Flutter Web\nRespuesta: Porque así el dominio es portable a cualquier plataforma. No depends de Flutter ni de ninguna infraestructura específica. ✅",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html#práctica-ejercicios-de-refactorización",
+    "href": "unidades/unidad6/1_clean_architecture.html#práctica-ejercicios-de-refactorización",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "16.1 🚀 Práctica: Ejercicios de Refactorización",
+    "text": "16.1 🚀 Práctica: Ejercicios de Refactorización\n\n\n\n\n\n\nImportantEjercicio 1: Refactoriza este código mal\n\n\n\n\n\n\n\nDART\n\n// Este código tiene TODOS los problemas de Clean Architecture\nclass MiPagina extends StatelessWidget {\n  final db = FirebaseFirestore.instance;\n  final http = HttpClient();\n  \n  Future&lt;void&gt; guardarDatos() async {\n    final response = await http.post(\n      'https://miapi.com/datos',\n      body: jsonEncode({'fecha': DateTime.now()}),\n    );\n    await db.collection('logs').add({'response': response});\n  }\n}\n\nTu misión: Separa este código en las 3 capas correctas. Sube tu solución al repositorio ytaguéame en Twitter (@statick88) para revisión.\nPremio: El mejor código publicado recibefeedback personalizado en el siguiente directo.\n\n\n\n\n\n\n\n\n\nTipEjercicio 2: Investiga y Presenta\n\n\n\n\n\nEstudia estos temas para el próximo capítulo:\n\nEntity vs Model vs DTO - ¿Cuál es la diferencia?\nRepository Pattern - Why overkill en proyectos pequeños?\nDependency Injection - Por qué Flutter usa Injection heredado?\n\nRecurso recomendado: Clean Architecture en Flutter - Reso Coder (YouTube) 1",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/1_clean_architecture.html#footnotes",
+    "href": "unidades/unidad6/1_clean_architecture.html#footnotes",
+    "title": "14  Clean Architecture: Ingeniería, no solo Código",
+    "section": "",
+    "text": "Clean Architecture en Flutter por Reso Coder - YouTube↩︎",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Clean Architecture: Ingeniería, no solo Código</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/2_ddd_flutter.html",
+    "href": "unidades/unidad6/2_ddd_flutter.html",
+    "title": "15  Domain Driven Design (DDD) en Flutter",
+    "section": "",
+    "text": "15.1 Estructura Recomendada de Carpetas\nEl Domain Driven Design (Diseño Orientado al Dominio) se centra en el núcleo del problema que estamos resolviendo. En Flutter, esto se traduce en una estructura de carpetas que refleja las funcionalidades, no los tipos de archivos.\nPara cada funcionalidad (feature), tendremos tres capas:",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Domain Driven Design (DDD) en Flutter</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/2_ddd_flutter.html#estructura-recomendada-de-carpetas",
+    "href": "unidades/unidad6/2_ddd_flutter.html#estructura-recomendada-de-carpetas",
+    "title": "15  Domain Driven Design (DDD) en Flutter",
+    "section": "",
+    "text": "domain: Contiene las entidades, los repositorios (interfaces) y los casos de uso. Es puro Dart.\ninfrastructure: Implementa los repositorios, maneja las peticiones HTTP (Data Sources) y los modelos de datos (Mappers).\npresentation: Contiene los Widgets, Providers (Riverpod) y controladores de la interfaz.\n\n\n\nTEXT\n\nlib/\n  features/\n    auth/\n      domain/\n      infrastructure/\n      presentation/\n    movies/\n      domain/\n      infrastructure/\n      presentation/",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Domain Driven Design (DDD) en Flutter</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad6/2_ddd_flutter.html#beneficios-para-el-equipo",
+    "href": "unidades/unidad6/2_ddd_flutter.html#beneficios-para-el-equipo",
+    "title": "15  Domain Driven Design (DDD) en Flutter",
+    "section": "15.2 Beneficios para el Equipo",
+    "text": "15.2 Beneficios para el Equipo\nEsta estructura permite que múltiples desarrolladores trabajen en diferentes “features” sin colisionar en el código, facilitando el escalado de la aplicación.\n\n\n\n\n\n\nTipEl Facilitador Recomienda\n\n\n\nNunca importes nada de infrastructure o presentation dentro de tu capa de domain. El dominio es el centro y no debe tener dependencias externas.\n\n\n\nAnálisis de Dependencias: ¿Qué pasaría si importamos un widget de Flutter dentro de una Entidad de Dominio? ¿Cómo afectaría esto a nuestras pruebas unitarias automatizadas?",
+    "crumbs": [
+      "VI - Clean Architecture y DDD",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Domain Driven Design (DDD) en Flutter</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad7/1_apis_http.html",
+    "href": "unidades/unidad7/1_apis_http.html",
+    "title": "16  Consumo de APIs con HTTP y Dio",
+    "section": "",
+    "text": "16.1 HTTP vs Dio\nEn el desarrollo profesional, rara vez trabajamos con datos estáticos. Como facilitador, quiero que domines el arte de solicitar, recibir y procesar información desde servidores remotos.\nAunque Flutter tiene un paquete http oficial, en este curso recomendamos Dio para proyectos medianos y grandes debido a sus características avanzadas:",
+    "crumbs": [
+      "VII - Integración con APIs",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Consumo de APIs con HTTP y Dio</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad7/1_apis_http.html#http-vs-dio",
+    "href": "unidades/unidad7/1_apis_http.html#http-vs-dio",
+    "title": "16  Consumo de APIs con HTTP y Dio",
+    "section": "",
+    "text": "Interceptores: Permiten añadir tokens de autenticación o loguear peticiones globalmente.\nConfiguración Global: Define una BaseURL y timeouts en un solo lugar.\nCancelación de Peticiones: Útil para ahorrar recursos cuando el usuario sale de una pantalla.",
+    "crumbs": [
+      "VII - Integración con APIs",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Consumo de APIs con HTTP y Dio</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad7/1_apis_http.html#flujo-de-una-petición-con-dio",
+    "href": "unidades/unidad7/1_apis_http.html#flujo-de-una-petición-con-dio",
+    "title": "16  Consumo de APIs con HTTP y Dio",
+    "section": "16.2 Flujo de una Petición con Dio",
+    "text": "16.2 Flujo de una Petición con Dio\n\n\nMERMAID\n\nsequenceDiagram\n    participant App as App (Dio)\n    participant Int as Interceptor\n    participant API as Servidor Externo\n    \n    App-&gt;&gt;Int: 1. Solicitud (Request)\n    Int-&gt;&gt;Int: 2. Agregar headers/auth\n    Int-&gt;&gt;API: 3. GET/POST/PUT/DELETE\n    API--&gt;&gt;Int: 4. Response (200, 400, 500...)\n    Int-&gt;&gt;Int: 5. Procesar respuesta\n    Int--&gt;&gt;App: 6. Datos o Error\n    \n    Note over App,API: Los interceptores permiten agregar&lt;br/&gt;token JWT, logging, caching automáticamente\n\nFlujo: Los拦截adores (interceptors) son middleware que procesan cada request/response globalmente.",
+    "crumbs": [
+      "VII - Integración con APIs",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Consumo de APIs con HTTP y Dio</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad7/1_apis_http.html#realizando-una-petición-get",
+    "href": "unidades/unidad7/1_apis_http.html#realizando-una-petición-get",
+    "title": "16  Consumo de APIs con HTTP y Dio",
+    "section": "16.3 Realizando una Petición GET",
+    "text": "16.3 Realizando una Petición GET\n\n\nDART\n\nfinal dio = Dio(BaseOptions(\n  baseUrl: 'https://api.themoviedb.org/3',\n  queryParameters: {\n    'api_key': 'TU_API_KEY',\n    'language': 'es-MX'\n  }\n));\n\nFuture&lt;void&gt; getMovies() async {\n  final response = await dio.get('/movie/now_playing');\n  print(response.data);\n}\n\n\nManejo de Errores: ¿Qué pasaría con tu aplicación si el servidor devuelve un error 500 o si el usuario no tiene conexión a internet? Investiga cómo usar un bloque try-catch con DioException para capturar estos escenarios y mostrar un mensaje amigable.",
+    "crumbs": [
+      "VII - Integración con APIs",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Consumo de APIs con HTTP y Dio</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad7/2_mappers_models.html",
+    "href": "unidades/unidad7/2_mappers_models.html",
+    "title": "17  Modelos y Mappers: Protegiendo el Dominio",
+    "section": "",
+    "text": "17.1 El Problema de la Dependencia Externa\nUn error común es usar las clases generadas desde el JSON directamente en toda la aplicación. En Clean Architecture, protegemos nuestro Dominio usando Mappers.\nSi la API cambia el nombre de un campo (ej. de movie_title a name), y usaste el modelo de la API en 50 widgets, tendrás que cambiarlos todos.",
+    "crumbs": [
+      "VII - Integración con APIs",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Modelos y Mappers: Protegiendo el Dominio</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad7/2_mappers_models.html#la-solución-mappers",
+    "href": "unidades/unidad7/2_mappers_models.html#la-solución-mappers",
+    "title": "17  Modelos y Mappers: Protegiendo el Dominio",
+    "section": "17.2 La Solución: Mappers",
+    "text": "17.2 La Solución: Mappers\n\nModel: Refleja exactamente la respuesta de la API (capa de Infrastructure).\nEntity: Refleja lo que tu aplicación necesita (capa de Domain).\nMapper: Una clase simple que transforma el Model en una Entity.\n\n\n\nDART\n\nclass MovieMapper {\n  static Movie movieDBToEntity(MovieFromMovieDB moviedb) =&gt; Movie(\n    id: moviedb.id,\n    title: moviedb.title,\n    overview: moviedb.overview,\n    posterPath: (moviedb.posterPath != '')\n      ? 'https://image.tmdb.org/t/p/w500${moviedb.posterPath}'\n      : 'https://sd.keepcalms.com/i/no-poster-found.png',\n  );\n}\n\n\n\n\n\n\n\nTipConsejo del Facilitador\n\n\n\nEl Mapper es el lugar ideal para manejar valores nulos o asignar imágenes por defecto si la API no devuelve una.\n\n\n\nDesafío de Arquitectura: ¿Por qué decimos que el MovieMapper pertenece a la capa de Infrastructure y no a la de Domain? Justifica tu respuesta basándote en la dirección de las dependencias.",
+    "crumbs": [
+      "VII - Integración con APIs",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Modelos y Mappers: Protegiendo el Dominio</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad8/1_sqlite_drift.html",
+    "href": "unidades/unidad8/1_sqlite_drift.html",
+    "title": "18  Persistencia Local con Drift (SQLite)",
+    "section": "",
+    "text": "18.1 ¿Por qué Drift?\nEn aplicaciones móviles profesionales, a menudo necesitamos que los datos estén disponibles sin conexión (Offline-first). Como facilitador, quiero presentarte Drift, un generador de código que hace que trabajar con SQLite en Flutter sea seguro y reactivo.",
+    "crumbs": [
+      "VIII - Base de Datos Local",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Persistencia Local con Drift (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad8/1_sqlite_drift.html#por-qué-drift",
+    "href": "unidades/unidad8/1_sqlite_drift.html#por-qué-drift",
+    "title": "18  Persistencia Local con Drift (SQLite)",
+    "section": "",
+    "text": "Type-safe: Errores en tiempo de compilación para tus consultas SQL.\nStreams reactivos: La UI se actualiza automáticamente cuando los datos cambian en la base de datos.\nMigraciones: Facilita el cambio de esquema de la base de datos entre versiones de la app.",
+    "crumbs": [
+      "VIII - Base de Datos Local",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Persistencia Local con Drift (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad8/1_sqlite_drift.html#arquitectura-drift-en-clean-architecture",
+    "href": "unidades/unidad8/1_sqlite_drift.html#arquitectura-drift-en-clean-architecture",
+    "title": "18  Persistencia Local con Drift (SQLite)",
+    "section": "18.2 Arquitectura Drift en Clean Architecture",
+    "text": "18.2 Arquitectura Drift en Clean Architecture\n\n\nMERMAID\n\ngraph LR\n    subgraph PRESENTATION\n        UI[Widgets/UI]\n    end\n    \n    subgraph DOMAIN\n        Entity[Entidad Movie]\n    end\n    \n    subgraph INFRASTRUCTURE\n        Repo[Repository]\n        DAO[Drift DAO]\n        DB[(SQLite)]\n    end\n    \n    UI --&gt;|observa Stream| Repo\n    Repo --&gt;|usa| Entity\n    Entity --&gt;|mappea a| DAO\n    DAO --&gt;|ejecuta SQL| DB\n    \n    style Entity fill:#e1f5fe\n    style Repo fill:#fff3e0\n    style DAO fill:#e8f5e9\n    style DB fill:#fce4ec\n\nFlujo: La UI observa un Stream del Repository, que internamente usa el DAO de Drift para ejecutar SQL en SQLite.",
+    "crumbs": [
+      "VIII - Base de Datos Local",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Persistencia Local con Drift (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad8/1_sqlite_drift.html#definiendo-una-tabla",
+    "href": "unidades/unidad8/1_sqlite_drift.html#definiendo-una-tabla",
+    "title": "18  Persistencia Local con Drift (SQLite)",
+    "section": "18.3 Definiendo una Tabla",
+    "text": "18.3 Definiendo una Tabla\nCon Drift, definimos las tablas usando clases de Dart:\n\n\nDART\n\nclass Movies extends Table {\n  IntColumn get id =&gt; integer().autoIncrement()();\n  TextColumn get title =&gt; text().withLength(min: 1, max: 200)();\n  TextColumn get overview =&gt; text()();\n  DateTimeColumn get releaseDate =&gt; dateTime().nullable()();\n}",
+    "crumbs": [
+      "VIII - Base de Datos Local",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Persistencia Local con Drift (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad8/1_sqlite_drift.html#operaciones-crud-básicas",
+    "href": "unidades/unidad8/1_sqlite_drift.html#operaciones-crud-básicas",
+    "title": "18  Persistencia Local con Drift (SQLite)",
+    "section": "18.4 Operaciones CRUD Básicas",
+    "text": "18.4 Operaciones CRUD Básicas\n\n\nDART\n\n@DriftDatabase(tables: [Movies])\nclass AppDatabase extends _$AppDatabase {\n  // ... constructor ...\n\n  // Obtener todas las películas como un Stream\n  Stream&lt;List&lt;Movie&gt;&gt; get allMovies =&gt; select(movies).watch();\n\n  // Insertar una nueva película\n  Future insertMovie(MoviesCompanion movie) =&gt; into(movies).insert(movie);\n}\n\n\nOptimización de Almacenamiento: SQLite es potente, pero ¿cuándo es preferible usar una base de datos local frente a guardar datos en archivos planos o SharedPreferences? Justifica tu respuesta considerando el volumen y la estructura de los datos.",
+    "crumbs": [
+      "VIII - Base de Datos Local",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Persistencia Local con Drift (SQLite)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad9/1_firebase_notifications.html",
+    "href": "unidades/unidad9/1_firebase_notifications.html",
+    "title": "19  Notificaciones Push con Firebase (FCM)",
+    "section": "",
+    "text": "19.1 Conceptos Clave de FCM\nLas notificaciones son el canal principal para retainer usuarios. Aquí aprenderás a configurar Firebase Cloud Messaging (FCM) para enviar mensajes de manera eficiente a dispositivos Android e iOS.",
+    "crumbs": [
+      "IX - Notificaciones con Firebase",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Notificaciones Push con Firebase (FCM)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad9/1_firebase_notifications.html#conceptos-clave-de-fcm",
+    "href": "unidades/unidad9/1_firebase_notifications.html#conceptos-clave-de-fcm",
+    "title": "19  Notificaciones Push con Firebase (FCM)",
+    "section": "",
+    "text": "FCM Token: Un identificador único para cada instalación de la app.\nTopics: Permiten enviar notificaciones a grupos de usuarios (ej. “deportes”, “noticias”).\nData Messages: Mensajes silenciosos que permiten que la app procese datos en segundo plano antes de mostrar la notificación.",
+    "crumbs": [
+      "IX - Notificaciones con Firebase",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Notificaciones Push con Firebase (FCM)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad9/1_firebase_notifications.html#configuración-inicial",
+    "href": "unidades/unidad9/1_firebase_notifications.html#configuración-inicial",
+    "title": "19  Notificaciones Push con Firebase (FCM)",
+    "section": "19.2 Configuración Inicial",
+    "text": "19.2 Configuración Inicial\n\nCrear un proyecto en la Firebase Console.\nRegistrar la app de Android/iOS.\nDescargar y configurar el archivo google-services.json o GoogleService-Info.plist.\nInstalar el paquete firebase_messaging en Flutter.",
+    "crumbs": [
+      "IX - Notificaciones con Firebase",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Notificaciones Push con Firebase (FCM)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad9/1_firebase_notifications.html#escuchando-notificaciones-en-primer-plano",
+    "href": "unidades/unidad9/1_firebase_notifications.html#escuchando-notificaciones-en-primer-plano",
+    "title": "19  Notificaciones Push con Firebase (FCM)",
+    "section": "19.3 Escuchando Notificaciones en Primer Plano",
+    "text": "19.3 Escuchando Notificaciones en Primer Plano\n\n\nDART\n\nFirebaseMessaging.onMessage.listen((RemoteMessage message) {\n  print('Notificación recibida: ${message.notification?.title}');\n});\n\n\n\n\n\n\n\nWarningPermisos en iOS\n\n\n\nRecuerda que en iOS debes solicitar explícitamente permisos al usuario antes de poder recibir notificaciones push.\n\n\n\nEstrategia de Engagement: Investiga la diferencia entre notificaciones “locales” y “remotas”. ¿Cómo usarías ambas para recordarle a un usuario que tiene tareas pendientes en su app de Cinemapedia?",
+    "crumbs": [
+      "IX - Notificaciones con Firebase",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Notificaciones Push con Firebase (FCM)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad10/1_supabase_auth.html",
+    "href": "unidades/unidad10/1_supabase_auth.html",
+    "title": "20  Autenticación con Supabase",
+    "section": "",
+    "text": "20.1 ¿Por qué Supabase?\nSupabase es una alternativa a Firebase basada en estándares abiertos y PostgreSQL. Como facilitador, quiero que domines el uso de Supabase Auth para gestionar registros, inicios de sesión y seguridad mediante JWT.",
+    "crumbs": [
+      "X - Autenticación con Supabase",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Autenticación con Supabase</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad10/1_supabase_auth.html#por-qué-supabase",
+    "href": "unidades/unidad10/1_supabase_auth.html#por-qué-supabase",
+    "title": "20  Autenticación con Supabase",
+    "section": "",
+    "text": "Open Source: Evita el “vendor lock-in”.\nSQL Power: PostgreSQL real con soporte para RLS (Row Level Security).\nSimplicidad: SDK intuitivo para Flutter.",
+    "crumbs": [
+      "X - Autenticación con Supabase",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Autenticación con Supabase</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad10/1_supabase_auth.html#flujo-de-autenticación",
+    "href": "unidades/unidad10/1_supabase_auth.html#flujo-de-autenticación",
+    "title": "20  Autenticación con Supabase",
+    "section": "20.2 Flujo de Autenticación",
+    "text": "20.2 Flujo de Autenticación\n\nConfiguración: Registrar la app en Supabase y obtener la URL y Anon Key.\nLogin: Autenticación con email/password o proveedores sociales.\nSession Management: Escuchar cambios en el estado de la sesión para redirigir al usuario.\n\n\n\nDART\n\nfinal supabase = Supabase.instance.client;\n\n// Iniciar sesión\nFuture&lt;void&gt; signIn(String email, String password) async {\n  final AuthResponse res = await supabase.auth.signInWithPassword(\n    email: email,\n    password: password,\n  );\n}",
+    "crumbs": [
+      "X - Autenticación con Supabase",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Autenticación con Supabase</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad10/1_supabase_auth.html#protegiendo-rutas-con-gorouter",
+    "href": "unidades/unidad10/1_supabase_auth.html#protegiendo-rutas-con-gorouter",
+    "title": "20  Autenticación con Supabase",
+    "section": "20.3 Protegiendo Rutas con GoRouter",
+    "text": "20.3 Protegiendo Rutas con GoRouter\nEn este curso, usaremos un RefreshListenable con GoRouter para que la aplicación redirija automáticamente al usuario al login si su sesión expira.\n\nSeguridad de Datos: ¿Qué es el Row Level Security (RLS) y por qué es fundamental activarlo en las tablas de Supabase, incluso si ya tenemos autenticación activa? Explica cómo evitarías que un usuario borre los datos de otro usuario.",
+    "crumbs": [
+      "X - Autenticación con Supabase",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Autenticación con Supabase</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad11/1_camera_picker.html",
+    "href": "unidades/unidad11/1_camera_picker.html",
+    "title": "21  Cámara y Recursos Nativos",
+    "section": "",
+    "text": "21.1 Flujo de Captura de Imagen\nLas aplicaciones móviles brillan cuando interactúan con el hardware del dispositivo. En esta unidad, aprenderás a usar la cámara y la galería para enriquecer tus aplicaciones.\nFlujo: Solicitar permiso → Capturar → Comprimir (opcional) → Guardar/Subir → Mostrar en UI.",
+    "crumbs": [
+      "XI - Cámara y Recursos Nativos",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Cámara y Recursos Nativos</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad11/1_camera_picker.html#flujo-de-captura-de-imagen",
+    "href": "unidades/unidad11/1_camera_picker.html#flujo-de-captura-de-imagen",
+    "title": "21  Cámara y Recursos Nativos",
+    "section": "",
+    "text": "MERMAID\n\nflowchart TD\n    A[Usuario hace tap en&lt;br/&gt;\"Capturar Foto\"] --&gt; B{¿Tiene permiso&lt;br/&gt;de cámara?}\n    B --&gt;|No| C[Solicitar permiso]\n    C --&gt; B\n    B --&gt;|Sí| D[ Abrir Cámara ]\n    D --&gt; E[Usuario captura foto]\n    E --&gt; F[Obtener XFile]\n    F --&gt; G{¿Subir a la nube?}\n    G --&gt;|Sí| H[Comprimir imagen&lt;br/&gt;maxWidth, imageQuality]\n    H --&gt; I[Subir a Storage&lt;br/&gt;Firebase/Supabase]\n    G --&gt;|No| J[Guardar localmente]\n    I --&gt; K[Actualizar UI con&lt;br/&gt;imagen]\n    J --&gt; K\n    \n    style A fill:#e3f2fd\n    style H fill:#fff3e0\n    style I fill:#e8f5e9\n    style K fill:#f3e5f5",
+    "crumbs": [
+      "XI - Cámara y Recursos Nativos",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Cámara y Recursos Nativos</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad11/1_camera_picker.html#uso-de-image-picker",
+    "href": "unidades/unidad11/1_camera_picker.html#uso-de-image-picker",
+    "title": "21  Cámara y Recursos Nativos",
+    "section": "21.2 Uso de Image Picker",
+    "text": "21.2 Uso de Image Picker\nEl paquete image_picker es el estándar para capturar fotos o seleccionar imágenes de la galería en Flutter.\n\n\nDART\n\nfinal ImagePicker picker = ImagePicker();\nfinal XFile? image = await picker.pickImage(source: ImageSource.camera);\n\nif (image != null) {\n  print('Ruta de la imagen: ${image.path}');\n}",
+    "crumbs": [
+      "XI - Cámara y Recursos Nativos",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Cámara y Recursos Nativos</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad11/1_camera_picker.html#manejo-de-permisos",
+    "href": "unidades/unidad11/1_camera_picker.html#manejo-de-permisos",
+    "title": "21  Cámara y Recursos Nativos",
+    "section": "21.3 Manejo de Permisos",
+    "text": "21.3 Manejo de Permisos\nDependiendo de la plataforma (Android/iOS), debemos solicitar permisos explícitos en el archivo de configuración (AndroidManifest.xml o Info.plist).\n\n\n\n\n\n\nImportantExperiencia de Usuario\n\n\n\nSiempre verifica si el permiso ha sido denegado permanentemente para mostrar un diálogo que guíe al usuario a los Ajustes del Sistema para activarlo manualmente.\n\n\n\nOptimización de Archivos: Capturar una foto en resolución completa puede generar archivos de 10MB+. ¿Cómo usarías los parámetros de image_picker (ej. maxWidth, imageQuality) para reducir el tamaño antes de subirla a un servidor como Supabase Storage?",
+    "crumbs": [
+      "XI - Cámara y Recursos Nativos",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Cámara y Recursos Nativos</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad12/1_build_distribucion.html",
+    "href": "unidades/unidad12/1_build_distribucion.html",
+    "title": "22  Build y Distribución Profesional",
+    "section": "",
+    "text": "22.1 Pipeline de Build\nTu aplicación está lista, pero antes de que llegue a las manos de los usuarios, debemos prepararla para el mundo real. Como facilitador, te guiaré en el proceso de generar versiones optimizadas y seguras.\nFlujo: Analyze → Test → Build → Distribute. Nunca publiques sin pasar los tests.",
+    "crumbs": [
+      "XII - Build y Distribución",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Build y Distribución Profesional</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad12/1_build_distribucion.html#pipeline-de-build",
+    "href": "unidades/unidad12/1_build_distribucion.html#pipeline-de-build",
+    "title": "22  Build y Distribución Profesional",
+    "section": "",
+    "text": "MERMAID\n\nflowchart LR\n    subgraph Desarrollo\n        A[flutter analyze] --&gt; B[flutter test]\n    end\n    \n    subgraph Build\n        B --&gt; C{¿Pass?}\n        C --&gt;|No| A\n        C --&gt;|Sí| D[flutter build&lt;br/&gt;appbundle]\n    end\n    \n    subgraph Distribucion\n        D --&gt; E[App Bundle&lt;br/&gt;AAB]\n        E --&gt; F[Google Play&lt;br/&gt;Console]\n        F --&gt; G[Usuarios]\n    end\n    \n    style A fill:#e3f2fd\n    style B fill:#e8f5e9\n    style D fill:#fff3e0\n    style E fill:#fce4ec",
+    "crumbs": [
+      "XII - Build y Distribución",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Build y Distribución Profesional</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad12/1_build_distribucion.html#modos-de-compilación",
+    "href": "unidades/unidad12/1_build_distribucion.html#modos-de-compilación",
+    "title": "22  Build y Distribución Profesional",
+    "section": "22.2 Modos de Compilación",
+    "text": "22.2 Modos de Compilación\n\nDebug Mode: Para desarrollo local. Incluye aserciones y Hot Reload. No es representativo del rendimiento final.\nProfile Mode: Para analizar el rendimiento (jank, memoria). No se puede usar en emuladores.\nRelease Mode: El que enviamos a las tiendas. Código minificado, sin debug symbols y optimizado para velocidad.",
+    "crumbs": [
+      "XII - Build y Distribución",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Build y Distribución Profesional</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad12/1_build_distribucion.html#generación-de-apk-y-aab-android",
+    "href": "unidades/unidad12/1_build_distribucion.html#generación-de-apk-y-aab-android",
+    "title": "22  Build y Distribución Profesional",
+    "section": "22.3 Generación de APK y AAB (Android)",
+    "text": "22.3 Generación de APK y AAB (Android)\nPara publicar en Google Play, es obligatorio usar el formato App Bundle (AAB).\n\n\nBASH\n\n# Generar APK (para pruebas rápidas)\nflutter build apk --release\n\n# Generar App Bundle (para Google Play)\nflutter build appbundle --release",
+    "crumbs": [
+      "XII - Build y Distribución",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Build y Distribución Profesional</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad12/1_build_distribucion.html#firma-de-la-aplicación",
+    "href": "unidades/unidad12/1_build_distribucion.html#firma-de-la-aplicación",
+    "title": "22  Build y Distribución Profesional",
+    "section": "22.4 Firma de la Aplicación",
+    "text": "22.4 Firma de la Aplicación\nNunca compartas tu archivo de keystore ni las contraseñas. Úsalas mediante un archivo key.properties que debe estar en tu .gitignore.\n\n\n\n\n\n\nImportantQA (Quality Assurance)\n\n\n\nAntes de subir tu app, pruébala en al menos dos dispositivos físicos diferentes. Los emuladores a veces ocultan errores de rendimiento o de permisos que solo aparecen en hardware real.\n\n\n\nOptimización de Tamaño: Una app de Flutter en release puede pesar 15-20MB. ¿Qué técnica usarías para reducir aún más el tamaño del APK/AAB? (Pista: investiga el flag --split-debug-info y el uso de Proguard).",
+    "crumbs": [
+      "XII - Build y Distribución",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Build y Distribución Profesional</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad13/1_performance.html",
+    "href": "unidades/unidad13/1_performance.html",
+    "title": "23  Optimización: De “Funciona” a “Vuela”",
+    "section": "",
+    "text": "23.1 Flutter DevTools: Tu mejor amigo\nLa Chapter 15 bien implementada es la base del rendimiento. Una arquitectura limpia facilita el profiling preciso porque cada capa tiene responsabilidades definidas.\nSi tu app tiene lag, no es Flutter; es TU CÓDIGO. Aquí NO nos conformamos con que una app “funcione”. Una app profesional debe correr a 120 FPS sin parpadear. El rendimiento no es un “extra”, es una OBLIGACIÓN TÉCNICA.\nAprenderás a usar el set de herramientas de Flutter como un cirujano. No adivines dónde está el problema, MIDELO.",
+    "crumbs": [
+      "XIII - Optimización y Performance",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Optimización: De \"Funciona\" a \"Vuela\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad13/1_performance.html#flutter-devtools-tu-mejor-amigo",
+    "href": "unidades/unidad13/1_performance.html#flutter-devtools-tu-mejor-amigo",
+    "title": "23  Optimización: De “Funciona” a “Vuela”",
+    "section": "",
+    "text": "MERMAID\n\nflowchart TD\n    A[App en Producción] --&gt; B{Hay Lag?}\n    B --&gt;|Sí| C[Flutter DevTools]\n    C --&gt; D[Flutter Inspector]\n    C --&gt; E[Performance View]\n    C --&gt; F[Memory View]\n    D --&gt; D1[¿Widgets rebuild innecesarios?]\n    E --&gt; E1[¿Frames &gt; 16ms?]\n    F --&gt; F1[¿Memory Leaks?]\n    D1 --&gt; G[Optimizar rebuilds]\n    E1 --&gt; H[Optimizar frames]\n    F1 --&gt; I[Liberar memoria]\n    G --&gt; J[RepaintBoundary&lt;br/&gt;const widgets]\n    H --&gt; K[ListView.builder&lt;br/&gt;Lazy loading]\n    I --&gt; L[Dispose correcto]\n    J --&gt; M[120 FPS ✓]\n    K --&gt; M\n    L --&gt; M\n    B --&gt;|No| M\n\n\nArquitectura → Rendimiento: Una Chapter 14 bien implementada facilita el profiling porque cada capa tiene responsabilidades claras. El estado que viene de Chapter 12 debe minimizarse para evitar rebuilds innecesarios.\n\n\nFLUTTER INSPECTOR: Para cazar esas reconstrucciones inútiles que matan la CPU.\nPERFORMANCE VIEW: Para analizar el Raster Thread. Si tus frames tardan más de 8ms, estás en problemas.\nMEMORY VIEW: Para DESTRUIR los memory leaks antes de que tu app explote en producción.",
+    "crumbs": [
+      "XIII - Optimización y Performance",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Optimización: De \"Funciona\" a \"Vuela\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad13/1_performance.html#mis-reglas-de-oro-para-la-fluidez",
+    "href": "unidades/unidad13/1_performance.html#mis-reglas-de-oro-para-la-fluidez",
+    "title": "23  Optimización: De “Funciona” a “Vuela”",
+    "section": "23.2 Mis Reglas de Oro para la Fluidez",
+    "text": "23.2 Mis Reglas de Oro para la Fluidez\n\nCONST ES LEY: Si un widget puede ser const, DEBE ser const. Ayuda al framework a reutilizar el árbol.\nLISTVIEW.BUILDER: Solo un principiante usa ListView simple con miles de elementos. Usa constructores perezosos.\nREPAINTBOUNDARY: Aísla las animaciones pesadas. No redibujes toda la pantalla por un simple cronómetro.\n\n\n\nDART\n\n// Si no usas RepaintBoundary aquí, estás desperdiciando recursos\nRepaintBoundary(\n  child: MyComplexAnimation(),\n)\n\n\nDIAGNÓSTICO DE ÉLITE: Si notas que tu app pierde frames solo en el primer scroll, pero luego va fluida, ¿qué concepto de pre-compilación de Shaders (Skia/Impeller) explicarías a tu equipo para solucionar este problema técnico?",
+    "crumbs": [
+      "XIII - Optimización y Performance",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Optimización: De \"Funciona\" a \"Vuela\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad14/1_testing_cicd.html",
+    "href": "unidades/unidad14/1_testing_cicd.html",
+    "title": "24  Testing y CI/CD: El Escudo del Desarrollador",
+    "section": "",
+    "text": "24.1 La Pirámide de Pruebas en Flutter\nUn desarrollador mediocre dice: “Mi código funciona porque lo probé en el emulador”. Un INGENIERO dice: “Mi código funciona porque tengo una suite de tests que lo garantiza”. Aquí NO aceptamos código sin pruebas — el testing es OBLIGATORIO.",
+    "crumbs": [
+      "XIV - Testing e Integración Continua",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Testing y CI/CD: El Escudo del Desarrollador</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad14/1_testing_cicd.html#la-pirámide-de-pruebas-en-flutter",
+    "href": "unidades/unidad14/1_testing_cicd.html#la-pirámide-de-pruebas-en-flutter",
+    "title": "24  Testing y CI/CD: El Escudo del Desarrollador",
+    "section": "",
+    "text": "UNIT TESTS: Pruebas de lógica pura (Domain). Son rápidas y DEBEN ser el 70% de tus pruebas.\nWIDGET TESTS: Pruebas de UI. Verifican que un botón dispare la acción correcta.\nINTEGRATION TESTS: Pruebas de flujo completo en un dispositivo real o emulador.\nGOLDEN TESTS: Capturas visuales para evitar que un cambio de CSS rompa el diseño.",
+    "crumbs": [
+      "XIV - Testing e Integración Continua",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Testing y CI/CD: El Escudo del Desarrollador</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad14/1_testing_cicd.html#pirámide-de-testing",
+    "href": "unidades/unidad14/1_testing_cicd.html#pirámide-de-testing",
+    "title": "24  Testing y CI/CD: El Escudo del Desarrollador",
+    "section": "24.2 Pirámide de Testing",
+    "text": "24.2 Pirámide de Testing\n\n\nMERMAID\n\npie title Distribución Ideal de Tests\n    \"Unit Tests\" : 70\n    \"Widget Tests\" : 20\n    \"Integration Tests\" : 10\n\nMeta: 70% Unit, 20% Widget, 10% Integration. Los unit tests son más rápidos y confiables.",
+    "crumbs": [
+      "XIV - Testing e Integración Continua",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Testing y CI/CD: El Escudo del Desarrollador</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad14/1_testing_cicd.html#integración-continua-ci-con-github-actions",
+    "href": "unidades/unidad14/1_testing_cicd.html#integración-continua-ci-con-github-actions",
+    "title": "24  Testing y CI/CD: El Escudo del Desarrollador",
+    "section": "24.3 Integración Continua (CI) con GitHub Actions",
+    "text": "24.3 Integración Continua (CI) con GitHub Actions\nNo queremos que subas código roto al repositorio. Configuraremos un flujo automatizado que: - Ejecute el linter (análisis estático). - Corra todos los tests. - Genere el build de la app.\n\n\nYAML\n\n# .github/workflows/flutter_ci.yml\nname: Flutter CI\n\non: [push, pull_request]\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: subosito/flutter-action@v2\n      - run: flutter pub get\n      - run: flutter analyze\n      - run: flutter test\n\n\nDESAFÍO DE DEVOPS: Si un test de integración falla en el CI pero pasa en tu computadora local, ¿cuáles serían las 3 posibles causas técnicas relacionadas con el entorno (Environment) que investigarías primero?",
+    "crumbs": [
+      "XIV - Testing e Integración Continua",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Testing y CI/CD: El Escudo del Desarrollador</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/README.html",
+    "href": "lab-practicos/README.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\n\n\n\n\n1 Code Appendix",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>README.html</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/1_yesno_app.html",
+    "href": "lab-practicos/1_yesno_app.html",
+    "title": "26  Laboratorio 1: YesNo App",
+    "section": "",
+    "text": "26.1 Objetivos del Laboratorio\nEn este primer laboratorio práctico, construiremos una aplicación de chat simple pero funcional que utiliza una API externa para responder “Sí” o “No” a nuestras preguntas.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/1_yesno_app.html#objetivos-del-laboratorio",
+    "href": "lab-practicos/1_yesno_app.html#objetivos-del-laboratorio",
+    "title": "26  Laboratorio 1: YesNo App",
+    "section": "",
+    "text": "Aplicar el uso de Material 3.\nGestionar el estado con Provider (introducción).\nConsumir una API REST básica (yesno.wtf/api).\nCrear interfaces con ListView y Chat Bubbles.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/1_yesno_app.html#estructura-del-proyecto",
+    "href": "lab-practicos/1_yesno_app.html#estructura-del-proyecto",
+    "title": "26  Laboratorio 1: YesNo App",
+    "section": "26.2 Estructura del Proyecto",
+    "text": "26.2 Estructura del Proyecto\n\nModelos: Definir cómo luce la respuesta de la API.\nProvider: Manejar el historial de mensajes y la petición a la API.\nScreens: Pantalla principal del chat.\nWidgets: Burbujas de chat personalizadas.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/1_yesno_app.html#desafío-anti-ia",
+    "href": "lab-practicos/1_yesno_app.html#desafío-anti-ia",
+    "title": "26  Laboratorio 1: YesNo App",
+    "section": "26.3 Desafío Anti-IA",
+    "text": "26.3 Desafío Anti-IA\n\nRazonamiento Crítico: En este proyecto usamos http para las peticiones. Si la API tarda 5 segundos en responder, ¿cómo mostrarías un indicador de “escribiendo…” en la interfaz? No busques el código, describe el flujo de estado necesario.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/1_yesno_app.html#entrega",
+    "href": "lab-practicos/1_yesno_app.html#entrega",
+    "title": "26  Laboratorio 1: YesNo App",
+    "section": "26.4 Entrega",
+    "text": "26.4 Entrega\nSube tu código a un repositorio de GitHub y comparte el enlace en la plataforma de Abacom. Asegúrate de incluir un README.md con capturas de pantalla de tu aplicación.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/2_toktik.html",
+    "href": "lab-practicos/2_toktik.html",
+    "title": "27  Laboratorio 2: TokTik (Vertical Video App)",
+    "section": "",
+    "text": "27.1 Objetivos del Laboratorio\nEn este laboratorio, crearemos una aplicación inspirada en TikTok para aprender a manejar contenido multimedia, layouts a pantalla completa y gestos táctiles.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/2_toktik.html#objetivos-del-laboratorio",
+    "href": "lab-practicos/2_toktik.html#objetivos-del-laboratorio",
+    "title": "27  Laboratorio 2: TokTik (Vertical Video App)",
+    "section": "",
+    "text": "Implementar un Scroll Vertical infinito.\nUsar el paquete video_player para reproducción de video.\nCrear gradientes y superposiciones (overlays) con el widget Stack.\nAplicar animaciones simples para los botones de interacción.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/2_toktik.html#desafío-de-arquitectura",
+    "href": "lab-practicos/2_toktik.html#desafío-de-arquitectura",
+    "title": "27  Laboratorio 2: TokTik (Vertical Video App)",
+    "section": "27.2 Desafío de Arquitectura",
+    "text": "27.2 Desafío de Arquitectura\nPara este proyecto, utilizaremos un modelo de datos local (falso backend) para simular la llegada de videos.\n\nEntities: Definir la entidad VideoPost.\nModels: Crear el modelo VideoPostModel con métodos fromJson.\nMappers: Separar la lógica de conversión de datos de la lógica de negocio.\n\n\nEstrategia de Performance: Los videos consumen mucha memoria y datos. ¿Cómo implementarías una lógica para que solo el video que está actualmente en pantalla se esté reproduciendo, mientras que los demás estén pausados o precargados?",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/2_toktik.html#entrega",
+    "href": "lab-practicos/2_toktik.html#entrega",
+    "title": "27  Laboratorio 2: TokTik (Vertical Video App)",
+    "section": "27.3 Entrega",
+    "text": "27.3 Entrega\nAsegúrate de que tu aplicación sea fluida y maneje correctamente la carga de videos. Documenta en tu README cómo configuraste los permisos de red para Android e iOS.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/3_widgets_app.html",
+    "href": "lab-practicos/3_widgets_app.html",
+    "title": "28  Laboratorio 3: Widgets App",
+    "section": "",
+    "text": "28.1 Objetivos del Laboratorio\nEn este laboratorio, construiremos un catálogo interactivo de más de 15 widgets de Flutter. Esta aplicación te servirá como referencia rápida (Cookbook) para tus futuros proyectos.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/3_widgets_app.html#objetivos-del-laboratorio",
+    "href": "lab-practicos/3_widgets_app.html#objetivos-del-laboratorio",
+    "title": "28  Laboratorio 3: Widgets App",
+    "section": "",
+    "text": "Dominar la Navegación avanzada con go_router.\nImplementar Menús Laterales (Drawer) y diálogos personalizados.\nCrear animaciones de carga y progreso.\nAplicar el uso de Riverpod para el cambio de tema global (Dark/Light Mode).",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/3_widgets_app.html#componentes-a-implementar",
+    "href": "lab-practicos/3_widgets_app.html#componentes-a-implementar",
+    "title": "28  Laboratorio 3: Widgets App",
+    "section": "28.2 Componentes a Implementar",
+    "text": "28.2 Componentes a Implementar\n\nButtons: Variaciones de Material 3.\nCards: Diseños personalizados con sombras y bordes.\nProgress Indicators: Circulares y lineales con estados controlados.\nSnackbars & Dialogs: Notificaciones y alertas al usuario.\nInfinite Scroll: Carga de imágenes optimizada.\n\n\nDesafío de Optimización: En la pantalla de Infinite Scroll, las imágenes pueden saturar la memoria. ¿Cómo usarías el widget Image.network con un loadingBuilder para mejorar la experiencia de usuario mientras la imagen se descarga?",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/3_widgets_app.html#entrega",
+    "href": "lab-practicos/3_widgets_app.html#entrega",
+    "title": "28  Laboratorio 3: Widgets App",
+    "section": "28.3 Entrega",
+    "text": "28.3 Entrega\nTu Widgets App debe incluir un menú de configuración donde el usuario pueda elegir entre al menos 5 colores temáticos diferentes y alternar entre modo claro y oscuro.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/4_cinemapedia.html",
+    "href": "lab-practicos/4_cinemapedia.html",
+    "title": "29  Laboratorio 4: Cinemapedia",
+    "section": "",
+    "text": "29.1 Objetivos del Laboratorio\nCinemapedia es el proyecto central de este curso. Es una aplicación de películas completa que utiliza TheMovieDB API y aplica todos los conceptos de Clean Architecture y Riverpod aprendidos hasta ahora.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/4_cinemapedia.html#objetivos-del-laboratorio",
+    "href": "lab-practicos/4_cinemapedia.html#objetivos-del-laboratorio",
+    "title": "29  Laboratorio 4: Cinemapedia",
+    "section": "",
+    "text": "Implementar una estructura de carpetas basada en Features.\nUsar Riverpod para manejar el estado de las películas (ahora en cine, populares, etc.).\nImplementar un Custom ScrollView con Sliders y Grids.\nManejar la Carga Infinita de datos (Pagination).\nImplementar una pantalla de detalles con animaciones de transición.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/4_cinemapedia.html#desafío-de-implementación",
+    "href": "lab-practicos/4_cinemapedia.html#desafío-de-implementación",
+    "title": "29  Laboratorio 4: Cinemapedia",
+    "section": "29.2 Desafío de Implementación",
+    "text": "29.2 Desafío de Implementación\nEn este laboratorio, no solo mostraremos datos, sino que implementaremos un Repository Pattern para que la capa de presentación nunca sepa si los datos vienen de una API o de una base de datos local.\n\nOptimización de UI: Al hacer scroll infinito, ¿cómo evitarías realizar múltiples peticiones a la API para la misma página si el usuario hace scroll muy rápido? (Pista: investiga el concepto de isLoading flag en tu Provider).",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/4_cinemapedia.html#requisitos-técnicos",
+    "href": "lab-practicos/4_cinemapedia.html#requisitos-técnicos",
+    "title": "29  Laboratorio 4: Cinemapedia",
+    "section": "29.3 Requisitos Técnicos",
+    "text": "29.3 Requisitos Técnicos\n\nUso obligatorio de Dio para peticiones.\nImplementación de Mappers para convertir las respuestas de la API.\nNavegación con GoRouter.\nTema personalizado siguiendo el branding del curso.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/5_pushapp.html",
+    "href": "lab-practicos/5_pushapp.html",
+    "title": "30  Laboratorio 5: PushApp",
+    "section": "",
+    "text": "30.1 Objetivos del Laboratorio\nEn este laboratorio práctico, construiremos una aplicación de mensajería básica que recibe y muestra notificaciones push utilizando Firebase.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/5_pushapp.html#objetivos-del-laboratorio",
+    "href": "lab-practicos/5_pushapp.html#objetivos-del-laboratorio",
+    "title": "30  Laboratorio 5: PushApp",
+    "section": "",
+    "text": "Configurar un proyecto de Firebase desde cero para Flutter.\nImplementar la recepción de notificaciones en primer plano y en segundo plano.\nMostrar las notificaciones recibidas en una lista persistida con Drift.\nManejar los Permisos de Notificación de manera profesional.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/5_pushapp.html#estructura-del-proyecto",
+    "href": "lab-practicos/5_pushapp.html#estructura-del-proyecto",
+    "title": "30  Laboratorio 5: PushApp",
+    "section": "30.2 Estructura del Proyecto",
+    "text": "30.2 Estructura del Proyecto\n\nFirebase Init: Inicializar Firebase en el main.dart.\nNotification Provider: Un provider global (Riverpod) para manejar el historial de notificaciones.\nLocal DB: Guardar las notificaciones para que no se pierdan al cerrar la app.\nUI: Una pantalla simple con el historial de alertas recibidas.\n\n\nRazonamiento Crítico: Si el usuario desactiva las notificaciones desde los ajustes del sistema, ¿cómo detectarías esto en tu aplicación de Flutter para mostrar un aviso pidiéndole que las reactive? No busques el código, explica el flujo lógico.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/5_pushapp.html#entrega",
+    "href": "lab-practicos/5_pushapp.html#entrega",
+    "title": "30  Laboratorio 5: PushApp",
+    "section": "30.3 Entrega",
+    "text": "30.3 Entrega\nAsegúrate de probar tu aplicación enviando mensajes de prueba desde la consola de Firebase. Incluye en tu README el token del dispositivo de prueba que usaste.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/6_shopapp.html",
+    "href": "lab-practicos/6_shopapp.html",
+    "title": "31  Laboratorio 6: ShopApp",
+    "section": "",
+    "text": "31.1 Objetivos del Laboratorio\nShopApp es un e-commerce simplificado que nos permite aplicar todo lo aprendido: Supabase Auth, Clean Architecture y Recursos Nativos.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/6_shopapp.html#objetivos-del-laboratorio",
+    "href": "lab-practicos/6_shopapp.html#objetivos-del-laboratorio",
+    "title": "31  Laboratorio 6: ShopApp",
+    "section": "",
+    "text": "Implementar un flujo completo de Login y Registro.\nCrear un catálogo de productos consumido desde Supabase.\nPermitir que el usuario suba su Foto de Perfil usando la cámara.\nManejar el estado de la sesión de forma global con Riverpod.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/6_shopapp.html#desafío-de-implementación-supabase-storage",
+    "href": "lab-practicos/6_shopapp.html#desafío-de-implementación-supabase-storage",
+    "title": "31  Laboratorio 6: ShopApp",
+    "section": "31.2 Desafío de Implementación: Supabase Storage",
+    "text": "31.2 Desafío de Implementación: Supabase Storage\nEn este proyecto, no solo guardaremos texto en la base de datos, sino que subiremos archivos reales a un Bucket de Supabase Storage.\n\nCapturar: Usar image_picker para obtener la foto.\nSubir: Enviar el archivo al bucket “avatars” con un nombre único.\nPersistir: Guardar la URL pública en el perfil del usuario en la base de datos.\n\n\nRazonamiento de Infraestructura: Si miles de usuarios suben fotos simultáneamente, ¿qué estrategia usarías para nombrar los archivos en el bucket y evitar colisiones (sobreescritura accidental)? Explica el uso de UUID o Timestamps.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/6_shopapp.html#entrega",
+    "href": "lab-practicos/6_shopapp.html#entrega",
+    "title": "31  Laboratorio 6: ShopApp",
+    "section": "31.3 Entrega",
+    "text": "31.3 Entrega\nTu ShopApp debe ser segura: las rutas de “Perfil” y “Carrito” deben estar protegidas y solo ser accesibles para usuarios autenticados. Documenta los pasos necesarios para configurar Supabase en tu README.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/7_final_app.html",
+    "href": "lab-practicos/7_final_app.html",
+    "title": "32  Laboratorio 7: Proyecto Final (Grado)",
+    "section": "",
+    "text": "32.1 Requisitos de la Aplicación Final\nEl proyecto final consiste en desarrollar una aplicación móvil completa y profesional que integre todos los pilares del curso. Es tu oportunidad para demostrar que eres un Arquitecto de Flutter.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/7_final_app.html#requisitos-de-la-aplicación-final",
+    "href": "lab-practicos/7_final_app.html#requisitos-de-la-aplicación-final",
+    "title": "32  Laboratorio 7: Proyecto Final (Grado)",
+    "section": "",
+    "text": "Arquitectura: Uso estricto de Clean Architecture (domain, infrastructure, presentation).\nGestión de Estado: Implementar Riverpod para todo el estado global.\nPersistencia: Base de datos local con Drift (offline-first).\nBackend: Autenticación con Supabase y notificaciones push con Firebase.\nUI/UX: Tema dinámico (dark/light) y navegación con GoRouter.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/7_final_app.html#posibles-temas",
+    "href": "lab-practicos/7_final_app.html#posibles-temas",
+    "title": "32  Laboratorio 7: Proyecto Final (Grado)",
+    "section": "32.2 Posibles Temas",
+    "text": "32.2 Posibles Temas\n\nControl de Gastos Personal: Con reportes en la nube y sincronización local.\nGestión de Citas Médicas: Con notificaciones de recordatorio y perfiles de doctor.\nApp de Delivery Local: Integrando mapas y seguimiento de pedidos.\n\n\nDefensa Técnica: Durante tu presentación final, el facilitador te pedirá que expliques por qué elegiste un determinado gestor de estado o base de datos. Prepara una justificación técnica basada en los beneficios y compromisos (trade-offs) de tu elección.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/7_final_app.html#criterios-de-evaluación",
+    "href": "lab-practicos/7_final_app.html#criterios-de-evaluación",
+    "title": "32  Laboratorio 7: Proyecto Final (Grado)",
+    "section": "32.3 Criterios de Evaluación",
+    "text": "32.3 Criterios de Evaluación\n\nCorrectitud del Código (40%): Sin errores, tipado fuerte y manejo de excepciones.\nArquitectura (30%): Separación clara de capas y modularización.\nExperiencia de Usuario (20%): Diseño atractivo y navegación intuitiva.\nDocumentación (10%): README completo y código comentado.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
+    ]
+  },
+  {
+    "objectID": "quizzes/README.html",
+    "href": "quizzes/README.html",
+    "title": "33  Evaluaciones y Quizzes Interactivos",
+    "section": "",
+    "text": "33.1 Metodología Anti-IA\nBienvenido a la sección de evaluación. Aquí pondremos a prueba no solo lo que memorizaste, sino lo que comprendiste.\nNuestros quizzes no se basan en definiciones de diccionario. Están diseñados como Casos de Uso reales:",
+    "crumbs": [
+      "Evaluación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Evaluaciones y Quizzes Interactivos</span>"
+    ]
+  },
+  {
+    "objectID": "quizzes/README.html#metodología-anti-ia",
+    "href": "quizzes/README.html#metodología-anti-ia",
+    "title": "33  Evaluaciones y Quizzes Interactivos",
+    "section": "",
+    "text": "Situación: Un escenario común en el desarrollo.\nConflicto: Un problema técnico que surge.\nResolución: Debes elegir la mejor solución arquitectónica o de código.",
+    "crumbs": [
+      "Evaluación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Evaluaciones y Quizzes Interactivos</span>"
+    ]
+  },
+  {
+    "objectID": "quizzes/README.html#quizzes-disponibles",
+    "href": "quizzes/README.html#quizzes-disponibles",
+    "title": "33  Evaluaciones y Quizzes Interactivos",
+    "section": "33.2 Quizzes Disponibles",
+    "text": "33.2 Quizzes Disponibles\n\n\n\nEvaluación\nMódulos Cubiertos\nEstado\n\n\n\n\nQuiz I: Dart & Widgets\nI, II, III, IV\nIniciar Quiz\n\n\nQuiz II: Arquitectura & Estado\nV, VI, VII\nPróximamente\n\n\nQuiz III: Backend & Nativo\nVIII, IX, X, XI\nPróximamente\n\n\n\n\n\n\n\n\n\nTipConsejo para la Evaluación\n\n\n\nLee bien el enunciado. A veces, la solución que “parece” funcionar no es la más adecuada para un proyecto escalable con Clean Architecture.",
+    "crumbs": [
+      "Evaluación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Evaluaciones y Quizzes Interactivos</span>"
+    ]
+  },
+  {
+    "objectID": "quizzes/quiz_final.html",
+    "href": "quizzes/quiz_final.html",
+    "title": "34  Quiz Final: Arquitectura y Gestión de Estado",
+    "section": "",
+    "text": "Responde a los siguientes desafíos de arquitectura. Recuerda que no hay una única respuesta correcta, pero sí hay mejores prácticas.\n\n34.0.1 Pregunta 1: El Dilema del Provider\nTienes una aplicación que maneja el estado de un carrito de compras. El usuario está en la pantalla de “Checkout” y se pierde la conexión a internet.\n¿Cómo manejarías este estado con Riverpod? a) Usarías un StateProvider y guardarías el error en una variable global. b) Usarías un AsyncValue en un NotifierProvider para manejar los estados de loading, data y error. c) Llamarías a setState en el widget de Checkout para mostrar un diálogo de error.\n\n\n\n34.0.2 Pregunta 2: Clean Architecture\nUn nuevo requerimiento pide que la aplicación sea capaz de funcionar con dos bases de datos diferentes (una para Premium y otra para Free).\n¿En qué capa de la arquitectura deberías implementar esta lógica de selección? a) En la capa de Presentation (usando un condicional en el Widget). b) En la capa de Domain (creando una entidad DatabaseSelector). c) En la capa de Infrastructure (implementando un RepositoryImpl que decida qué DataSource usar).\n\n\nAuto-evaluación: Si tuvieras que explicarle a un compañero por qué elegiste la opción (c) en la pregunta anterior, ¿qué argumentos de desacoplamiento usarías?\n\n\n\n\n34.0.3 Pregunta 3: APIs y Modelado de Datos\nTu equipo decide cambiar el nombre de un campo en la respuesta del API de user_name a full_name.\n¿Dónde realizarías el mapeo para evitar romper la UI? a) Directamente en el Widget que consume el dato. b) En un archivo models/user_model.dart que reflectiona la respuesta exacta de la API. c) En un mapper entre el Model (API) y la Entity (Domain).\n\n\n\n34.0.4 Pregunta 4: Firebase vs Supabase\nTu cliente necesita una base de datos en tiempo real con soporte offline.\n¿Qué tecnología elegirías y por qué? a) Firebase Firestore - por su offline-first nativo. b) Supabase - por su soporte de PostgreSQL y Row Level Security. c) SQLite local - por simplicidad en una app pequeña.\n\n\n\n34.0.5 Pregunta 5: Rendimiento\nTu aplicación tiene 1000+ items en una lista y experimentas lags al hacer scroll.\n¿Qué approach seguirías? (Selecciona todos los que apliquen) - [ ] Usar ListView.builder en lugar de ListView - [ ] Implementar pagination (cargar de 20 en 20) - [ ] Usar const en los widgets que no cambian - [ ] Mover el estado a un StateNotifier separado\n\n\n\n\n\n\n\nTip🎯 Evaluación\n\n\n\nSube tus respuestas a un documento Google Docs y comparte el enlace en el canal #dudas-del-curso de Discord. Feedback personalizado: Las primeras 10 respuestas reciben review técnico del instructor.\n\n\n\n\n\n\n\n\n35 Code Appendix",
+    "crumbs": [
+      "Evaluación",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Quiz Final: Arquitectura y Gestión de Estado</span>"
+    ]
+  }
+]
