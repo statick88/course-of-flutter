@@ -23,7 +23,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Quarto
-        uses: quarto-dev/quarto-action@v1
+        run: |
+          wget -q https://downloads.quarto.org/linux/quarto.tar.gz
+          tar -xzf quarto.tar.gz
+          mv quarto /opt/quarto
+          echo "/opt/quarto/bin" >> $GITHUB_PATH
 
       - name: Render Quarto project
         run: quarto render --to html
@@ -38,8 +42,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
