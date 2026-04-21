@@ -24,7 +24,7 @@ jobs:
 
       - name: Set up Quarto
         run: |
-          wget -q https://downloads.quarto.org/linux/quarto.tar.gz
+          curl -fsSL https://downloads.quarto.org/linux/quarto.tar.gz -o quarto.tar.gz
           tar -xzf quarto.tar.gz
           mv quarto /opt/quarto
           echo "/opt/quarto/bin" >> $GITHUB_PATH
