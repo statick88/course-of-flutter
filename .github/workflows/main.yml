@@ -24,9 +24,9 @@ jobs:
 
       - name: Set up Quarto
         run: |
-          curl -fsSL https://downloads.quarto.org/linux/quarto.tar.gz -o quarto.tar.gz
+          curl -fsSL https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quarto-1.9.37-linux-amd64.tar.gz -o quarto.tar.gz
           tar -xzf quarto.tar.gz
-          mv quarto /opt/quarto
+          mv quarto-1.9.37 /opt/quarto
           echo "/opt/quarto/bin" >> $GITHUB_PATH
 
       - name: Render Quarto project
