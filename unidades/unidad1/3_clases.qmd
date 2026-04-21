@@ -1,0 +1,46 @@
+# POO Avanzada: Abstract, Mixins y Extensions {#sec-poo}
+
+En un nivel superior, el uso de clases simples no es suficiente. Para construir sistemas escalables, debemos dominar la reutilización de código y la extensibilidad sin herencia múltiple.
+
+## Clases Abstractas e Interfaces
+
+Dart no tiene la palabra clave `interface`; cada clase es implícitamente una interfaz.
+
+```dart
+abstract class Repository {
+  Future<List<String>> getData();
+}
+
+class ApiRepository implements Repository {
+  @override
+  Future<List<String>> getData() async => ['Data 1', 'Data 2'];
+}
+```
+
+## Mixins: Reutilización de Comportamiento
+
+Los mixins permiten añadir funcionalidades a una clase sin usar herencia. Es fundamental para manejar comportamientos transversales (ej. validaciones, animaciones).
+
+```dart
+mixin Logger {
+  void log(String msg) => print('[LOG ${DateTime.now()}]: $msg');
+}
+
+class UserService with Logger {
+  void save() => log('Usuario guardado');
+}
+```
+
+## Extension Methods
+
+Permiten añadir funcionalidad a bibliotecas de terceros o clases existentes del sistema sin modificarlas.
+
+```dart
+extension StringExtensions on String {
+  bool get isValidEmail => contains('@');
+}
+```
+
+::: {.anti-ia-challenge}
+**Diseño de Framework**: Imagina que estás creando un sistema de persistencia. ¿Cómo usarías una combinación de `abstract class` y `mixins` para obligar a que todos tus servicios tengan un método `save()` y, opcionalmente, una capacidad de `cache`?
+:::

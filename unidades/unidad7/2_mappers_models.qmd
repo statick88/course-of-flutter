@@ -1,0 +1,35 @@
+# Modelos y Mappers: Protegiendo el Dominio
+
+Un error común es usar las clases generadas desde el JSON directamente en toda la aplicación. En **Clean Architecture**, protegemos nuestro **Dominio** usando **Mappers**.
+
+## El Problema de la Dependencia Externa
+
+Si la API cambia el nombre de un campo (ej. de `movie_title` a `name`), y usaste el modelo de la API en 50 widgets, tendrás que cambiarlos todos.
+
+## La Solución: Mappers
+
+1. **Model**: Refleja exactamente la respuesta de la API (capa de Infrastructure).
+2. **Entity**: Refleja lo que tu aplicación necesita (capa de Domain).
+3. **Mapper**: Una clase simple que transforma el `Model` en una `Entity`.
+
+```dart
+class MovieMapper {
+  static Movie movieDBToEntity(MovieFromMovieDB moviedb) => Movie(
+    id: moviedb.id,
+    title: moviedb.title,
+    overview: moviedb.overview,
+    posterPath: (moviedb.posterPath != '')
+      ? 'https://image.tmdb.org/t/p/w500${moviedb.posterPath}'
+      : 'https://sd.keepcalms.com/i/no-poster-found.png',
+  );
+}
+```
+
+::: {.callout-tip}
+## Consejo del Facilitador
+El Mapper es el lugar ideal para manejar valores nulos o asignar imágenes por defecto si la API no devuelve una.
+:::
+
+::: {.anti-ia-challenge}
+**Desafío de Arquitectura**: ¿Por qué decimos que el `MovieMapper` pertenece a la capa de `Infrastructure` y no a la de `Domain`? Justifica tu respuesta basándote en la dirección de las dependencias.
+:::

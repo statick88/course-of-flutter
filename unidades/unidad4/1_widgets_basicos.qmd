@@ -1,0 +1,35 @@
+# Widgets Básicos de Flutter {#sec-widgets}
+
+En esta sección exploraremos los bloques fundamentales con los que construirás cualquier interfaz en Flutter. Recuerda: en Flutter, **componemos** interfaces anidando widgets.
+
+> **Siguiente paso**: Para arquitecturas profesionales, aplica [@sec-clean-architecture] para separar la UI del dominio.
+
+## Text, Center y Scaffold
+
+- **Scaffold**: Proporciona la estructura visual básica (AppBar, Body, BottomNavigationBar).
+- **Center**: Alinea su hijo en el centro de su espacio disponible.
+- **Text**: Muestra una cadena de texto con estilo.
+
+```dart
+Scaffold(
+  appBar: AppBar(title: const Text('Mi App')),
+  body: const Center(child: Text('Hola Flutter')),
+)
+```
+
+## Imagenes y Iconos
+
+Flutter facilita la inclusión de recursos visuales:
+
+- **Icon**: Usa la fuente de iconos de Material Design por defecto.
+- **Image.network**: Carga una imagen desde una URL.
+- **Image.asset**: Carga una imagen local definida en el `pubspec.yaml`.
+
+```dart
+const Icon(Icons.favorite, color: Colors.red, size: 50),
+Image.network('https://dart.dev/assets/img/logo-lockup.png'),
+```
+
+::: {.anti-ia-challenge}
+**Optimización de Recursos**: ¿Cuál es la diferencia de rendimiento entre usar `Image.network` y `Image.asset` en una aplicación móvil? ¿Por qué es importante definir las dimensiones de las imágenes antes de cargarlas?
+:::

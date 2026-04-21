@@ -1,0 +1,38 @@
+# Autenticación con Supabase {#sec-supabase}
+
+> **Relación con APIs**: Supabase usa APIs RESTful bajo el capó. Ver [@sec-apis] para entender cómo consumir endpoints.
+> **Relación con Clean Architecture**: El servicio de Auth pertenece a INFRASTRUCTURE. Ver [@sec-clean-architecture].
+
+Supabase es una alternativa a Firebase basada en estándares abiertos y PostgreSQL. Como facilitador, quiero que domines el uso de **Supabase Auth** para gestionar registros, inicios de sesión y seguridad mediante **JWT**.
+
+## ¿Por qué Supabase?
+
+- **Open Source**: Evita el "vendor lock-in".
+- **SQL Power**: PostgreSQL real con soporte para RLS (Row Level Security).
+- **Simplicidad**: SDK intuitivo para Flutter.
+
+## Flujo de Autenticación
+
+1. **Configuración**: Registrar la app en Supabase y obtener la URL y Anon Key.
+2. **Login**: Autenticación con email/password o proveedores sociales.
+3. **Session Management**: Escuchar cambios en el estado de la sesión para redirigir al usuario.
+
+```dart
+final supabase = Supabase.instance.client;
+
+// Iniciar sesión
+Future<void> signIn(String email, String password) async {
+  final AuthResponse res = await supabase.auth.signInWithPassword(
+    email: email,
+    password: password,
+  );
+}
+```
+
+## Protegiendo Rutas con GoRouter
+
+En este curso, usaremos un **RefreshListenable** con GoRouter para que la aplicación redirija automáticamente al usuario al login si su sesión expira.
+
+::: {.anti-ia-challenge}
+**Seguridad de Datos**: ¿Qué es el Row Level Security (RLS) y por qué es fundamental activarlo en las tablas de Supabase, incluso si ya tenemos autenticación activa? Explica cómo evitarías que un usuario borre los datos de otro usuario.
+:::

@@ -1,0 +1,31 @@
+# Acerca de este eBook
+
+Este curso de **Flutter con Arquitectura Profesional** está diseñado para desarrolladores que quieren dominar el desarrollo móvil con metodologías de ingeniería de software. Basado en la metodología Statick: 90% práctico, 100% aplicable.
+
+## Sobre el Autor
+
+**Diego Medardo Saavedra García**  
+FullStack Developer | Ethical Hacker | Docente Universitario | Estudiante de Máster
+
+Con más de 10 años de experiencia en desarrollo de software y educación técnica, Diego ha creado este curso con un enfoque en **Arquitectura Limpia**, **Testing**, **Seguridad** y **Pensamiento Crítico**. Su objetivo es formar no solo programadores, sino **Ingenieros de Software** capaces de liderar proyectos complejos en Flutter.
+
+### CV y Portafolio
+
+- **Web**: [statick88.github.io](https://statick88.github.io)
+- **LinkedIn**: [linkedin.com/in/diego-saavedra-developer](https://www.linkedin.com/in/diego-saavedra-developer/)
+- **X (Twitter)**: [x.com/statick_ds](https://x.com/statick_ds)
+- **GitHub**: [github.com/statick88](https://github.com/statick88)
+- **Google Scholar**: [scholar.google.com/citations](https://scholar.google.com/citations?user=getKs_4AAAAJ&hl=es)
+- **Hack The Box**: [hackthebox.com](https://account.hackthebox.com/dashboard)
+
+---
+
+## Licencia
+
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0?style=flat-square&logo=creative-commons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+**© 2026 Diego Medardo Saavedra García.** Algunos derechos reservados bajo [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+---
+
+*Este material puedes compartirlo y adaptarlo bajo los mismos términos de esta licencia.*

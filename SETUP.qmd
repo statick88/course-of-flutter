@@ -1,0 +1,25 @@
+# Guía de Inicio Rápido (Setup)
+
+Para comenzar a usar este eBook y realizar los laboratorios, asegúrate de tener instalado el siguiente software:
+
+## 1. Flutter SDK
+Instala la versión estable de Flutter (3.41 o superior).
+- [Instrucciones oficiales](https://docs.flutter.dev/get-started/install)
+
+## 2. Editor de Código
+Recomendamos **Visual Studio Code** con las siguientes extensiones:
+- Flutter (by Dart Code)
+- Dart (by Dart Code)
+- Error Lens (opcional, muy recomendado)
+
+## 3. Quarto (Opcional)
+Si deseas renderizar este eBook localmente o modificarlo, necesitas instalar **Quarto CLI**.
+- [Descargar Quarto](https://quarto.org/docs/get-started/)
+
+## 4. Repositorio del Curso
+Clona el repositorio con las soluciones de los laboratorios:
+```bash
+git clone https://github.comTuUsuario/curso-flutter.git
+```
+
+O descarga desde: Reemplaza `TuUsuario` con tu nombre de usuario de GitHub

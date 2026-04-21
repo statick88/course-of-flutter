@@ -1,0 +1,48 @@
+# Flutter: Primeros Pasos {#sec-primeros-pasos}
+
+Flutter es un framework declarativo. Esto significa que nosotros describimos **cómo se debe ver la interfaz** basándonos en su **estado** actual.
+
+> **Siguiente paso**: Después de entender Widgets básicos, profundiza en [@sec-widgets] y luego en [@sec-gestion-estado] para dominar el estado.
+
+## ¿Qué es un Widget?
+
+En Flutter, **todo es un Widget**. Un Widget es una descripción inmutable de una parte de la interfaz de usuario.
+
+### Stateless vs Stateful Widgets
+
+- **StatelessWidget**: No cambia su estado una vez construido. Es ideal para elementos estáticos como iconos o etiquetas de texto.
+- **StatefulWidget**: Tiene un objeto de estado interno que puede cambiar. Cuando el estado cambia, el Widget se reconstruye.
+
+## Mi Primera Aplicación (Hello World)
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Abacom Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Bienvenidos a Flutter'),
+          backgroundColor: Colors.orange,
+        ),
+        body: const Center(
+          child: Text('¡Hola Mundo desde Abacom!'),
+        ),
+      ),
+    );
+  }
+}
+```
+
+::: {.callout-tip}
+## Hot Reload
+Flutter permite ver los cambios casi instantáneamente sin perder el estado de la aplicación. ¡Pruébalo cambiando el texto del `Text` widget!
+:::

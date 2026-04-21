@@ -1,0 +1,138 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Flutter - Desarrollo Móvil De Cero a Experto"
+  subtitle: "Curso Profesional de Desarrollo Multiplataforma"
+  author: "Diego Saavedra García"
+  date: "2026-04-20"
+  date-format: medium
+  favicon: favicon.ico
+  
+  navbar:
+    search: true
+  
+  sidebar:
+    logo: logo.jpeg
+    collapse-level: 1
+
+  chapters:
+    - index.qmd
+    - part: "Introducción al Curso"
+      chapters:
+        - about.qmd
+        - SETUP.qmd
+        - glosario.qmd
+    - part: "I - Fundamentos de Dart"
+      chapters:
+        - unidades/unidad1/1_variables.qmd
+        - unidades/unidad1/2_funciones.qmd
+        - unidades/unidad1/3_clases.qmd
+    - part: "II - Instalación y Configuración"
+      chapters:
+        - unidades/unidad2/1_configuracion.qmd
+    - part: "III - Flutter: Primeros Pasos"
+      chapters:
+        - unidades/unidad3/1_primeros_pasos.qmd
+    - part: "IV - Widgets Básicos y Avanzados"
+      chapters:
+        - unidades/unidad4/1_widgets_basicos.qmd
+        - unidades/unidad4/2_layouts.qmd
+    - part: "V - Gestión de Estado"
+      chapters:
+        - unidades/unidad5/1_gestion_estado.qmd
+        - unidades/unidad5/2_riverpod.qmd
+    - part: "VI - Clean Architecture y DDD"
+      chapters:
+        - unidades/unidad6/1_clean_architecture.qmd
+        - unidades/unidad6/2_ddd_flutter.qmd
+    - part: "VII - Integración con APIs"
+      chapters:
+        - unidades/unidad7/1_apis_http.qmd
+        - unidades/unidad7/2_mappers_models.qmd
+    - part: "VIII - Base de Datos Local"
+      chapters:
+        - unidades/unidad8/1_sqlite_drift.qmd
+    - part: "IX - Notificaciones con Firebase"
+      chapters:
+        - unidades/unidad9/1_firebase_notifications.qmd
+    - part: "X - Autenticación con Supabase"
+      chapters:
+        - unidades/unidad10/1_supabase_auth.qmd
+    - part: "XI - Cámara y Recursos Nativos"
+      chapters:
+        - unidades/unidad11/1_camera_picker.qmd
+    - part: "XII - Build y Distribución"
+      chapters:
+        - unidades/unidad12/1_build_distribucion.qmd
+    - part: "XIII - Optimización y Performance"
+      chapters:
+        - unidades/unidad13/1_performance.qmd
+    - part: "XIV - Testing e Integración Continua"
+      chapters:
+        - unidades/unidad14/1_testing_cicd.qmd
+    - part: "Laboratorios Prácticos"
+      chapters:
+        - lab-practicos/README.md
+        - lab-practicos/1_yesno_app.md
+        - lab-practicos/2_toktik.md
+        - lab-practicos/3_widgets_app.md
+        - lab-practicos/4_cinemapedia.md
+        - lab-practicos/5_pushapp.md
+        - lab-practicos/6_shopapp.md
+        - lab-practicos/7_final_app.md
+    - part: "Evaluación"
+      chapters:
+        - quizzes/README.qmd
+        - quizzes/quiz_final.qmd
+
+format:
+  html:
+    theme: [solar, theme.scss]
+    css: css/styles.css
+    toc: true
+    number-sections: true
+    code-copy: true
+    code-fold: show
+    code-summary: "Ver Código"
+    code-tools: true
+    lightbox: true
+
+filters:
+  - include-code-files
+  - collapse-callout
+  - linkrot
+  - quizdown
+  - line-highlight
+  - details
+  - code-fullscreen
+  - fancy-text
+  - fontawesome
+  - highlight-text
+  - language-cell-decorator
+  - code-appendix
+  - badge
+  - qrcode
+  - custom-callout
+  - bsicons
+  - social-embeds
+  - wordcount
+
+# Plugin-specific options
+quizdown:
+  use-bootstrap-css: true
+wordcount:
+  output: auto
+lightbox:
+  effect: fade
+  loop: true
+linkrot:
+  warn: true
+extensions:
+  linkrot:
+    skip-patterns: ["^http://localhost(:[0-9]+)?(/.*)?$"]
+code-fullscreen:
+  button: true
+
+editor: visual

@@ -1,0 +1,56 @@
+# Cámara y Recursos Nativos {#sec-camera}
+
+> **Relación con [@sec-firebase]**: Las fotos capturadas pueden subirse a Firebase Storage o [@sec-supabase] Supabase Storage para persistencia en la nube.
+
+Las aplicaciones móviles brillan cuando interactúan con el hardware del dispositivo. En esta unidad, aprenderás a usar la cámara y la galería para enriquecer tus aplicaciones.
+
+## Flujo de Captura de Imagen
+
+```mermaid
+flowchart TD
+    A[Usuario hace tap en<br/>"Capturar Foto"] --> B{¿Tiene permiso<br/>de cámara?}
+    B -->|No| C[Solicitar permiso]
+    C --> B
+    B -->|Sí| D[ Abrir Cámara ]
+    D --> E[Usuario captura foto]
+    E --> F[Obtener XFile]
+    F --> G{¿Subir a la nube?}
+    G -->|Sí| H[Comprimir imagen<br/>maxWidth, imageQuality]
+    H --> I[Subir a Storage<br/>Firebase/Supabase]
+    G -->|No| J[Guardar localmente]
+    I --> K[Actualizar UI con<br/>imagen]
+    J --> K
+    
+    style A fill:#e3f2fd
+    style H fill:#fff3e0
+    style I fill:#e8f5e9
+    style K fill:#f3e5f5
+```
+
+**Flujo**: Solicitar permiso → Capturar → Comprimir (opcional) → Guardar/Subir → Mostrar en UI.
+
+## Uso de Image Picker
+
+El paquete `image_picker` es el estándar para capturar fotos o seleccionar imágenes de la galería en Flutter.
+
+```dart
+final ImagePicker picker = ImagePicker();
+final XFile? image = await picker.pickImage(source: ImageSource.camera);
+
+if (image != null) {
+  print('Ruta de la imagen: ${image.path}');
+}
+```
+
+## Manejo de Permisos
+
+Dependiendo de la plataforma (Android/iOS), debemos solicitar permisos explícitos en el archivo de configuración (`AndroidManifest.xml` o `Info.plist`).
+
+::: {.callout-important}
+## Experiencia de Usuario
+Siempre verifica si el permiso ha sido denegado permanentemente para mostrar un diálogo que guíe al usuario a los Ajustes del Sistema para activarlo manualmente.
+:::
+
+::: {.anti-ia-challenge}
+**Optimización de Archivos**: Capturar una foto en resolución completa puede generar archivos de 10MB+. ¿Cómo usarías los parámetros de `image_picker` (ej. `maxWidth`, `imageQuality`) para reducir el tamaño antes de subirla a un servidor como Supabase Storage?
+:::

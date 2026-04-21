@@ -1,0 +1,104 @@
+{
+  "index.qmd": {
+    "index.html": "9cb529d5"
+  },
+  "about.qmd": {
+    "about.html": "0a100b62"
+  },
+  "SETUP.qmd": {
+    "SETUP.html": "1bc8c0a3"
+  },
+  "glosario.qmd": {
+    "glosario.html": "d9f63fdb"
+  },
+  "unidades/unidad1/1_variables.qmd": {
+    "1_variables.html": "4ffcfbb8"
+  },
+  "unidades/unidad1/2_funciones.qmd": {
+    "2_funciones.html": "b3616e39"
+  },
+  "unidades/unidad1/3_clases.qmd": {
+    "3_clases.html": "e9896177"
+  },
+  "unidades/unidad2/1_configuracion.qmd": {
+    "1_configuracion.html": "a304db6f"
+  },
+  "unidades/unidad3/1_primeros_pasos.qmd": {
+    "1_primeros_pasos.html": "9a58d0c6"
+  },
+  "unidades/unidad4/1_widgets_basicos.qmd": {
+    "1_widgets_basicos.html": "77760099"
+  },
+  "unidades/unidad4/2_layouts.qmd": {
+    "2_layouts.html": "41f7ea2c"
+  },
+  "unidades/unidad5/1_gestion_estado.qmd": {
+    "1_gestion_estado.html": "83adf595"
+  },
+  "unidades/unidad5/2_riverpod.qmd": {
+    "2_riverpod.html": "748a016b"
+  },
+  "unidades/unidad6/1_clean_architecture.qmd": {
+    "1_clean_architecture.html": "ac7fc9df"
+  },
+  "unidades/unidad6/2_ddd_flutter.qmd": {
+    "2_ddd_flutter.html": "b87db225"
+  },
+  "unidades/unidad7/1_apis_http.qmd": {
+    "1_apis_http.html": "319bd4e4"
+  },
+  "unidades/unidad7/2_mappers_models.qmd": {
+    "2_mappers_models.html": "abbdee12"
+  },
+  "unidades/unidad8/1_sqlite_drift.qmd": {
+    "1_sqlite_drift.html": "38c66d63"
+  },
+  "unidades/unidad9/1_firebase_notifications.qmd": {
+    "1_firebase_notifications.html": "9c6e0487"
+  },
+  "unidades/unidad10/1_supabase_auth.qmd": {
+    "1_supabase_auth.html": "0de5cf31"
+  },
+  "unidades/unidad11/1_camera_picker.qmd": {
+    "1_camera_picker.html": "a0a5bf0b"
+  },
+  "unidades/unidad12/1_build_distribucion.qmd": {
+    "1_build_distribucion.html": "3d482c77"
+  },
+  "lab-practicos/README.md": {
+    "README.html": "3c88b650"
+  },
+  "lab-practicos/1_yesno_app.md": {
+    "1_yesno_app.html": "39a440df"
+  },
+  "lab-practicos/2_toktik.md": {
+    "2_toktik.html": "2c3be918"
+  },
+  "lab-practicos/3_widgets_app.md": {
+    "3_widgets_app.html": "2ff39e22"
+  },
+  "lab-practicos/4_cinemapedia.md": {
+    "4_cinemapedia.html": "2628edca"
+  },
+  "lab-practicos/5_pushapp.md": {
+    "5_pushapp.html": "7cf186b8"
+  },
+  "lab-practicos/6_shopapp.md": {
+    "6_shopapp.html": "1ff4cfec"
+  },
+  "lab-practicos/7_final_app.md": {
+    "7_final_app.html": "2b7029ab"
+  },
+  "quizzes/README.qmd": {
+    "README.html": "08879faf"
+  },
+  "quizzes/quiz_final.qmd": {
+    "quiz_final.html": "3e173ee9"
+  },
+  "unidades/unidad13/1_performance.qmd": {
+    "1_performance.html": "431d35b0"
+  },
+  "unidades/unidad14/1_testing_cicd.qmd": {
+    "1_testing_cicd.html": "0cc1deae"
+  }
+}

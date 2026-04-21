@@ -1,0 +1,67 @@
+# Quiz Final: Arquitectura y Gestión de Estado
+
+Responde a los siguientes desafíos de arquitectura. Recuerda que no hay una única respuesta correcta, pero sí hay **mejores prácticas**.
+
+### Pregunta 1: El Dilema del Provider
+Tienes una aplicación que maneja el estado de un carrito de compras. El usuario está en la pantalla de "Checkout" y se pierde la conexión a internet. 
+
+**¿Cómo manejarías este estado con Riverpod?**
+a) Usarías un `StateProvider` y guardarías el error en una variable global.
+b) Usarías un `AsyncValue` en un `NotifierProvider` para manejar los estados de `loading`, `data` y `error`.
+c) Llamarías a `setState` en el widget de Checkout para mostrar un diálogo de error.
+
+---
+
+### Pregunta 2: Clean Architecture
+Un nuevo requerimiento pide que la aplicación sea capaz de funcionar con dos bases de datos diferentes (una para Premium y otra para Free).
+
+**¿En qué capa de la arquitectura deberías implementar esta lógica de selección?**
+a) En la capa de `Presentation` (usando un condicional en el Widget).
+b) En la capa de `Domain` (creando una entidad `DatabaseSelector`).
+c) En la capa de `Infrastructure` (implementando un `RepositoryImpl` que decida qué `DataSource` usar).
+
+---
+
+::: {.anti-ia-challenge}
+**Auto-evaluación**: Si tuvieras que explicarle a un compañero por qué elegiste la opción (c) en la pregunta anterior, ¿qué argumentos de **desacoplamiento** usarías?
+:::
+
+---
+
+### Pregunta 3: APIs y Modelado de Datos
+Tu equipo decide cambiar el nombre de un campo en la respuesta del API de `user_name` a `full_name`. 
+
+**¿Dónde realizarías el mapeo para evitar romper la UI?**
+a) Directamente en el Widget que consume el dato.
+b) En un archivo `models/user_model.dart` que reflectiona la respuesta exacta de la API.
+c) En un `mapper` entre el Model (API) y la Entity (Domain).
+
+---
+
+### Pregunta 4: Firebase vs Supabase
+Tu cliente necesita una base de datos en tiempo real con soporte offline.
+
+**¿Qué tecnología elegirías y por qué?**
+a) Firebase Firestore - por su offline-first nativo.
+b) Supabase - por su soporte de PostgreSQL y Row Level Security.
+c) SQLite local - por simplicidad en una app pequeña.
+
+---
+
+### Pregunta 5: Rendimiento
+Tu aplicación tiene 1000+ items en una lista y experimentas lags al hacer scroll.
+
+**¿Qué approach seguirías? (Selecciona todos los que apliquen)**
+- [ ] Usar `ListView.builder` en lugar de `ListView`
+- [ ] Implementar `pagination` (cargar de 20 en 20)
+- [ ] Usar `const` en los widgets que no cambian
+- [ ] Mover el estado a un `StateNotifier` separado
+
+---
+
+::: {.callout-tip}
+## 🎯 Evaluación
+
+Sube tus respuestas a un documento Google Docs y comparte el enlace en el canal #dudas-del-curso de Discord. 
+**Feedback personalizado**: Las primeras 10 respuestas reciben review técnico del instructor.
+:::

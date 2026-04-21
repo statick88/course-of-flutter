@@ -1,0 +1,70 @@
+# Riverpod 2.x Avanzado: Generators y Reactividad {#sec-riverpod}
+
+En aplicaciones empresariales, no escribimos los providers manualmente. Utilizamos **Riverpod Generators** para automatizar la creación de proveedores seguros y con tipado fuerte.
+
+## @riverpod: Generación de Código
+
+El uso de `@riverpod` elimina el boilerplate y reduce los errores humanos al autogenerar el tipo de provider adecuado según el valor de retorno.
+
+```dart
+@riverpod
+Future<String> fetchUser(FetchUserRef ref, String id) async {
+  return await ref.watch(apiClientProvider).getUser(id);
+}
+```
+
+## Manejo de Datos Asíncronos con AsyncValue
+
+`AsyncValue` es un tipo de unión que representa perfectamente los estados de una petición: `data`, `loading` y `error`. Como ingeniero, debes manejar siempre estos tres estados para garantizar una UX robusta.
+
+```dart
+@riverpod
+class TodoList extends _$TodoList {
+  @override
+  FutureOr<List<Todo>> build() => [];
+
+  Future<void> addTodo(Todo todo) async {
+    state = const AsyncValue.loading();
+    state = await AsyncValue.guard(() async {
+      return await ref.read(apiProvider).save(todo);
+    });
+  }
+}
+```
+
+::: {.anti-ia-challenge}
+**Optimización de Memoria**: ¿Cuándo usarías `.keepAlive()` en un provider generado? Explica el impacto en la memoria de la aplicación si mantienes vivos todos los estados de los detalles de productos que el usuario ha visitado.
+:::
+
+## 🚀 Práctica: Implementa un Notifier Completo
+
+Llegó el momento de aplicar lo aprendido. En esta sección construirás desde cero un sistema de gestión de tareas con estados completos.
+
+### Fase 1: Configuración
+
+```bash
+flutter create practica_riverpod
+cd practica_riverpod
+flutter pub add flutter_riverpod riverpod_annotation
+dart run build_runner build -d
+```
+
+### Fase 2: Implementación
+
+Crea las siguientes entidades y providers:
+
+1. **Entidad Task** con id, título, descripción y estado (pendiente/completado)
+2. **NotifierProvider** para gestionar el CRUD completo
+3. **FilterProvider** para filtrar tareas por estado
+
+### Fase 3: Validación
+
+Tu implementación debe pasar estas pruebas:
+- ✅ Crear una tarea nueva aparece en la lista inmediatamente
+- ✅ Marcar como completada no elimina la tarea
+- ✅ Filtrar por "pendientes" oculta las completadas
+- ✅ Persistir el estado al reiniciar la app
+
+### Entregable
+
+Sube tu código a un repositorio Git y comparte el enlace. ¿Cuántas líneas de código escribiste? Compara con la versión sin `@riverpod`.

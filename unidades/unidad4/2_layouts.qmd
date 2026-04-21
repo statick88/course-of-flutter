@@ -1,0 +1,34 @@
+# Layouts: Column, Row y Stack {#sec-layouts}
+
+Para crear interfaces complejas, necesitamos organizar los widgets en el espacio. Flutter utiliza un sistema de **Layouts** basado en hijos múltiples.
+
+## Column y Row
+
+- **Column**: Organiza los widgets verticalmente.
+- **Row**: Organiza los widgets horizontalmente.
+
+Ambos usan `mainAxisAlignment` y `crossAxisAlignment` para controlar la alineación.
+
+```dart
+Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    const Text('Item 1'),
+    const Icon(Icons.star),
+  ],
+)
+```
+
+## Container y Padding
+
+- **Padding**: Añade espacio alrededor de un widget.
+- **Container**: Un widget versátil que combina pintura, posicionamiento y dimensionamiento (margen, borde, color de fondo).
+
+::: {.callout-tip}
+## Menos es Más
+Si solo necesitas añadir espacio, prefiere el widget `Padding` sobre un `Container` con padding, ya que es más ligero para el motor de renderizado.
+:::
+
+::: {.anti-ia-challenge}
+**Desafío de Diseño**: Intenta replicar una fila de tres botones con iconos y etiquetas de texto debajo, asegurándote de que estén distribuidos equitativamente en la pantalla. ¿Qué propiedad de `MainAxisAlignment` usarías?
+:::

@@ -1,0 +1,208 @@
+# Glosario de Términos (Flutter & Dart)
+
+Glosario técnico con referencias cruzadas a las unidades donde se cubre cada tema en profundidad.
+
+## A
+
+- **AAB (Android App Bundle)**: Formato de publicación de Google Play que optimiza el tamaño de la app para cada dispositivo. → Ver: [Unidad 12: Build y Distribución](unidades/unidad12/1_build_distribucion.qmd)
+- **AdMob**: Plataforma de monetización de Google para apps móviles. → Relacionado: [Unidad 12: Build y Distribución](unidades/unidad12/1_build_distribucion.qmd)
+- **API (Application Programming Interface)**: Contrato que define cómo dos sistemas se comunican. → Ver: [Unidad 7: Integración con APIs](unidades/unidad7/1_apis_http.qmd)
+
+## B
+
+- **Bloc (Business Logic Component)**: Patrón de gestión de estado basado en streams. → Relacionado: [Unidad 5: Gestión de Estado](unidades/unidad5/1_gestion_estado.qmd)
+- **Build Context**: Objeto que contiene información sobre la ubicación del widget en el árbol de widgets.
+
+## C
+
+- **Clean Architecture**: Patrón de diseño que separa el código en capas (Domain, Infrastructure, Presentation) para mejorar la mantenibilidad. → Ver: [Unidad 6: Clean Architecture](unidades/unidad6/1_clean_architecture.qmd)
+- **ConsumerWidget**: Widget de Riverpod que puede escuchar cambios en el estado sin necesidad de un `StatefulWidget`. → Ver: [Unidad 5: Riverpod](unidades/unidad5/2_riverpod.qmd)
+- **Cross-References**: Referencias entre secciones del libro. Ejemplo: La capa DOMAIN (→ @sec-capas-sagradas) es independiente de Flutter.
+
+## D
+
+- **Dart**: Lenguaje de programación optimizado para UI, desarrollado por Google.
+- **DDD (Domain Driven Design)**: Metodología de diseño de software centrada en el dominio del negocio. → Ver: [Unidad 6: DDD en Flutter](unidades/unidad6/2_ddd_flutter.qmd)
+- **Dependency Injection**: Patrón para inyectar dependencias desde fuera, no crearlas dentro. → Ver: [Unidad 6: Clean Architecture](unidades/unidad6/1_clean_architecture.qmd)
+- **Dio**: Paquete potente para realizar peticiones HTTP con soporte para interceptores. → Ver: [Unidad 7: APIs HTTP](unidades/unidad7/1_apis_http.qmd)
+- **Drift**: Biblioteca de persistencia (SQLite) para Dart y Flutter con tipado seguro. → Ver: [Unidad 8: SQLite con Drift](unidades/unidad8/1_sqlite_drift.qmd)
+
+## E
+
+- **Entity**: Objeto del dominio que representa una entidad de negocio con identidad única. → Ver: [Unidad 6: Clean Architecture](unidades/unidad6/1_clean_architecture.qmd)
+- **Entorno de Desarrollo (IDE)**: Android Studio, VS Code o IntelliJ con plugins de Flutter.
+
+## F
+
+- **Firebase Cloud Messaging (FCM)**: Servicio de notificaciones push de Google. → Ver: [Unidad 9: Firebase Notifications](unidades/unidad9/1_firebase_notifications.qmd)
+- **FVM (Flutter Version Manager)**: Gestor de versiones de Flutter para proyectos con diferentes versiones.
+- **Future**: Objeto que representa un valor que estará disponible en el futuro (operación asíncrona).
+
+## G
+
+- **GetIt**: Biblioteca de inyección de dependencias para Dart y Flutter.
+
+## H
+
+- **Hot Reload**: Característica de Flutter que permite inyectar cambios de código directamente en la app sin reiniciarla. → Ver: [Unidad 3: Primeros Pasos](unidades/unidad3/1_primeros_pasos.qmd)
+- **Http Client**: Componente para realizar peticiones de red. → Ver: [Unidad 7: Integración con APIs](unidades/unidad7/1_apis_http.qmd)
+
+## I
+
+- **InheritedWidget**: Widget base para compartir estado hacia abajo en el árbol de widgets.
+- **Isolate**: Concurrencia en Dart - procesos separados con memoria independiente.
+
+## L
+
+- **Layout**: Estructura visual de la interfaz. → Ver: [Unidad 4: Layouts](unidades/unidad4/2_layouts.qmd)
+- **Listener**: Función que se ejecuta cuando cambia el estado.
+
+## M
+
+- **Mappers**: Funciones que transforman datos entre capas (DTO → Entity, Entity → Model). → Ver: [Unidad 7: Mappers y Models](unidades/unidad7/2_mappers_models.qmd)
+- **Material Design**: Sistema de diseño de Google para interfaces consistente.
+
+## P
+
+- **Package**: Librería reutilizable de código Dart/Flutter.
+- **pubspec.yaml**: Archivo de configuración de dependencias de Flutter.
+- **Provider**: Paquete oficial de gestión de estado de Flutter. → Ver: [Unidad 5: Gestión de Estado](unidades/unidad5/1_gestion_estado.qmd)
+- **Pub.dev**: Repositorio oficial de packages Dart y Flutter.
+- **Push Notification**: Notificación enviada al dispositivo aunque la app esté cerrada. → Ver: [Unidad 9: Firebase Notifications](unidades/unidad9/1_firebase_notifications.qmd)
+
+## R
+
+- **Ref (Reference)**: En Riverpod, objeto para leer estado sin rebuild automático.
+- **Repository Pattern**: Abstracción que hiding la fuente de datos real.
+- **Riverpod**: Gestor de estado reactivo y seguro que mejora los conceptos de Provider. → Ver: [Unidad 5: Riverpod](unidades/unidad5/2_riverpod.qmd)
+
+## S
+
+- **SetState**: Método en StatefulWidget para rebuilds locales.
+- **SQLite**: Base de datos local embebida. → Ver: [Unidad 8: SQLite con Drift](unidades/unidad8/1_sqlite_drift.qmd)
+- **StatefulWidget**: Widget con estado mutable que puede cambiar durante su lifetime.
+- **StatelessWidget**: Widget inmutable que solo se construye una vez.
+- **Stream**: Secuencia asynchronous de eventos o valores.
+
+## T
+
+- **TDD (Test-Driven Development)**: Metodología de desarrollo donde se escribe el test primero. → Ver: [Unidad 14: Testing y CI/CD](unidades/unidad14/1_testing_cicd.qmd)
+
+## U
+
+- **useProvider**: Hook de Riverpod para acceder a providers en widgets.
+
+## V
+
+- **VoidCallback**: Función sin返回值 (equivalente a Action en otros frameworks).
+
+## W
+
+- **Widget**: La unidad básica de construcción de interfaces en Flutter. Todo en Flutter es un widget. → Ver: [Unidad 4: Widgets Básicos](unidades/unidad4/1_widgets_basicos.qmd)
+- **Widget Tree**: Árbol jerárquico de todos los widgets de la app.
+
+---
+
+::: {.callout-tip}
+## Cómo usar este glosario
+
+- Las **cross-references** te llevan directamente a la unidad donde se cubre el tema
+- Cada término tiene un link a la sección relevante
+- Si no entiendes un concepto, busca aquí primero
+- Los términos están organizados alfabéticamente por simplicidad
+:::
+
+## Contribuir al Glosario
+
+¿Conoces un término que falta? 
+1. Haz fork del repositorio
+2. Añade el término en orden alfabético
+3. Envía un PR con el término nuevo
+
+**Tu contribución ayuda a otros estudiantes** 🎓
+
+---
+
+## 📇 Flashcards de Repaso
+
+Las siguientes flashcards te ayudan a repasar los conceptos clave del curso. Usa estas preguntas para autoevaluarte antes de los exámenes.
+
+::: {.panel-tabset}
+## Clean Architecture
+
+### Pregunta 1
+**¿Cuáles son las 3 capas principales de Clean Architecture?**
+
+::: {.callout-tip collapse="true"}
+**Respuesta:**
+1. **DOMAIN** - Lógica de negocio pura (Dart sin dependencias de Flutter)
+2. **INFRASTRUCTURE** - Implementaciones concretas (APIs, Bases de datos)
+3. **PRESENTATION** - UI y Widgets de Flutter
+:::
+
+### Pregunta 2
+**¿Por qué el DOMAIN debe ser independiente de Flutter?**
+
+::: {.callout-tip collapse="true"}
+**Respuesta:**
+Para mantener la portabilidad. El dominio puede usarse en cualquier plataforma (API REST, CLI, Flutter Web) sin cambios.
+:::
+
+## Riverpod
+
+### Pregunta 3
+**¿Qué es un `NotifierProvider` en Riverpod?**
+
+::: {.callout-tip collapse="true"}
+**Respuesta:**
+Un provider que permite mutable state (estado mutable) con métodos para modificar el estado. Ideal para CRUD operations.
+:::
+
+### Pregunta 4
+**¿Cuál es la diferencia entre `FutureProvider` y `StreamProvider`?**
+
+::: {.callout-tip collapse="true"}
+**Respuesta:**
+- `FutureProvider`: Para operaciones que devuelven un solo valor (una petición HTTP)
+- `StreamProvider`: Para flujos de datos continuos que se actualizan en tiempo real
+:::
+
+## SQLite/Drift
+
+### Pregunta 5
+**¿Qué es el patrón Repository en Clean Architecture?**
+
+::: {.callout-tip collapse="true"}
+**Respuesta:**
+Una abstracción que define cómo se acceden los datos, separando la interfaz (contrato) de la implementación concreta (Drift, Firebase, API).
+:::
+
+## Firebase & Supabase
+
+### Pregunta 6
+**¿Cuál es la diferencia principal entre Firebase y Supabase?**
+
+::: {.callout-tip collapse="true"}
+**Respuesta:**
+- **Firebase**: Ecosistema cerrado de Google, propiedad
+- **Supabase**: Código abierto (open-source), basado en PostgreSQL, más control sobre los datos
+:::
+
+## Performance
+
+### Pregunta 7
+**¿Qué es un `RepaintBoundary` y cuándo usarlo?**
+
+::: {.callout-tip collapse="true"}
+**Respuesta:**
+Un widget que aísla su hijo del resto del árbol de renderizado. Usarlo cuando tienes animaciones o widgets complejos que no necesitan ser redibujados cuando cambia el estado padre.
+:::
+
+### Pregunta 8
+**¿Por qué `const` es importante en Flutter?**
+
+::: {.callout-tip collapse="true"}
+**Respuesta:**
+El compilador puede cachear widgets `const` porque nunca cambian, reduciendo el número de rebuilds necesarios.
+:::
+:::

@@ -1,0 +1,29 @@
+# Instalación y Configuración del Entorno {#sec-setup}
+
+Para desarrollar en Flutter, necesitamos un entorno de desarrollo (IDE) y el SDK de Flutter. En este curso, recomendamos **Visual Studio Code** por su ligereza y excelentes extensiones.
+
+> **Prerrequisito**: Si no conoces Dart, repasa [@sec-variables] y [@sec-funciones] antes de continuar.
+
+## Pasos de Instalación
+
+1. **Flutter SDK**: Descarga la versión estable (3.41+) desde [flutter.dev](https://docs.flutter.dev/get-started/install).
+2. **Variables de Entorno**: Agrega la carpeta `bin` de Flutter a tu `PATH`.
+3. **Android Studio**: Instálalo para obtener el Android SDK y las herramientas de emulación.
+4. **VS Code Extensions**: Instala las extensiones de **Flutter** y **Dart**.
+
+## Verificación del Entorno
+
+Ejecuta el siguiente comando en tu terminal para verificar que todo esté en orden:
+
+```bash
+flutter doctor
+```
+
+::: {.callout-warning}
+## ¡No te detengas!
+No es necesario que todos los checks de `flutter doctor` estén en verde (como Chrome o Windows Desktop) si solo vas a desarrollar para Android o iOS. Lo importante es tener el SDK, el Toolchain de Android/iOS y un IDE listo.
+:::
+
+::: {.anti-ia-challenge}
+**Solución de Problemas**: Si `flutter doctor` indica que las licencias de Android no han sido aceptadas, ¿cuál es el comando exacto para aceptarlas todas de una vez? (Pista: usa el flag `--android-licenses`).
+:::

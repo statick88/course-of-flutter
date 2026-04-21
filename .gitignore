@@ -1,0 +1,54 @@
+# Quarto / Book Output
+docs/
+_book/
+_bookdown_files/
+*.html
+*.pdf
+*.epub
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+android/
+ios/
+linux/
+windows/
+macos/
+web/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Node (if any)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python (if any)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.env

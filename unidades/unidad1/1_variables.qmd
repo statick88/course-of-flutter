@@ -1,0 +1,33 @@
+# Variables y Tipos de Datos en Dart {#sec-variables}
+
+En Dart, todo es un objeto. Como facilitador, quiero que entiendas que la seguridad de tipos (type safety) no es una restricción, sino una herramienta para evitar errores en producción.
+
+## Tipos de Datos Básicos
+
+Dart soporta los siguientes tipos fundamentales:
+
+- **String**: Cadenas de texto.
+- **int / double**: Números enteros y de punto flotante.
+- **bool**: Valores lógicos (true/false).
+- **List / Map**: Colecciones de datos.
+
+```dart
+void main() {
+  final String name = 'Abacom Flutter'; // Inmutable después de la asignación
+  const double version = 3.41;          // Constante en tiempo de compilación
+  int students = 15;
+  
+  print('Bienvenido a $name versión $version');
+}
+```
+
+## Inferencia de Tipos vs Tipado Explícito
+
+Dart puede inferir el tipo usando `var`, pero en este curso **preferimos el tipado explícito** o el uso de `final` para mejorar la legibilidad y mantenibilidad.
+
+::: {.anti-ia-challenge}
+**¿Por qué `final` es preferible a `var` en el desarrollo de aplicaciones móviles?**
+Investiga la diferencia entre `final` y `const` en Dart. ¿Cuál de los dos usarías para definir la URL de una API que se obtiene en tiempo de ejecución?
+
+> 💡 **Pista**: En [@sec-apis] profundizaremos en cómo consumir APIs con Dart.
+:::

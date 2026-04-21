@@ -1,0 +1,24 @@
+# Evaluaciones y Quizzes Interactivos
+
+Bienvenido a la sección de evaluación. Aquí pondremos a prueba no solo lo que memorizaste, sino lo que **comprendiste**. 
+
+## Metodología Anti-IA
+
+Nuestros quizzes no se basan en definiciones de diccionario. Están diseñados como **Casos de Uso** reales:
+
+- **Situación**: Un escenario común en el desarrollo.
+- **Conflicto**: Un problema técnico que surge.
+- **Resolución**: Debes elegir la mejor solución arquitectónica o de código.
+
+## Quizzes Disponibles
+
+| Evaluación | Módulos Cubiertos | Estado |
+|------------|------------------|--------|
+| **Quiz I: Dart & Widgets** | I, II, III, IV | [Iniciar Quiz](quiz_final.qmd) |
+| **Quiz II: Arquitectura & Estado** | V, VI, VII | Próximamente |
+| **Quiz III: Backend & Nativo** | VIII, IX, X, XI | Próximamente |
+
+::: {.callout-tip}
+## Consejo para la Evaluación
+Lee bien el enunciado. A veces, la solución que "parece" funcionar no es la más adecuada para un proyecto escalable con **Clean Architecture**.
+:::

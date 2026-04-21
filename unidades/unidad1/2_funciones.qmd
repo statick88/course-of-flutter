@@ -1,0 +1,35 @@
+# Funciones y Parámetros {#sec-funciones}
+
+Las funciones en Dart son objetos de primera clase, lo que significa que pueden pasarse como argumentos a otras funciones (callback), un concepto clave para entender los Widgets en Flutter.
+
+## Definición de Funciones
+
+```dart
+// Función básica con tipado de retorno
+String greet(String name) {
+  return 'Hola, $name';
+}
+
+// Arrow Function (para expresiones de una sola línea)
+String greetShort(String name) => 'Hola, $name';
+```
+
+## Parámetros Nombrados (Named Parameters)
+
+En Flutter, casi todos los Widgets usan parámetros nombrados para mejorar la claridad.
+
+```dart
+void main() {
+  createApp(title: 'My Awesome App', version: 1.0);
+}
+
+// Los parámetros entre {} son nombrados y opcionales por defecto
+void createApp({required String title, double? version}) {
+  print('Creando app: $title (v$version)');
+}
+```
+
+::: {.callout-tip}
+## Buenas Prácticas
+Usa siempre la palabra clave `required` para parámetros que son indispensables para el funcionamiento de tu lógica.
+:::

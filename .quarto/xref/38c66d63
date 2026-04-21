@@ -1,0 +1,1 @@
+{"entries":[{"caption":"17  Persistencia Local con Drift (SQLite)","key":"sec-sqlite","order":{"number":1,"section":[17,0,0,0,0,0,0]}}],"headings":["por-qué-drift","arquitectura-drift-en-clean-architecture","definiendo-una-tabla","operaciones-crud-básicas","sec-sqlite"],"options":{"chapter-id":"sec-sqlite","chapters":true}}

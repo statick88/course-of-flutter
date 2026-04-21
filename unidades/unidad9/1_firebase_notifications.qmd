@@ -1,0 +1,36 @@
+# Notificaciones Push con Firebase (FCM) {#sec-firebase}
+
+> **Relación con APIs**: Firebase usa APIs HTTP para enviar notificaciones. Ver [@sec-apis] para entender el flujo de solicitudes.
+> **Relación con Clean Architecture**: El servicio de notificaciones pertenece a INFRASTRUCTURE. Ver [@sec-clean-architecture].
+
+Las notificaciones son el canal principal para retainer usuarios. Aquí aprenderás a configurar **Firebase Cloud Messaging (FCM)** para enviar mensajes de manera eficiente a dispositivos Android e iOS.
+
+## Conceptos Clave de FCM
+
+- **FCM Token**: Un identificador único para cada instalación de la app.
+- **Topics**: Permiten enviar notificaciones a grupos de usuarios (ej. "deportes", "noticias").
+- **Data Messages**: Mensajes silenciosos que permiten que la app procese datos en segundo plano antes de mostrar la notificación.
+
+## Configuración Inicial
+
+1. Crear un proyecto en la **Firebase Console**.
+2. Registrar la app de Android/iOS.
+3. Descargar y configurar el archivo `google-services.json` o `GoogleService-Info.plist`.
+4. Instalar el paquete `firebase_messaging` en Flutter.
+
+## Escuchando Notificaciones en Primer Plano
+
+```dart
+FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+  print('Notificación recibida: ${message.notification?.title}');
+});
+```
+
+::: {.callout-warning}
+## Permisos en iOS
+Recuerda que en iOS debes solicitar explícitamente permisos al usuario antes de poder recibir notificaciones push.
+:::
+
+::: {.anti-ia-challenge}
+**Estrategia de Engagement**: Investiga la diferencia entre notificaciones "locales" y "remotas". ¿Cómo usarías ambas para recordarle a un usuario que tiene tareas pendientes en su app de Cinemapedia?
+:::

@@ -1,0 +1,37 @@
+# Domain Driven Design (DDD) en Flutter
+
+El **Domain Driven Design** (Diseño Orientado al Dominio) se centra en el núcleo del problema que estamos resolviendo. En Flutter, esto se traduce en una estructura de carpetas que refleja las funcionalidades, no los tipos de archivos.
+
+## Estructura Recomendada de Carpetas
+
+Para cada funcionalidad (feature), tendremos tres capas:
+
+- **domain**: Contiene las entidades, los repositorios (interfaces) y los casos de uso. Es puro Dart.
+- **infrastructure**: Implementa los repositorios, maneja las peticiones HTTP (Data Sources) y los modelos de datos (Mappers).
+- **presentation**: Contiene los Widgets, Providers (Riverpod) y controladores de la interfaz.
+
+```text
+lib/
+  features/
+    auth/
+      domain/
+      infrastructure/
+      presentation/
+    movies/
+      domain/
+      infrastructure/
+      presentation/
+```
+
+## Beneficios para el Equipo
+
+Esta estructura permite que múltiples desarrolladores trabajen en diferentes "features" sin colisionar en el código, facilitando el escalado de la aplicación.
+
+::: {.callout-tip}
+## El Facilitador Recomienda
+Nunca importes nada de `infrastructure` o `presentation` dentro de tu capa de `domain`. El dominio es el centro y no debe tener dependencias externas.
+:::
+
+::: {.anti-ia-challenge}
+**Análisis de Dependencias**: ¿Qué pasaría si importamos un widget de Flutter dentro de una Entidad de Dominio? ¿Cómo afectaría esto a nuestras pruebas unitarias automatizadas?
+:::
