@@ -1,0 +1,45 @@
+/* Custom Styles for Abacom Flutter Course */
+
+:root {
+    --abacom-blue: #004a99;
+    --abacom-orange: #ff6600;
+}
+
+.quarto-title-block .quarto-title-banner {
+    background-color: var(--abacom-blue);
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active, 
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 2px solid var(--abacom-orange);
+    color: var(--abacom-orange) !important;
+}
+
+.callout.callout-style-default {
+    border-left: 5px solid var(--abacom-blue);
+}
+
+.callout-tip {
+    border-left-color: #28a745 !important;
+}
+
+.callout-warning {
+    border-left-color: var(--abacom-orange) !important;
+}
+
+/* Anti-IA Challenge Styling */
+.anti-ia-challenge {
+    background-color: rgba(255, 102, 0, 0.05);
+    border: 1px dashed var(--abacom-orange);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.anti-ia-challenge::before {
+    content: "🚀 DESAFÍO ANTI-IA";
+    font-weight: bold;
+    color: var(--abacom-orange);
+    display: block;
+    margin-bottom: 10px;
+}
