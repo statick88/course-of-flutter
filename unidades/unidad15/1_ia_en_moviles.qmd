@@ -1,0 +1,101 @@
+# Unidad 15: Inteligencia Artificial Móvil (Embedding)
+
+Este módulo es el puente hacia el desarrollo de aplicaciones de "Próxima Generación". No vamos a usar solo APIs; vamos a aprender a **enterrar** la inteligencia dentro del dispositivo para que funcione sin internet, con baja latencia y máxima privacidad.
+
+## 🎯 Objetivos de la Unidad
+
+- Dominar la arquitectura de IA "On-Device" frente a "Cloud-Based".
+- Integrar el motor de inferencia de **TensorFlow Lite** en Flutter.
+- Gestionar modelos de visión y lenguaje localmente.
+- Optimizar el rendimiento mediante **Cuantización** y aceleración por Hardware.
+- Aplicar la arquitectura limpia para desacoplar el motor de IA de la UI.
+
+## 📚 Lección 1: Arquitectura de IA en Móviles
+**Concepto base**: ¿Por qué no usar siempre la API de OpenAI? Latencia, costo y privacidad. En esta lección aprendemos el ciclo de vida de un modelo: Entrenamiento -> Conversión -> Inferencia.
+
+::: {.callout-important}
+### Desafío Anti-IA (Nivel 1)
+Explica por qué un modelo de 70B de parámetros (como Llama 3) no puede correr en un iPhone 15 sin optimización extrema. ¿Es un problema de CPU, RAM o Almacenamiento?
+:::
+
+---
+
+## 📚 Lección 2: Integración de TensorFlow Lite
+El estándar industrial para móviles. No vamos a usar un plugin mágico; vamos a entender el `Interpreter`.
+
+```dart
+// La clave está en el pre-procesamiento
+// Los modelos no entienden "imágenes", entienden "matrices de floats"
+final input = imagenNormalizada.reshape([1, 224, 224, 3]);
+final output = List<double>.filled(1001, 0).reshape([1, 1001]);
+
+// La ejecución es sincrónica, por eso usamos Isolates en producción
+interpreter.run(input, output);
+```
+
+::: {.callout-warning}
+### Desafío Anti-IA (Nivel 2)
+Implementa un **Isolate** en Dart para ejecutar la inferencia de TFLite. Si no lo haces, la UI de tu app se congelará durante el procesamiento. ¿Cómo pasarías los datos entre el hilo principal y el Isolate?
+:::
+
+---
+
+## 📚 Lección 3: Modelos de HuggingFace Localizados
+HuggingFace es el "GitHub" de la IA. Aquí aprendemos a buscar modelos compatibles con TFLite o ONNX y cómo cargarlos localmente.
+
+**Importante**: Si usas una API de inferencia remota, NO estás embebiendo el modelo. Aquí aprenderás a usar `tflite_flutter` para modelos locales.
+
+::: {.callout-tip}
+### Desafío Anti-IA (Nivel 3)
+Encuentra un modelo de **Análisis de Sentimiento** en HuggingFace en formato `.tflite` y cárgalo como un Asset. Crea un mapper que convierta el índice numérico de salida (0, 1, 2) en un String legible ("Positivo", "Neutral", "Negativo").
+:::
+
+---
+
+## 📚 Lección 4: Visión por Computadora (Object Detection)
+Uso de la cámara en tiempo real. Aquí la optimización es crítica.
+
+**Conceptos clave**:
+- FPS (Frames Per Second) vs Inferencia.
+- Cuantización (convertir pesos de 32 bits a 8 bits) para ganar velocidad.
+
+---
+
+## 📚 Lección 5: NLP y LLMs Ligeros
+¿Podemos correr un chatbot local? Con modelos como **Gemma-2b** o **Llama-Tiny**, es posible. Aprenderás a configurar los límites de memoria para no crashear la app.
+
+---
+
+## 📚 Lección 6: Optimización de Modelos
+Un modelo de 100MB es inaceptable para una app móvil. 
+- **Pruning**: Quitar conexiones neuronales inútiles.
+- **Quantization**: Reducir la precisión sin perder (mucha) exactitud.
+
+---
+
+## 📚 Lección 7: IA en Clean Architecture
+No ensucies tus Widgets con lógica de Tensores.
+- **Data Source**: El Motor de TFLite.
+- **Repository**: Maneja la conversión de Tipos Nativos a Tensores.
+- **UseCase**: La lógica de negocio (ej: "Si detectas fuego, lanza alerta").
+
+---
+
+## 📚 Lección 8: Hibridación IA (Local + Cloud)
+El mejor de los dos mundos. Procesamiento rápido local, análisis profundo en la nube si hay conexión.
+
+---
+
+## 🛠️ Herramientas Obligatorias
+- [Netron](https://netron.app/): Para visualizar la arquitectura de tus modelos `.tflite`.
+- [TensorFlow Hub](https://tfhub.dev/): Catálogo oficial de modelos listos para usar.
+
+## 🎓 Evaluación del Módulo
+Para aprobar, el alumno debe entregar una app que:
+1. Detecte al menos 5 tipos de objetos usando la cámara.
+2. Realice la inferencia en menos de 500ms.
+3. El código debe estar desacoplado de la UI mediante el patrón BLoC o Riverpod.
+
+## Final del Módulo
+
+**Recuerda**: Cualquiera puede llamar a una API de OpenAI, pero solo un Ingeniero Senior sabe cómo meter un modelo dentro del bolsillo del usuario.

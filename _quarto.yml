@@ -73,6 +73,9 @@ book:
     - part: "XIV - Testing e Integración Continua"
       chapters:
         - unidades/unidad14/1_testing_cicd.qmd
+    - part: "XV - Inteligencia Artificial Móvil"
+      chapters:
+        - unidades/unidad15/1_ia_en_moviles.qmd
     - part: "Laboratorios Prácticos"
       chapters:
         - lab-practicos/README.md
@@ -83,6 +86,7 @@ book:
         - lab-practicos/5_pushapp.md
         - lab-practicos/6_shopapp.md
         - lab-practicos/7_final_app.md
+        - lab-practicos/8_ia_moviles.md
     - part: "Evaluación"
       chapters:
         - quizzes/README.qmd

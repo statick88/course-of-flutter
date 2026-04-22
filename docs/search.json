@@ -1229,6 +1229,149 @@
     ]
   },
   {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html",
+    "href": "unidades/unidad15/1_ia_en_moviles.html",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "",
+    "text": "25.1 🎯 Objetivos de la Unidad\nEste módulo es el puente hacia el desarrollo de aplicaciones de “Próxima Generación”. No vamos a usar solo APIs; vamos a aprender a enterrar la inteligencia dentro del dispositivo para que funcione sin internet, con baja latencia y máxima privacidad.",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#objetivos-de-la-unidad",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#objetivos-de-la-unidad",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "",
+    "text": "Dominar la arquitectura de IA “On-Device” frente a “Cloud-Based”.\nIntegrar el motor de inferencia de TensorFlow Lite en Flutter.\nGestionar modelos de visión y lenguaje localmente.\nOptimizar el rendimiento mediante Cuantización y aceleración por Hardware.\nAplicar la arquitectura limpia para desacoplar el motor de IA de la UI.",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#lección-1-arquitectura-de-ia-en-móviles",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#lección-1-arquitectura-de-ia-en-móviles",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.2 📚 Lección 1: Arquitectura de IA en Móviles",
+    "text": "25.2 📚 Lección 1: Arquitectura de IA en Móviles\nConcepto base: ¿Por qué no usar siempre la API de OpenAI? Latencia, costo y privacidad. En esta lección aprendemos el ciclo de vida de un modelo: Entrenamiento -&gt; Conversión -&gt; Inferencia.\n\n\n\n\n\n\nImportantDesafío Anti-IA (Nivel 1)\n\n\n\nExplica por qué un modelo de 70B de parámetros (como Llama 3) no puede correr en un iPhone 15 sin optimización extrema. ¿Es un problema de CPU, RAM o Almacenamiento?",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#lección-2-integración-de-tensorflow-lite",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#lección-2-integración-de-tensorflow-lite",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.3 📚 Lección 2: Integración de TensorFlow Lite",
+    "text": "25.3 📚 Lección 2: Integración de TensorFlow Lite\nEl estándar industrial para móviles. No vamos a usar un plugin mágico; vamos a entender el Interpreter.\n\n\nDART\n\n// La clave está en el pre-procesamiento\n// Los modelos no entienden \"imágenes\", entienden \"matrices de floats\"\nfinal input = imagenNormalizada.reshape([1, 224, 224, 3]);\nfinal output = List&lt;double&gt;.filled(1001, 0).reshape([1, 1001]);\n\n// La ejecución es sincrónica, por eso usamos Isolates en producción\ninterpreter.run(input, output);\n\n\n\n\n\n\n\nWarningDesafío Anti-IA (Nivel 2)\n\n\n\nImplementa un Isolate en Dart para ejecutar la inferencia de TFLite. Si no lo haces, la UI de tu app se congelará durante el procesamiento. ¿Cómo pasarías los datos entre el hilo principal y el Isolate?",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#lección-3-modelos-de-huggingface-localizados",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#lección-3-modelos-de-huggingface-localizados",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.4 📚 Lección 3: Modelos de HuggingFace Localizados",
+    "text": "25.4 📚 Lección 3: Modelos de HuggingFace Localizados\nHuggingFace es el “GitHub” de la IA. Aquí aprendemos a buscar modelos compatibles con TFLite o ONNX y cómo cargarlos localmente.\nImportante: Si usas una API de inferencia remota, NO estás embebiendo el modelo. Aquí aprenderás a usar tflite_flutter para modelos locales.\n\n\n\n\n\n\nTipDesafío Anti-IA (Nivel 3)\n\n\n\nEncuentra un modelo de Análisis de Sentimiento en HuggingFace en formato .tflite y cárgalo como un Asset. Crea un mapper que convierta el índice numérico de salida (0, 1, 2) en un String legible (“Positivo”, “Neutral”, “Negativo”).",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#lección-4-visión-por-computadora-object-detection",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#lección-4-visión-por-computadora-object-detection",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.5 📚 Lección 4: Visión por Computadora (Object Detection)",
+    "text": "25.5 📚 Lección 4: Visión por Computadora (Object Detection)\nUso de la cámara en tiempo real. Aquí la optimización es crítica.\nConceptos clave: - FPS (Frames Per Second) vs Inferencia. - Cuantización (convertir pesos de 32 bits a 8 bits) para ganar velocidad.",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#lección-5-nlp-y-llms-ligeros",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#lección-5-nlp-y-llms-ligeros",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.6 📚 Lección 5: NLP y LLMs Ligeros",
+    "text": "25.6 📚 Lección 5: NLP y LLMs Ligeros\n¿Podemos correr un chatbot local? Con modelos como Gemma-2b o Llama-Tiny, es posible. Aprenderás a configurar los límites de memoria para no crashear la app.",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#lección-6-optimización-de-modelos",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#lección-6-optimización-de-modelos",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.7 📚 Lección 6: Optimización de Modelos",
+    "text": "25.7 📚 Lección 6: Optimización de Modelos\nUn modelo de 100MB es inaceptable para una app móvil. - Pruning: Quitar conexiones neuronales inútiles. - Quantization: Reducir la precisión sin perder (mucha) exactitud.",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#lección-7-ia-en-clean-architecture",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#lección-7-ia-en-clean-architecture",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.8 📚 Lección 7: IA en Clean Architecture",
+    "text": "25.8 📚 Lección 7: IA en Clean Architecture\nNo ensucies tus Widgets con lógica de Tensores. - Data Source: El Motor de TFLite. - Repository: Maneja la conversión de Tipos Nativos a Tensores. - UseCase: La lógica de negocio (ej: “Si detectas fuego, lanza alerta”).",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#lección-8-hibridación-ia-local-cloud",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#lección-8-hibridación-ia-local-cloud",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.9 📚 Lección 8: Hibridación IA (Local + Cloud)",
+    "text": "25.9 📚 Lección 8: Hibridación IA (Local + Cloud)\nEl mejor de los dos mundos. Procesamiento rápido local, análisis profundo en la nube si hay conexión.",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#herramientas-obligatorias",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#herramientas-obligatorias",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.10 🛠️ Herramientas Obligatorias",
+    "text": "25.10 🛠️ Herramientas Obligatorias\n\nNetron: Para visualizar la arquitectura de tus modelos .tflite.\nTensorFlow Hub: Catálogo oficial de modelos listos para usar.",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#evaluación-del-módulo",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#evaluación-del-módulo",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.11 🎓 Evaluación del Módulo",
+    "text": "25.11 🎓 Evaluación del Módulo\nPara aprobar, el alumno debe entregar una app que: 1. Detecte al menos 5 tipos de objetos usando la cámara. 2. Realice la inferencia en menos de 500ms. 3. El código debe estar desacoplado de la UI mediante el patrón BLoC o Riverpod.",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad15/1_ia_en_moviles.html#final-del-módulo",
+    "href": "unidades/unidad15/1_ia_en_moviles.html#final-del-módulo",
+    "title": "25  Unidad 15: Inteligencia Artificial Móvil (Embedding)",
+    "section": "25.12 Final del Módulo",
+    "text": "25.12 Final del Módulo\nRecuerda: Cualquiera puede llamar a una API de OpenAI, pero solo un Ingeniero Senior sabe cómo meter un modelo dentro del bolsillo del usuario.",
+    "crumbs": [
+      "XV - Inteligencia Artificial Móvil",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Unidad 15: Inteligencia Artificial Móvil (Embedding)</span>"
+    ]
+  },
+  {
     "objectID": "lab-practicos/README.html",
     "href": "lab-practicos/README.html",
     "title": "",
@@ -1236,370 +1379,491 @@
     "text": "Code\n\n\n\n\n\n\n\n\n\n1 Code Appendix",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>README.html</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>README.html</span>"
     ]
   },
   {
     "objectID": "lab-practicos/1_yesno_app.html",
     "href": "lab-practicos/1_yesno_app.html",
-    "title": "26  Laboratorio 1: YesNo App",
+    "title": "27  Laboratorio 1: YesNo App",
     "section": "",
-    "text": "26.1 Objetivos del Laboratorio\nEn este primer laboratorio práctico, construiremos una aplicación de chat simple pero funcional que utiliza una API externa para responder “Sí” o “No” a nuestras preguntas.",
+    "text": "27.1 Objetivos del Laboratorio\nEn este primer laboratorio práctico, construiremos una aplicación de chat simple pero funcional que utiliza una API externa para responder “Sí” o “No” a nuestras preguntas.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
     ]
   },
   {
     "objectID": "lab-practicos/1_yesno_app.html#objetivos-del-laboratorio",
     "href": "lab-practicos/1_yesno_app.html#objetivos-del-laboratorio",
-    "title": "26  Laboratorio 1: YesNo App",
+    "title": "27  Laboratorio 1: YesNo App",
     "section": "",
     "text": "Aplicar el uso de Material 3.\nGestionar el estado con Provider (introducción).\nConsumir una API REST básica (yesno.wtf/api).\nCrear interfaces con ListView y Chat Bubbles.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
     ]
   },
   {
     "objectID": "lab-practicos/1_yesno_app.html#estructura-del-proyecto",
     "href": "lab-practicos/1_yesno_app.html#estructura-del-proyecto",
-    "title": "26  Laboratorio 1: YesNo App",
-    "section": "26.2 Estructura del Proyecto",
-    "text": "26.2 Estructura del Proyecto\n\nModelos: Definir cómo luce la respuesta de la API.\nProvider: Manejar el historial de mensajes y la petición a la API.\nScreens: Pantalla principal del chat.\nWidgets: Burbujas de chat personalizadas.",
+    "title": "27  Laboratorio 1: YesNo App",
+    "section": "27.2 Estructura del Proyecto",
+    "text": "27.2 Estructura del Proyecto\n\nModelos: Definir cómo luce la respuesta de la API.\nProvider: Manejar el historial de mensajes y la petición a la API.\nScreens: Pantalla principal del chat.\nWidgets: Burbujas de chat personalizadas.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
     ]
   },
   {
     "objectID": "lab-practicos/1_yesno_app.html#desafío-anti-ia",
     "href": "lab-practicos/1_yesno_app.html#desafío-anti-ia",
-    "title": "26  Laboratorio 1: YesNo App",
-    "section": "26.3 Desafío Anti-IA",
-    "text": "26.3 Desafío Anti-IA\n\nRazonamiento Crítico: En este proyecto usamos http para las peticiones. Si la API tarda 5 segundos en responder, ¿cómo mostrarías un indicador de “escribiendo…” en la interfaz? No busques el código, describe el flujo de estado necesario.",
+    "title": "27  Laboratorio 1: YesNo App",
+    "section": "27.3 Desafío Anti-IA",
+    "text": "27.3 Desafío Anti-IA\n\nRazonamiento Crítico: En este proyecto usamos http para las peticiones. Si la API tarda 5 segundos en responder, ¿cómo mostrarías un indicador de “escribiendo…” en la interfaz? No busques el código, describe el flujo de estado necesario.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
     ]
   },
   {
     "objectID": "lab-practicos/1_yesno_app.html#entrega",
     "href": "lab-practicos/1_yesno_app.html#entrega",
-    "title": "26  Laboratorio 1: YesNo App",
-    "section": "26.4 Entrega",
-    "text": "26.4 Entrega\nSube tu código a un repositorio de GitHub y comparte el enlace en la plataforma de Abacom. Asegúrate de incluir un README.md con capturas de pantalla de tu aplicación.",
+    "title": "27  Laboratorio 1: YesNo App",
+    "section": "27.4 Entrega",
+    "text": "27.4 Entrega\nSube tu código a un repositorio de GitHub y comparte el enlace en la plataforma de Abacom. Asegúrate de incluir un README.md con capturas de pantalla de tu aplicación.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 1: YesNo App</span>"
     ]
   },
   {
     "objectID": "lab-practicos/2_toktik.html",
     "href": "lab-practicos/2_toktik.html",
-    "title": "27  Laboratorio 2: TokTik (Vertical Video App)",
+    "title": "28  Laboratorio 2: TokTik (Vertical Video App)",
     "section": "",
-    "text": "27.1 Objetivos del Laboratorio\nEn este laboratorio, crearemos una aplicación inspirada en TikTok para aprender a manejar contenido multimedia, layouts a pantalla completa y gestos táctiles.",
+    "text": "28.1 Objetivos del Laboratorio\nEn este laboratorio, crearemos una aplicación inspirada en TikTok para aprender a manejar contenido multimedia, layouts a pantalla completa y gestos táctiles.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
     ]
   },
   {
     "objectID": "lab-practicos/2_toktik.html#objetivos-del-laboratorio",
     "href": "lab-practicos/2_toktik.html#objetivos-del-laboratorio",
-    "title": "27  Laboratorio 2: TokTik (Vertical Video App)",
+    "title": "28  Laboratorio 2: TokTik (Vertical Video App)",
     "section": "",
     "text": "Implementar un Scroll Vertical infinito.\nUsar el paquete video_player para reproducción de video.\nCrear gradientes y superposiciones (overlays) con el widget Stack.\nAplicar animaciones simples para los botones de interacción.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
     ]
   },
   {
     "objectID": "lab-practicos/2_toktik.html#desafío-de-arquitectura",
     "href": "lab-practicos/2_toktik.html#desafío-de-arquitectura",
-    "title": "27  Laboratorio 2: TokTik (Vertical Video App)",
-    "section": "27.2 Desafío de Arquitectura",
-    "text": "27.2 Desafío de Arquitectura\nPara este proyecto, utilizaremos un modelo de datos local (falso backend) para simular la llegada de videos.\n\nEntities: Definir la entidad VideoPost.\nModels: Crear el modelo VideoPostModel con métodos fromJson.\nMappers: Separar la lógica de conversión de datos de la lógica de negocio.\n\n\nEstrategia de Performance: Los videos consumen mucha memoria y datos. ¿Cómo implementarías una lógica para que solo el video que está actualmente en pantalla se esté reproduciendo, mientras que los demás estén pausados o precargados?",
+    "title": "28  Laboratorio 2: TokTik (Vertical Video App)",
+    "section": "28.2 Desafío de Arquitectura",
+    "text": "28.2 Desafío de Arquitectura\nPara este proyecto, utilizaremos un modelo de datos local (falso backend) para simular la llegada de videos.\n\nEntities: Definir la entidad VideoPost.\nModels: Crear el modelo VideoPostModel con métodos fromJson.\nMappers: Separar la lógica de conversión de datos de la lógica de negocio.\n\n\nEstrategia de Performance: Los videos consumen mucha memoria y datos. ¿Cómo implementarías una lógica para que solo el video que está actualmente en pantalla se esté reproduciendo, mientras que los demás estén pausados o precargados?",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
     ]
   },
   {
     "objectID": "lab-practicos/2_toktik.html#entrega",
     "href": "lab-practicos/2_toktik.html#entrega",
-    "title": "27  Laboratorio 2: TokTik (Vertical Video App)",
-    "section": "27.3 Entrega",
-    "text": "27.3 Entrega\nAsegúrate de que tu aplicación sea fluida y maneje correctamente la carga de videos. Documenta en tu README cómo configuraste los permisos de red para Android e iOS.",
+    "title": "28  Laboratorio 2: TokTik (Vertical Video App)",
+    "section": "28.3 Entrega",
+    "text": "28.3 Entrega\nAsegúrate de que tu aplicación sea fluida y maneje correctamente la carga de videos. Documenta en tu README cómo configuraste los permisos de red para Android e iOS.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 2: TokTik (Vertical Video App)</span>"
     ]
   },
   {
     "objectID": "lab-practicos/3_widgets_app.html",
     "href": "lab-practicos/3_widgets_app.html",
-    "title": "28  Laboratorio 3: Widgets App",
+    "title": "29  Laboratorio 3: Widgets App",
     "section": "",
-    "text": "28.1 Objetivos del Laboratorio\nEn este laboratorio, construiremos un catálogo interactivo de más de 15 widgets de Flutter. Esta aplicación te servirá como referencia rápida (Cookbook) para tus futuros proyectos.",
+    "text": "29.1 Objetivos del Laboratorio\nEn este laboratorio, construiremos un catálogo interactivo de más de 15 widgets de Flutter. Esta aplicación te servirá como referencia rápida (Cookbook) para tus futuros proyectos.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
     ]
   },
   {
     "objectID": "lab-practicos/3_widgets_app.html#objetivos-del-laboratorio",
     "href": "lab-practicos/3_widgets_app.html#objetivos-del-laboratorio",
-    "title": "28  Laboratorio 3: Widgets App",
+    "title": "29  Laboratorio 3: Widgets App",
     "section": "",
     "text": "Dominar la Navegación avanzada con go_router.\nImplementar Menús Laterales (Drawer) y diálogos personalizados.\nCrear animaciones de carga y progreso.\nAplicar el uso de Riverpod para el cambio de tema global (Dark/Light Mode).",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
     ]
   },
   {
     "objectID": "lab-practicos/3_widgets_app.html#componentes-a-implementar",
     "href": "lab-practicos/3_widgets_app.html#componentes-a-implementar",
-    "title": "28  Laboratorio 3: Widgets App",
-    "section": "28.2 Componentes a Implementar",
-    "text": "28.2 Componentes a Implementar\n\nButtons: Variaciones de Material 3.\nCards: Diseños personalizados con sombras y bordes.\nProgress Indicators: Circulares y lineales con estados controlados.\nSnackbars & Dialogs: Notificaciones y alertas al usuario.\nInfinite Scroll: Carga de imágenes optimizada.\n\n\nDesafío de Optimización: En la pantalla de Infinite Scroll, las imágenes pueden saturar la memoria. ¿Cómo usarías el widget Image.network con un loadingBuilder para mejorar la experiencia de usuario mientras la imagen se descarga?",
+    "title": "29  Laboratorio 3: Widgets App",
+    "section": "29.2 Componentes a Implementar",
+    "text": "29.2 Componentes a Implementar\n\nButtons: Variaciones de Material 3.\nCards: Diseños personalizados con sombras y bordes.\nProgress Indicators: Circulares y lineales con estados controlados.\nSnackbars & Dialogs: Notificaciones y alertas al usuario.\nInfinite Scroll: Carga de imágenes optimizada.\n\n\nDesafío de Optimización: En la pantalla de Infinite Scroll, las imágenes pueden saturar la memoria. ¿Cómo usarías el widget Image.network con un loadingBuilder para mejorar la experiencia de usuario mientras la imagen se descarga?",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
     ]
   },
   {
     "objectID": "lab-practicos/3_widgets_app.html#entrega",
     "href": "lab-practicos/3_widgets_app.html#entrega",
-    "title": "28  Laboratorio 3: Widgets App",
-    "section": "28.3 Entrega",
-    "text": "28.3 Entrega\nTu Widgets App debe incluir un menú de configuración donde el usuario pueda elegir entre al menos 5 colores temáticos diferentes y alternar entre modo claro y oscuro.",
+    "title": "29  Laboratorio 3: Widgets App",
+    "section": "29.3 Entrega",
+    "text": "29.3 Entrega\nTu Widgets App debe incluir un menú de configuración donde el usuario pueda elegir entre al menos 5 colores temáticos diferentes y alternar entre modo claro y oscuro.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 3: Widgets App</span>"
     ]
   },
   {
     "objectID": "lab-practicos/4_cinemapedia.html",
     "href": "lab-practicos/4_cinemapedia.html",
-    "title": "29  Laboratorio 4: Cinemapedia",
+    "title": "30  Laboratorio 4: Cinemapedia",
     "section": "",
-    "text": "29.1 Objetivos del Laboratorio\nCinemapedia es el proyecto central de este curso. Es una aplicación de películas completa que utiliza TheMovieDB API y aplica todos los conceptos de Clean Architecture y Riverpod aprendidos hasta ahora.",
+    "text": "30.1 Objetivos del Laboratorio\nCinemapedia es el proyecto central de este curso. Es una aplicación de películas completa que utiliza TheMovieDB API y aplica todos los conceptos de Clean Architecture y Riverpod aprendidos hasta ahora.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
     ]
   },
   {
     "objectID": "lab-practicos/4_cinemapedia.html#objetivos-del-laboratorio",
     "href": "lab-practicos/4_cinemapedia.html#objetivos-del-laboratorio",
-    "title": "29  Laboratorio 4: Cinemapedia",
+    "title": "30  Laboratorio 4: Cinemapedia",
     "section": "",
     "text": "Implementar una estructura de carpetas basada en Features.\nUsar Riverpod para manejar el estado de las películas (ahora en cine, populares, etc.).\nImplementar un Custom ScrollView con Sliders y Grids.\nManejar la Carga Infinita de datos (Pagination).\nImplementar una pantalla de detalles con animaciones de transición.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
     ]
   },
   {
     "objectID": "lab-practicos/4_cinemapedia.html#desafío-de-implementación",
     "href": "lab-practicos/4_cinemapedia.html#desafío-de-implementación",
-    "title": "29  Laboratorio 4: Cinemapedia",
-    "section": "29.2 Desafío de Implementación",
-    "text": "29.2 Desafío de Implementación\nEn este laboratorio, no solo mostraremos datos, sino que implementaremos un Repository Pattern para que la capa de presentación nunca sepa si los datos vienen de una API o de una base de datos local.\n\nOptimización de UI: Al hacer scroll infinito, ¿cómo evitarías realizar múltiples peticiones a la API para la misma página si el usuario hace scroll muy rápido? (Pista: investiga el concepto de isLoading flag en tu Provider).",
+    "title": "30  Laboratorio 4: Cinemapedia",
+    "section": "30.2 Desafío de Implementación",
+    "text": "30.2 Desafío de Implementación\nEn este laboratorio, no solo mostraremos datos, sino que implementaremos un Repository Pattern para que la capa de presentación nunca sepa si los datos vienen de una API o de una base de datos local.\n\nOptimización de UI: Al hacer scroll infinito, ¿cómo evitarías realizar múltiples peticiones a la API para la misma página si el usuario hace scroll muy rápido? (Pista: investiga el concepto de isLoading flag en tu Provider).",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
     ]
   },
   {
     "objectID": "lab-practicos/4_cinemapedia.html#requisitos-técnicos",
     "href": "lab-practicos/4_cinemapedia.html#requisitos-técnicos",
-    "title": "29  Laboratorio 4: Cinemapedia",
-    "section": "29.3 Requisitos Técnicos",
-    "text": "29.3 Requisitos Técnicos\n\nUso obligatorio de Dio para peticiones.\nImplementación de Mappers para convertir las respuestas de la API.\nNavegación con GoRouter.\nTema personalizado siguiendo el branding del curso.",
+    "title": "30  Laboratorio 4: Cinemapedia",
+    "section": "30.3 Requisitos Técnicos",
+    "text": "30.3 Requisitos Técnicos\n\nUso obligatorio de Dio para peticiones.\nImplementación de Mappers para convertir las respuestas de la API.\nNavegación con GoRouter.\nTema personalizado siguiendo el branding del curso.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 4: Cinemapedia</span>"
     ]
   },
   {
     "objectID": "lab-practicos/5_pushapp.html",
     "href": "lab-practicos/5_pushapp.html",
-    "title": "30  Laboratorio 5: PushApp",
+    "title": "31  Laboratorio 5: PushApp",
     "section": "",
-    "text": "30.1 Objetivos del Laboratorio\nEn este laboratorio práctico, construiremos una aplicación de mensajería básica que recibe y muestra notificaciones push utilizando Firebase.",
+    "text": "31.1 Objetivos del Laboratorio\nEn este laboratorio práctico, construiremos una aplicación de mensajería básica que recibe y muestra notificaciones push utilizando Firebase.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
     ]
   },
   {
     "objectID": "lab-practicos/5_pushapp.html#objetivos-del-laboratorio",
     "href": "lab-practicos/5_pushapp.html#objetivos-del-laboratorio",
-    "title": "30  Laboratorio 5: PushApp",
+    "title": "31  Laboratorio 5: PushApp",
     "section": "",
     "text": "Configurar un proyecto de Firebase desde cero para Flutter.\nImplementar la recepción de notificaciones en primer plano y en segundo plano.\nMostrar las notificaciones recibidas en una lista persistida con Drift.\nManejar los Permisos de Notificación de manera profesional.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
     ]
   },
   {
     "objectID": "lab-practicos/5_pushapp.html#estructura-del-proyecto",
     "href": "lab-practicos/5_pushapp.html#estructura-del-proyecto",
-    "title": "30  Laboratorio 5: PushApp",
-    "section": "30.2 Estructura del Proyecto",
-    "text": "30.2 Estructura del Proyecto\n\nFirebase Init: Inicializar Firebase en el main.dart.\nNotification Provider: Un provider global (Riverpod) para manejar el historial de notificaciones.\nLocal DB: Guardar las notificaciones para que no se pierdan al cerrar la app.\nUI: Una pantalla simple con el historial de alertas recibidas.\n\n\nRazonamiento Crítico: Si el usuario desactiva las notificaciones desde los ajustes del sistema, ¿cómo detectarías esto en tu aplicación de Flutter para mostrar un aviso pidiéndole que las reactive? No busques el código, explica el flujo lógico.",
+    "title": "31  Laboratorio 5: PushApp",
+    "section": "31.2 Estructura del Proyecto",
+    "text": "31.2 Estructura del Proyecto\n\nFirebase Init: Inicializar Firebase en el main.dart.\nNotification Provider: Un provider global (Riverpod) para manejar el historial de notificaciones.\nLocal DB: Guardar las notificaciones para que no se pierdan al cerrar la app.\nUI: Una pantalla simple con el historial de alertas recibidas.\n\n\nRazonamiento Crítico: Si el usuario desactiva las notificaciones desde los ajustes del sistema, ¿cómo detectarías esto en tu aplicación de Flutter para mostrar un aviso pidiéndole que las reactive? No busques el código, explica el flujo lógico.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
     ]
   },
   {
     "objectID": "lab-practicos/5_pushapp.html#entrega",
     "href": "lab-practicos/5_pushapp.html#entrega",
-    "title": "30  Laboratorio 5: PushApp",
-    "section": "30.3 Entrega",
-    "text": "30.3 Entrega\nAsegúrate de probar tu aplicación enviando mensajes de prueba desde la consola de Firebase. Incluye en tu README el token del dispositivo de prueba que usaste.",
+    "title": "31  Laboratorio 5: PushApp",
+    "section": "31.3 Entrega",
+    "text": "31.3 Entrega\nAsegúrate de probar tu aplicación enviando mensajes de prueba desde la consola de Firebase. Incluye en tu README el token del dispositivo de prueba que usaste.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 5: PushApp</span>"
     ]
   },
   {
     "objectID": "lab-practicos/6_shopapp.html",
     "href": "lab-practicos/6_shopapp.html",
-    "title": "31  Laboratorio 6: ShopApp",
+    "title": "32  Laboratorio 6: ShopApp",
     "section": "",
-    "text": "31.1 Objetivos del Laboratorio\nShopApp es un e-commerce simplificado que nos permite aplicar todo lo aprendido: Supabase Auth, Clean Architecture y Recursos Nativos.",
+    "text": "32.1 Objetivos del Laboratorio\nShopApp es un e-commerce simplificado que nos permite aplicar todo lo aprendido: Supabase Auth, Clean Architecture y Recursos Nativos.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
     ]
   },
   {
     "objectID": "lab-practicos/6_shopapp.html#objetivos-del-laboratorio",
     "href": "lab-practicos/6_shopapp.html#objetivos-del-laboratorio",
-    "title": "31  Laboratorio 6: ShopApp",
+    "title": "32  Laboratorio 6: ShopApp",
     "section": "",
     "text": "Implementar un flujo completo de Login y Registro.\nCrear un catálogo de productos consumido desde Supabase.\nPermitir que el usuario suba su Foto de Perfil usando la cámara.\nManejar el estado de la sesión de forma global con Riverpod.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
     ]
   },
   {
     "objectID": "lab-practicos/6_shopapp.html#desafío-de-implementación-supabase-storage",
     "href": "lab-practicos/6_shopapp.html#desafío-de-implementación-supabase-storage",
-    "title": "31  Laboratorio 6: ShopApp",
-    "section": "31.2 Desafío de Implementación: Supabase Storage",
-    "text": "31.2 Desafío de Implementación: Supabase Storage\nEn este proyecto, no solo guardaremos texto en la base de datos, sino que subiremos archivos reales a un Bucket de Supabase Storage.\n\nCapturar: Usar image_picker para obtener la foto.\nSubir: Enviar el archivo al bucket “avatars” con un nombre único.\nPersistir: Guardar la URL pública en el perfil del usuario en la base de datos.\n\n\nRazonamiento de Infraestructura: Si miles de usuarios suben fotos simultáneamente, ¿qué estrategia usarías para nombrar los archivos en el bucket y evitar colisiones (sobreescritura accidental)? Explica el uso de UUID o Timestamps.",
+    "title": "32  Laboratorio 6: ShopApp",
+    "section": "32.2 Desafío de Implementación: Supabase Storage",
+    "text": "32.2 Desafío de Implementación: Supabase Storage\nEn este proyecto, no solo guardaremos texto en la base de datos, sino que subiremos archivos reales a un Bucket de Supabase Storage.\n\nCapturar: Usar image_picker para obtener la foto.\nSubir: Enviar el archivo al bucket “avatars” con un nombre único.\nPersistir: Guardar la URL pública en el perfil del usuario en la base de datos.\n\n\nRazonamiento de Infraestructura: Si miles de usuarios suben fotos simultáneamente, ¿qué estrategia usarías para nombrar los archivos en el bucket y evitar colisiones (sobreescritura accidental)? Explica el uso de UUID o Timestamps.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
     ]
   },
   {
     "objectID": "lab-practicos/6_shopapp.html#entrega",
     "href": "lab-practicos/6_shopapp.html#entrega",
-    "title": "31  Laboratorio 6: ShopApp",
-    "section": "31.3 Entrega",
-    "text": "31.3 Entrega\nTu ShopApp debe ser segura: las rutas de “Perfil” y “Carrito” deben estar protegidas y solo ser accesibles para usuarios autenticados. Documenta los pasos necesarios para configurar Supabase en tu README.",
+    "title": "32  Laboratorio 6: ShopApp",
+    "section": "32.3 Entrega",
+    "text": "32.3 Entrega\nTu ShopApp debe ser segura: las rutas de “Perfil” y “Carrito” deben estar protegidas y solo ser accesibles para usuarios autenticados. Documenta los pasos necesarios para configurar Supabase en tu README.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 6: ShopApp</span>"
     ]
   },
   {
     "objectID": "lab-practicos/7_final_app.html",
     "href": "lab-practicos/7_final_app.html",
-    "title": "32  Laboratorio 7: Proyecto Final (Grado)",
+    "title": "33  Laboratorio 7: Proyecto Final (Grado)",
     "section": "",
-    "text": "32.1 Requisitos de la Aplicación Final\nEl proyecto final consiste en desarrollar una aplicación móvil completa y profesional que integre todos los pilares del curso. Es tu oportunidad para demostrar que eres un Arquitecto de Flutter.",
+    "text": "33.1 Requisitos de la Aplicación Final\nEl proyecto final consiste en desarrollar una aplicación móvil completa y profesional que integre todos los pilares del curso. Es tu oportunidad para demostrar que eres un Arquitecto de Flutter.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
     ]
   },
   {
     "objectID": "lab-practicos/7_final_app.html#requisitos-de-la-aplicación-final",
     "href": "lab-practicos/7_final_app.html#requisitos-de-la-aplicación-final",
-    "title": "32  Laboratorio 7: Proyecto Final (Grado)",
+    "title": "33  Laboratorio 7: Proyecto Final (Grado)",
     "section": "",
     "text": "Arquitectura: Uso estricto de Clean Architecture (domain, infrastructure, presentation).\nGestión de Estado: Implementar Riverpod para todo el estado global.\nPersistencia: Base de datos local con Drift (offline-first).\nBackend: Autenticación con Supabase y notificaciones push con Firebase.\nUI/UX: Tema dinámico (dark/light) y navegación con GoRouter.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
     ]
   },
   {
     "objectID": "lab-practicos/7_final_app.html#posibles-temas",
     "href": "lab-practicos/7_final_app.html#posibles-temas",
-    "title": "32  Laboratorio 7: Proyecto Final (Grado)",
-    "section": "32.2 Posibles Temas",
-    "text": "32.2 Posibles Temas\n\nControl de Gastos Personal: Con reportes en la nube y sincronización local.\nGestión de Citas Médicas: Con notificaciones de recordatorio y perfiles de doctor.\nApp de Delivery Local: Integrando mapas y seguimiento de pedidos.\n\n\nDefensa Técnica: Durante tu presentación final, el facilitador te pedirá que expliques por qué elegiste un determinado gestor de estado o base de datos. Prepara una justificación técnica basada en los beneficios y compromisos (trade-offs) de tu elección.",
+    "title": "33  Laboratorio 7: Proyecto Final (Grado)",
+    "section": "33.2 Posibles Temas",
+    "text": "33.2 Posibles Temas\n\nControl de Gastos Personal: Con reportes en la nube y sincronización local.\nGestión de Citas Médicas: Con notificaciones de recordatorio y perfiles de doctor.\nApp de Delivery Local: Integrando mapas y seguimiento de pedidos.\n\n\nDefensa Técnica: Durante tu presentación final, el facilitador te pedirá que expliques por qué elegiste un determinado gestor de estado o base de datos. Prepara una justificación técnica basada en los beneficios y compromisos (trade-offs) de tu elección.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
     ]
   },
   {
     "objectID": "lab-practicos/7_final_app.html#criterios-de-evaluación",
     "href": "lab-practicos/7_final_app.html#criterios-de-evaluación",
-    "title": "32  Laboratorio 7: Proyecto Final (Grado)",
-    "section": "32.3 Criterios de Evaluación",
-    "text": "32.3 Criterios de Evaluación\n\nCorrectitud del Código (40%): Sin errores, tipado fuerte y manejo de excepciones.\nArquitectura (30%): Separación clara de capas y modularización.\nExperiencia de Usuario (20%): Diseño atractivo y navegación intuitiva.\nDocumentación (10%): README completo y código comentado.",
+    "title": "33  Laboratorio 7: Proyecto Final (Grado)",
+    "section": "33.3 Criterios de Evaluación",
+    "text": "33.3 Criterios de Evaluación\n\nCorrectitud del Código (40%): Sin errores, tipado fuerte y manejo de excepciones.\nArquitectura (30%): Separación clara de capas y modularización.\nExperiencia de Usuario (20%): Diseño atractivo y navegación intuitiva.\nDocumentación (10%): README completo y código comentado.",
     "crumbs": [
       "Laboratorios Prácticos",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Laboratorio 7: Proyecto Final (Grado)</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html",
+    "href": "lab-practicos/8_ia_moviles.html",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "",
+    "text": "34.1 🎯 Objetivo del Laboratorio\nIntegrar un modelo de inteligencia artificial en una aplicación Flutter para demostrar capacidades de procesamiento offline.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html#descripción",
+    "href": "lab-practicos/8_ia_moviles.html#descripción",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "34.2 📝 Descripción",
+    "text": "34.2 📝 Descripción\nEn este laboratorio práctico, construirás una aplicación móvil que utilice modelos de IA para: - Procesamiento de imágenes con detección de objetos - Análisis de texto con procesamiento de lenguaje natural - Reconocimiento de patrones usando IA local",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html#requisitos-del-laboratorio",
+    "href": "lab-practicos/8_ia_moviles.html#requisitos-del-laboratorio",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "34.3 🛠️ Requisitos del Laboratorio",
+    "text": "34.3 🛠️ Requisitos del Laboratorio\n\n34.3.1 Tecnologías Necesarias\n\nFlutter SDK configurado\nAndroid Studio o VS Code con extensiones de Flutter\nConocimientos básicos de TensorFlow Lite o PyTorch Mobile\nModelo preentrenado (disponible para descarga)\n\n\n\n34.3.2 Dependencias Requeridas\n\n\nYAML\n\ndependencies:\n  tflite_flutter: ^0.11.0\n  image_picker: ^0.8.7+3\n  path_provider: ^2.0.15\n  http: ^0.13.5",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html#instrucciones-del-laboratorio",
+    "href": "lab-practicos/8_ia_moviles.html#instrucciones-del-laboratorio",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "34.4 📚 Instrucciones del Laboratorio",
+    "text": "34.4 📚 Instrucciones del Laboratorio\n\n34.4.1 Paso 1: Configuración del Proyecto (15 minutos)\n\nCrear un nuevo proyecto Flutter\nAgregar dependencias necesarias en pubspec.yaml\nConfigurar permisos para cámara y almacenamiento\nPreparar estructura de carpetas para IA\n\n\n\n34.4.2 Paso 2: Integración del Modelo TFLite (30 minutos)\n\nDescargar un modelo TFLite (ej: MobileNet para clasificación) desde TensorFlow Hub.\nAgregar el modelo al directorio assets/models/.\nConfigurar el intérprete de TensorFlow Lite.\nCrítico: Implementar la lógica de pre-procesamiento (normalización). Los modelos TFLite suelen esperar tensores de 0.0 a 1.0 o -1.0 a 1.0.\n\n\n\nDART\n\nclass IALocalService {\n  late Interpreter _interpreter;\n  \n  Future&lt;void&gt; inicializar() async {\n    // Carga el modelo desde los assets\n    _interpreter = await Interpreter.fromAsset('assets/models/mobilenet.tflite');\n  }\n  \n  Future&lt;List&lt;double&gt;&gt; procesarImagen(Uint8List rawBytes) async {\n    // 1. Decodificar la imagen a una matriz numérica\n    // 2. Redimensionar a 224x224 (según el modelo)\n    // 3. NORMALIZAR: Convertir de 0-255 (int) a 0.0-1.0 (float)\n    // 4. Inyectar en el interpreter.run(input, output)\n    \n    var input = _normalizarImagen(rawBytes); \n    var output = List&lt;double&gt;.filled(1001, 0).reshape([1, 1001]);\n    \n    _interpreter.run(input, output);\n    return output[0];\n  }\n}\n\n\n\n34.4.3 Paso 3: Construcción de la Interfaz (25 minutos)\n\nCrear pantalla principal con botón para cámara/galería\nImplementar vista previa de imágenes\nMostrar resultados de inferencia en tiempo real\nAgregar indicador de carga y estado\n\n\n\n34.4.4 Paso 4: Optimización (20 minutos)\n\nImplementar cuantificación del modelo\nProbar rendimiento en diferentes dispositivos\nAñadir manejo de memoria eficiente\nConfigurar opciones de hardware (GPU/NNAPI)\n\n\n\n34.4.5 Paso 5: Testing y Validación (10 minutos)\n\nProbar con imágenes de muestra\nVerificar tiempos de respuesta\nAsegurar resultados precisos\nDocumentar límites del modelo",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html#requisitos-de-calidad",
+    "href": "lab-practicos/8_ia_moviles.html#requisitos-de-calidad",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "34.5 🎨 Requisitos de Calidad",
+    "text": "34.5 🎨 Requisitos de Calidad\n\n34.5.1 Funcionalidad\n\nLa aplicación puede cargar imágenes desde cámara o galería\nEl modelo de IA se ejecuta completamente offline\nLos resultados de inferencia se muestran claramente\nLa aplicación maneja errores de inferencia\n\n\n\n34.5.2 Rendimiento\n\nTiempo de inferencia &lt; 2 segundos en dispositivos estándar\nUso de CPU/GPU eficiente\nSin bloqueos de la UI durante inferencia\nMemoria utilizada &lt; 100MB\n\n\n\n34.5.3 Calidad del Código\n\nUso de Clean Architecture (capa domain, data, presentation)\nTests unitarios para servicios de IA\nDocumentación clara del código\nManejo adecuado de estados (loading, error, success)",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html#casos-de-prueba",
+    "href": "lab-practicos/8_ia_moviles.html#casos-de-prueba",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "34.6 🧪 Casos de Prueba",
+    "text": "34.6 🧪 Casos de Prueba\n\n34.6.1 Caso 1: Clasificación de Imágenes\nEntrada: Imagen de un perro Salida esperada: “golden retriever” con confianza &gt; 80%\n\n\n34.6.2 Caso 2: Objeto no reconocido\nEntrada: Imagen abstracta Salida esperada: Mensaje de “objeto no reconocido”\n\n\n34.6.3 Caso 3: Rendimiento bajo carga\nEntrada: 10 imágenes consecutivas Salida esperada: Tiempos consistentes sin degradación significativa",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html#pistas-y-soluciones",
+    "href": "lab-practicos/8_ia_moviles.html#pistas-y-soluciones",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "34.7 🛠️ Pistas y Soluciones",
+    "text": "34.7 🛠️ Pistas y Soluciones\n\n34.7.1 Si el modelo no se carga:\n\nVerificar ruta del archivo en assets\nAsegurar que el modelo esté en formato TFLite\nComprobar dependencias en pubspec.yaml\n\n\n\n34.7.2 Si la inferencia es lenta:\n\nUsar modelo más pequeño (MobileNet en vez de ResNet)\nImplementar cuantificación (float32 → uint8)\nUsar delegado GPU si está disponible\n\n\n\n34.7.3 Si hay problemas de memoria:\n\nLiberar recursos después de cada inferencia\nUsar pooling de imágenes\nLimitar tamaño de entrada",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html#métricas-a-medir",
+    "href": "lab-practicos/8_ia_moviles.html#métricas-a-medir",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "34.8 📊 Métricas a Medir",
+    "text": "34.8 📊 Métricas a Medir\n\nTiempo de inferencia: Promedio en milisegundos\nPrecisión: Porcentaje de aciertos en test set\nUso de memoria: MB consumidos por el modelo\nTamaño del modelo: MB del archivo TFLite\nTiempo de carga: Segundos para inicializar el modelo",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html#desafíos-anti-ia",
+    "href": "lab-practicos/8_ia_moviles.html#desafíos-anti-ia",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "34.9 🎯 Desafíos Anti-IA",
+    "text": "34.9 🎯 Desafíos Anti-IA\n\n34.9.1 Desafío 1: Sin Documentación\nProblema: El modelo funciona pero no puedes explicar cómo Solución: Documentar el pipeline completo y los requisitos\n\n\n34.9.2 Desafío 2: Optimización Extrema\nProblema: El modelo original es demasiado grande Solución: Aplicar técnicas de cuantificación y poda\n\n\n34.9.3 Desafío 3: Múltiples Formatos\nProblema: Soportar diferentes tipos de modelos Solución: Crear abstracción de proveedor de IA",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html#recursos-útiles",
+    "href": "lab-practicos/8_ia_moviles.html#recursos-útiles",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "34.10 🔗 Recursos Útiles",
+    "text": "34.10 🔗 Recursos Útiles\n\nModelos TFLite: https://tfhub.dev/tensorflow/lite-models\nDocumentación TFLite Flutter: https://pub.dev/packages/tflite_flutter\nEjemplos de código: GitHub - tensorflow/examples\nConversión de modelos: TensorFlow Lite Converter",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
+    ]
+  },
+  {
+    "objectID": "lab-practicos/8_ia_moviles.html#entrega",
+    "href": "lab-practicos/8_ia_moviles.html#entrega",
+    "title": "34  Laboratorio 8: IA Móvil - Embebción de Modelos de IA",
+    "section": "34.11 📝 Entrega",
+    "text": "34.11 📝 Entrega\n\n34.11.1 Requisitos Finales\n\nProyecto Flutter funcional con IA integrada\nDocumentación del proceso de integración\nMétricas de rendimiento reportadas\nVideo demostrativo de la aplicación\nCódigo fuente con buenas prácticas\n\n\n\n34.11.2 Criterios de Éxito\n\n✅ Modelo integrado y funcionando offline\n✅ Interfaz de usuario intuitiva\n✅ Rendimiento aceptable en dispositivo móvil\n✅ Código limpio y bien estructurado\n✅ Documentación completa\n\n\nNota: Este laboratorio está diseñado para complementar el Módulo 8 del curso principal y demuestra la capacidad de integrar tecnologías emergentes como la IA en aplicaciones móviles profesionales.",
+    "crumbs": [
+      "Laboratorios Prácticos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Laboratorio 8: IA Móvil - Embebción de Modelos de IA</span>"
     ]
   },
   {
     "objectID": "quizzes/README.html",
     "href": "quizzes/README.html",
-    "title": "33  Evaluaciones y Quizzes Interactivos",
+    "title": "35  Evaluaciones y Quizzes Interactivos",
     "section": "",
-    "text": "33.1 Metodología Anti-IA\nBienvenido a la sección de evaluación. Aquí pondremos a prueba no solo lo que memorizaste, sino lo que comprendiste.\nNuestros quizzes no se basan en definiciones de diccionario. Están diseñados como Casos de Uso reales:",
+    "text": "35.1 Metodología Anti-IA\nBienvenido a la sección de evaluación. Aquí pondremos a prueba no solo lo que memorizaste, sino lo que comprendiste.\nNuestros quizzes no se basan en definiciones de diccionario. Están diseñados como Casos de Uso reales:",
     "crumbs": [
       "Evaluación",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Evaluaciones y Quizzes Interactivos</span>"
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Evaluaciones y Quizzes Interactivos</span>"
     ]
   },
   {
     "objectID": "quizzes/README.html#metodología-anti-ia",
     "href": "quizzes/README.html#metodología-anti-ia",
-    "title": "33  Evaluaciones y Quizzes Interactivos",
+    "title": "35  Evaluaciones y Quizzes Interactivos",
     "section": "",
     "text": "Situación: Un escenario común en el desarrollo.\nConflicto: Un problema técnico que surge.\nResolución: Debes elegir la mejor solución arquitectónica o de código.",
     "crumbs": [
       "Evaluación",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Evaluaciones y Quizzes Interactivos</span>"
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Evaluaciones y Quizzes Interactivos</span>"
     ]
   },
   {
     "objectID": "quizzes/README.html#quizzes-disponibles",
     "href": "quizzes/README.html#quizzes-disponibles",
-    "title": "33  Evaluaciones y Quizzes Interactivos",
-    "section": "33.2 Quizzes Disponibles",
-    "text": "33.2 Quizzes Disponibles\n\n\n\nEvaluación\nMódulos Cubiertos\nEstado\n\n\n\n\nQuiz I: Dart & Widgets\nI, II, III, IV\nIniciar Quiz\n\n\nQuiz II: Arquitectura & Estado\nV, VI, VII\nPróximamente\n\n\nQuiz III: Backend & Nativo\nVIII, IX, X, XI\nPróximamente\n\n\n\n\n\n\n\n\n\nTipConsejo para la Evaluación\n\n\n\nLee bien el enunciado. A veces, la solución que “parece” funcionar no es la más adecuada para un proyecto escalable con Clean Architecture.",
+    "title": "35  Evaluaciones y Quizzes Interactivos",
+    "section": "35.2 Quizzes Disponibles",
+    "text": "35.2 Quizzes Disponibles\n\n\n\nEvaluación\nMódulos Cubiertos\nEstado\n\n\n\n\nQuiz I: Dart & Widgets\nI, II, III, IV\nIniciar Quiz\n\n\nQuiz II: Arquitectura & Estado\nV, VI, VII\nPróximamente\n\n\nQuiz III: Backend & Nativo\nVIII, IX, X, XI\nPróximamente\n\n\n\n\n\n\n\n\n\nTipConsejo para la Evaluación\n\n\n\nLee bien el enunciado. A veces, la solución que “parece” funcionar no es la más adecuada para un proyecto escalable con Clean Architecture.",
     "crumbs": [
       "Evaluación",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Evaluaciones y Quizzes Interactivos</span>"
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Evaluaciones y Quizzes Interactivos</span>"
     ]
   },
   {
     "objectID": "quizzes/quiz_final.html",
     "href": "quizzes/quiz_final.html",
-    "title": "34  Quiz Final: Arquitectura y Gestión de Estado",
+    "title": "36  Quiz Final: Arquitectura y Gestión de Estado",
     "section": "",
-    "text": "Responde a los siguientes desafíos de arquitectura. Recuerda que no hay una única respuesta correcta, pero sí hay mejores prácticas.\n\n34.0.1 Pregunta 1: El Dilema del Provider\nTienes una aplicación que maneja el estado de un carrito de compras. El usuario está en la pantalla de “Checkout” y se pierde la conexión a internet.\n¿Cómo manejarías este estado con Riverpod? a) Usarías un StateProvider y guardarías el error en una variable global. b) Usarías un AsyncValue en un NotifierProvider para manejar los estados de loading, data y error. c) Llamarías a setState en el widget de Checkout para mostrar un diálogo de error.\n\n\n\n34.0.2 Pregunta 2: Clean Architecture\nUn nuevo requerimiento pide que la aplicación sea capaz de funcionar con dos bases de datos diferentes (una para Premium y otra para Free).\n¿En qué capa de la arquitectura deberías implementar esta lógica de selección? a) En la capa de Presentation (usando un condicional en el Widget). b) En la capa de Domain (creando una entidad DatabaseSelector). c) En la capa de Infrastructure (implementando un RepositoryImpl que decida qué DataSource usar).\n\n\nAuto-evaluación: Si tuvieras que explicarle a un compañero por qué elegiste la opción (c) en la pregunta anterior, ¿qué argumentos de desacoplamiento usarías?\n\n\n\n\n34.0.3 Pregunta 3: APIs y Modelado de Datos\nTu equipo decide cambiar el nombre de un campo en la respuesta del API de user_name a full_name.\n¿Dónde realizarías el mapeo para evitar romper la UI? a) Directamente en el Widget que consume el dato. b) En un archivo models/user_model.dart que reflectiona la respuesta exacta de la API. c) En un mapper entre el Model (API) y la Entity (Domain).\n\n\n\n34.0.4 Pregunta 4: Firebase vs Supabase\nTu cliente necesita una base de datos en tiempo real con soporte offline.\n¿Qué tecnología elegirías y por qué? a) Firebase Firestore - por su offline-first nativo. b) Supabase - por su soporte de PostgreSQL y Row Level Security. c) SQLite local - por simplicidad en una app pequeña.\n\n\n\n34.0.5 Pregunta 5: Rendimiento\nTu aplicación tiene 1000+ items en una lista y experimentas lags al hacer scroll.\n¿Qué approach seguirías? (Selecciona todos los que apliquen) - [ ] Usar ListView.builder en lugar de ListView - [ ] Implementar pagination (cargar de 20 en 20) - [ ] Usar const en los widgets que no cambian - [ ] Mover el estado a un StateNotifier separado\n\n\n\n\n\n\n\nTip🎯 Evaluación\n\n\n\nSube tus respuestas a un documento Google Docs y comparte el enlace en el canal #dudas-del-curso de Discord. Feedback personalizado: Las primeras 10 respuestas reciben review técnico del instructor.\n\n\n\n\n\n\n\n\n35 Code Appendix",
+    "text": "Responde a los siguientes desafíos de arquitectura. Recuerda que no hay una única respuesta correcta, pero sí hay mejores prácticas.\n\n36.0.1 Pregunta 1: El Dilema del Provider\nTienes una aplicación que maneja el estado de un carrito de compras. El usuario está en la pantalla de “Checkout” y se pierde la conexión a internet.\n¿Cómo manejarías este estado con Riverpod? a) Usarías un StateProvider y guardarías el error en una variable global. b) Usarías un AsyncValue en un NotifierProvider para manejar los estados de loading, data y error. c) Llamarías a setState en el widget de Checkout para mostrar un diálogo de error.\n\n\n\n36.0.2 Pregunta 2: Clean Architecture\nUn nuevo requerimiento pide que la aplicación sea capaz de funcionar con dos bases de datos diferentes (una para Premium y otra para Free).\n¿En qué capa de la arquitectura deberías implementar esta lógica de selección? a) En la capa de Presentation (usando un condicional en el Widget). b) En la capa de Domain (creando una entidad DatabaseSelector). c) En la capa de Infrastructure (implementando un RepositoryImpl que decida qué DataSource usar).\n\n\nAuto-evaluación: Si tuvieras que explicarle a un compañero por qué elegiste la opción (c) en la pregunta anterior, ¿qué argumentos de desacoplamiento usarías?\n\n\n\n\n36.0.3 Pregunta 3: APIs y Modelado de Datos\nTu equipo decide cambiar el nombre de un campo en la respuesta del API de user_name a full_name.\n¿Dónde realizarías el mapeo para evitar romper la UI? a) Directamente en el Widget que consume el dato. b) En un archivo models/user_model.dart que reflectiona la respuesta exacta de la API. c) En un mapper entre el Model (API) y la Entity (Domain).\n\n\n\n36.0.4 Pregunta 4: Firebase vs Supabase\nTu cliente necesita una base de datos en tiempo real con soporte offline.\n¿Qué tecnología elegirías y por qué? a) Firebase Firestore - por su offline-first nativo. b) Supabase - por su soporte de PostgreSQL y Row Level Security. c) SQLite local - por simplicidad en una app pequeña.\n\n\n\n36.0.5 Pregunta 5: Rendimiento\nTu aplicación tiene 1000+ items en una lista y experimentas lags al hacer scroll.\n¿Qué approach seguirías? (Selecciona todos los que apliquen) - [ ] Usar ListView.builder en lugar de ListView - [ ] Implementar pagination (cargar de 20 en 20) - [ ] Usar const en los widgets que no cambian - [ ] Mover el estado a un StateNotifier separado\n\n\n\n\n\n\n\nTip🎯 Evaluación\n\n\n\nSube tus respuestas a un documento Google Docs y comparte el enlace en el canal #dudas-del-curso de Discord. Feedback personalizado: Las primeras 10 respuestas reciben review técnico del instructor.\n\n\n\n\n\n\n\n\n37 Code Appendix",
     "crumbs": [
       "Evaluación",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Quiz Final: Arquitectura y Gestión de Estado</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Quiz Final: Arquitectura y Gestión de Estado</span>"
     ]
   }
 ]

@@ -1,0 +1,30 @@
+# Bienvenidos al Curso de Flutter {.unnumbered}
+
+![Flutter Course](logo.jpeg){width=200}
+
+Este eBook no es para personas que buscan el camino fácil. Aquí no vienemos a "copiar y pegar" código de internet. Este material es tu guía de ingeniería para transformar tu mentalidad y dominar **Flutter** y **Dart** con rigor profesional.
+
+**Licencia**: Este curso está bajo [Licencia Creative Commons BY-NC-SA 4.0](licencia) — Attribution, NonCommercial, ShareAlike.
+
+El autor cree firmemente que los **CONCEPTOS IMPORTAN MÁS QUE EL CÓDIGO**. Si entiendes la base, el framework es solo una herramienta.
+
+## La Hoja de Ruta del Ingeniero
+
+En este viaje de **56 horas de puro aprendizaje**, vamos a DESTRUIR la mediocridad cubriendo:
+
+- **FUNDAMENTOS DE DART**: Olvídate de lo básico; vamos a profundizar en Mixins, Extensions y Tipado Fuerte.
+- **ESTADO REACTIVO**: Dominaremos **Riverpod 2.x** con Generators. No más boilerplate innecesario.
+- **CLEAN ARCHITECTURE (DDD)**: Aprenderás a construir sistemas, no solo apps. La arquitectura es la que te salvará la vida en producción.
+- **TESTING RIGUROSO**: Un código sin tests es un código que NO FUNCIONA. Punto.
+- **OPTIMIZACIÓN EXTREMA**: Aprenderás a usar DevTools para que tu app corra a 120 FPS constantes.
+
+## Metodología Statick
+
+Como tu facilitador, seré exigente. Mi objetivo es que entiendas el **POR QUÉ** de cada línea de código. Este curso es **90% PRÁCTICO**, construyendo **7 aplicaciones reales** desde cero.
+
+::: {.callout-important}
+## EL RETO ANTI-IA
+Cada módulo contiene desafíos diseñados para que tu IA no pueda ayudarte. Si no puedes explicar la arquitectura detrás de tu código, NO HAS APRENDIDO NADA.
+:::
+
+Usa la barra lateral para navegar. Si buscas el éxito rápido, estás en el lugar equivocado. Si buscas convertirte en un **ARQUITECTO DE SOFTWARE**, bienvenido a casa.
