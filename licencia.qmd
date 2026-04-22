@@ -9,11 +9,11 @@
 
 ### Bajo los siguientes términos:
 
-- ![BY](https://licensebuttons.net/l/by/4.0/88x31.png) **Atribución** — Debe dar crédito appropriate, proporcionar un enlace a la licencia, e indicar si se realizaron cambios. Puede hacerlo de cualquier manera razonable, pero no de tal manera que sugiera que el licenciante lo respalda a usted o su uso.
+- ![BY](images/cc-by.png) **Atribución** — Debe dar crédito appropriate, proporcionar un enlace a la licencia, e indicar si se realizaron cambios. Puede hacerlo de cualquier manera razonable, pero no de tal manera que sugiera que el licenciante lo respalda a usted o su uso.
 
-- ![NC](https://licensebuttons.net/l/nc/4.0/88x31.png) **NoComercial** — No puede utilizar el material para fines comerciales.
+- ![NC](images/cc-nc.png) **NoComercial** — No puede utilizar el material para fines comerciales.
 
-- ![SA](https://licensebuttons.net/l/sa/4.0/88x31.png) **CompartirIgual** — Si remezcla, transforma o crea a partir del material, debe distribuir su contribución bajo la misma licencia que el original.
+- ![SA](images/cc-sa.png) **CompartirIgual** — Si remezcla, transforma o crea a partir del material, debe distribuir su contribución bajo la misma licencia que el original.
 
 ### Notas legales
 

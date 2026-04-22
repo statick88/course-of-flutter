@@ -27,7 +27,7 @@ Flutter facilita la inclusión de recursos visuales:
 
 ```dart
 const Icon(Icons.favorite, color: Colors.red, size: 50),
-Image.network('https://dart.dev/assets/img/logo-lockup.png'),
+Image.asset('images/dart-logo.png'),
 ```
 
 ::: {.anti-ia-challenge}

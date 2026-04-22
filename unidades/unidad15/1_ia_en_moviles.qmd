@@ -1,5 +1,8 @@
 # Unidad 15: Inteligencia Artificial Móvil (Embedding)
 
+![Logos de Tecnologías IA](../../images/tflite-logo.png){width=300}
+*Figura 1: Ecosistema TensorFlow Lite para inferencia on-device.*
+
 Este módulo es el puente hacia el desarrollo de aplicaciones de "Próxima Generación". No vamos a usar solo APIs; vamos a aprender a **enterrar** la inteligencia dentro del dispositivo para que funcione sin internet, con baja latencia y máxima privacidad.
 
 ## 🎯 Objetivos de la Unidad
@@ -8,10 +11,24 @@ Este módulo es el puente hacia el desarrollo de aplicaciones de "Próxima Gener
 - Integrar el motor de inferencia de **TensorFlow Lite** en Flutter.
 - Gestionar modelos de visión y lenguaje localmente.
 - Optimizar el rendimiento mediante **Cuantización** y aceleración por Hardware.
-- Aplicar la arquitectura limpia para desacoplar el motor de IA de la UI.
 
 ## 📚 Lección 1: Arquitectura de IA en Móviles
-**Concepto base**: ¿Por qué no usar siempre la API de OpenAI? Latencia, costo y privacidad. En esta lección aprendemos el ciclo de vida de un modelo: Entrenamiento -> Conversión -> Inferencia.
+
+La arquitectura on-device se diferencia radicalmente de las llamadas a API tradicionales. El modelo reside en la memoria del teléfono y utiliza el procesador local.
+
+```{mermaid}
+graph TD
+    A[Modelo Entrenado .h5/.pt] --> B[TFLite Converter]
+    B --> C[.tflite FlatBuffers]
+    C --> D[Assets de Flutter]
+    D --> E[TFLite Interpreter]
+    E --> F[Delegados: GPU/NNAPI/CoreML]
+    F --> G[Inferencia en Tiempo Real]
+```
+*Diagrama 1: Pipeline de despliegue de modelos de IA en dispositivos móviles.*
+
+**Cita Bibliográfica**: 
+> Abadi, M., et al. (2015). *TensorFlow: Large-scale machine learning on heterogeneous systems*. Software disponible en tensorflow.org. [1]
 
 ::: {.callout-important}
 ### Desafío Anti-IA (Nivel 1)
@@ -21,7 +38,14 @@ Explica por qué un modelo de 70B de parámetros (como Llama 3) no puede correr 
 ---
 
 ## 📚 Lección 2: Integración de TensorFlow Lite
+
 El estándar industrial para móviles. No vamos a usar un plugin mágico; vamos a entender el `Interpreter`.
+
+![Flujo de Datos en el Intérprete](../../images/tflite-interpreter-flow.png){width=500}
+*Figura 2: Interacción entre el Intérprete y los Delegados de Hardware.*
+
+**Cita Bibliográfica**: 
+> Howard, A. G., et al. (2017). *MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications*. arXiv preprint arXiv:1704.04861. [2]
 
 ```dart
 // La clave está en el pre-procesamiento

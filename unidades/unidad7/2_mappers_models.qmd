@@ -20,7 +20,7 @@ class MovieMapper {
     overview: moviedb.overview,
     posterPath: (moviedb.posterPath != '')
       ? 'https://image.tmdb.org/t/p/w500${moviedb.posterPath}'
-      : 'https://sd.keepcalms.com/i/no-poster-found.png',
+      : 'images/no-poster.png',
   );
 }
 ```
